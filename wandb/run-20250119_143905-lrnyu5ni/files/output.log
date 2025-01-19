@@ -1,0 +1,16 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/ppo_training.py", line 525, in <module>
+    run_ppo_vec_training(total_timesteps=200_000, num_envs = 4, rollout_steps=128, render=True)
+  File "/home/archer/code/super_mario_learning/ppo_training.py", line 382, in run_ppo_vec_training
+    prev_x_pos[i] = info_array[i].get("x_pos", 0)
+KeyError: 0
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/ppo_training.py", line 525, in <module>
+    run_ppo_vec_training(total_timesteps=200_000, num_envs = 4, rollout_steps=128, render=True)
+  File "/home/archer/code/super_mario_learning/ppo_training.py", line 382, in run_ppo_vec_training
+    prev_x_pos[i] = info_array[i].get("x_pos", 0)
+KeyError: 0

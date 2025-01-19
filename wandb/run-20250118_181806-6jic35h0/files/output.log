@@ -1,0 +1,121 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+Loading model from mario_dqn.pth ...
+/home/archer/code/super_mario_learning/train.py:279: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  agent.local_net.load_state_dict(torch.load(load_model, map_location=device))
+Model loaded successfully. Training will resume from this checkpoint.
+Training:   0%|                                                                               | 0/50000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 1677.00 | Eps: 0.020
+Training:   0%|                                                                   | 29/50000 [01:20<22:44:50,  1.64s/it]
+Episode 2 | Reward: 1306.00 | Eps: 0.020
+Episode 3 | Reward: 230.00 | Eps: 0.020
+Episode 4 | Reward: 246.00 | Eps: 0.020
+Episode 5 | Reward: 220.00 | Eps: 0.020
+Episode 6 | Reward: 243.00 | Eps: 0.020
+Episode 7 | Reward: 247.00 | Eps: 0.020
+Episode 8 | Reward: 236.00 | Eps: 0.020
+Episode 9 | Reward: 1308.00 | Eps: 0.020
+[Episode 10] Model saved to mario_dqn.pth
+Episode 10 | Reward: 202.00 | Eps: 0.020
+Episode 11 | Reward: 239.00 | Eps: 0.020
+Episode 12 | Reward: 246.00 | Eps: 0.020
+Episode 13 | Reward: 241.00 | Eps: 0.020
+Episode 14 | Reward: 639.00 | Eps: 0.020
+Episode 15 | Reward: 245.00 | Eps: 0.020
+Episode 16 | Reward: 235.00 | Eps: 0.020
+Episode 17 | Reward: 226.00 | Eps: 0.020
+Episode 18 | Reward: 236.00 | Eps: 0.020
+Episode 19 | Reward: 726.00 | Eps: 0.020
+[Episode 20] Model saved to mario_dqn.pth
+Episode 20 | Reward: 247.00 | Eps: 0.020
+Episode 21 | Reward: 242.00 | Eps: 0.020
+Episode 22 | Reward: 231.00 | Eps: 0.020
+Episode 23 | Reward: 241.00 | Eps: 0.020
+Episode 24 | Reward: 638.00 | Eps: 0.020
+Episode 25 | Reward: 248.00 | Eps: 0.020
+Episode 26 | Reward: 1037.00 | Eps: 0.020
+Episode 27 | Reward: 247.00 | Eps: 0.020
+Episode 28 | Reward: 241.00 | Eps: 0.020
+Episode 29 | Reward: 237.00 | Eps: 0.020
+[Episode 30] Model saved to mario_dqn.pth
+Episode 30 | Reward: 241.00 | Eps: 0.020
+Episode 31 | Reward: 994.00 | Eps: 0.020
+Episode 32 | Reward: 1273.00 | Eps: 0.020
+Episode 33 | Reward: 705.00 | Eps: 0.020
+Episode 34 | Reward: 237.00 | Eps: 0.020
+Episode 35 | Reward: 1314.00 | Eps: 0.020
+Episode 36 | Reward: 1302.00 | Eps: 0.020
+Episode 37 | Reward: 1288.00 | Eps: 0.020
+Episode 38 | Reward: 1036.00 | Eps: 0.020
+Episode 39 | Reward: 1684.00 | Eps: 0.020
+[Episode 40] Model saved to mario_dqn.pth
+Episode 40 | Reward: 902.00 | Eps: 0.020
+Episode 41 | Reward: 632.00 | Eps: 0.020
+Episode 42 | Reward: 245.00 | Eps: 0.020
+Episode 43 | Reward: 620.00 | Eps: 0.020
+Episode 44 | Reward: 653.00 | Eps: 0.020
+Episode 45 | Reward: 981.00 | Eps: 0.020
+Episode 46 | Reward: 1415.00 | Eps: 0.020
+Episode 47 | Reward: 570.00 | Eps: 0.020
+Episode 48 | Reward: 1319.00 | Eps: 0.020
+Episode 49 | Reward: 631.00 | Eps: 0.020
+[Episode 50] Model saved to mario_dqn.pth
+Episode 50 | Reward: 614.00 | Eps: 0.020
+Episode 51 | Reward: 599.00 | Eps: 0.020
+Episode 52 | Reward: 596.00 | Eps: 0.020
+Episode 53 | Reward: 767.00 | Eps: 0.020
+Episode 54 | Reward: 618.00 | Eps: 0.020
+Episode 55 | Reward: 1382.00 | Eps: 0.020
+Episode 56 | Reward: 244.00 | Eps: 0.020
+Episode 57 | Reward: 246.00 | Eps: 0.020
+Episode 58 | Reward: 571.00 | Eps: 0.020
+Episode 59 | Reward: 581.00 | Eps: 0.020
+[Episode 60] Model saved to mario_dqn.pth
+Episode 60 | Reward: 614.00 | Eps: 0.020
+Episode 61 | Reward: 1565.00 | Eps: 0.020
+Episode 62 | Reward: 813.00 | Eps: 0.020
+Episode 63 | Reward: 604.00 | Eps: 0.020
+Episode 64 | Reward: 578.00 | Eps: 0.020
+Episode 65 | Reward: 628.00 | Eps: 0.020
+Episode 66 | Reward: 776.00 | Eps: 0.020
+Episode 67 | Reward: 994.00 | Eps: 0.020
+Episode 68 | Reward: 631.00 | Eps: 0.020
+Episode 69 | Reward: 715.00 | Eps: 0.020
+[Episode 70] Model saved to mario_dqn.pth
+Episode 70 | Reward: 641.00 | Eps: 0.020
+Episode 71 | Reward: 250.00 | Eps: 0.020
+Episode 72 | Reward: 747.00 | Eps: 0.020
+Episode 73 | Reward: 613.00 | Eps: 0.020
+Episode 74 | Reward: 638.00 | Eps: 0.020
+Episode 75 | Reward: 755.00 | Eps: 0.020
+Episode 76 | Reward: 1043.00 | Eps: 0.020
+Episode 77 | Reward: 712.00 | Eps: 0.020
+Episode 78 | Reward: 1371.00 | Eps: 0.020
+Episode 79 | Reward: 620.00 | Eps: 0.020
+[Episode 80] Model saved to mario_dqn.pth
+Episode 80 | Reward: 794.00 | Eps: 0.020
+Episode 81 | Reward: 743.00 | Eps: 0.020
+Episode 82 | Reward: 243.00 | Eps: 0.020
+Episode 83 | Reward: 638.00 | Eps: 0.020
+Episode 84 | Reward: 614.00 | Eps: 0.020
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 352, in <module>
+    run_training(num_episodes=50000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 300, in run_training
+    action = agent.act(stacked_state)
+  File "/home/archer/code/super_mario_learning/train.py", line 187, in act
+    state_tensor = torch.tensor(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 352, in <module>
+    run_training(num_episodes=50000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 300, in run_training
+    action = agent.act(stacked_state)
+  File "/home/archer/code/super_mario_learning/train.py", line 187, in act
+    state_tensor = torch.tensor(
+KeyboardInterrupt

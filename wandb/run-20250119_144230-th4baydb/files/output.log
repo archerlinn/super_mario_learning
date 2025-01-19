@@ -1,0 +1,48 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+No model found at mario_dqn.pth; starting from scratch.
+Training:   0%|                                                                                              | 0/5000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 678.28 | Eps: 0.995
+Training:   0%|▎                                                                                 | 20/5000 [18:35<77:07:48, 55.76s/it]
+Episode 2 | Reward: -30.69 | Eps: 0.990
+Episode 3 | Reward: -29.49 | Eps: 0.985
+Episode 4 | Reward: -29.49 | Eps: 0.980
+Episode 5 | Reward: -28.19 | Eps: 0.975
+Episode 6 | Reward: 246.74 | Eps: 0.970
+Episode 7 | Reward: 245.74 | Eps: 0.966
+Episode 8 | Reward: -29.69 | Eps: 0.961
+Episode 9 | Reward: 112.21 | Eps: 0.956
+[Episode 10] Model saved to mario_dqn.pth
+Episode 10 | Reward: -29.69 | Eps: 0.951
+Episode 11 | Reward: 112.01 | Eps: 0.946
+Episode 12 | Reward: -30.59 | Eps: 0.942
+Episode 13 | Reward: -29.59 | Eps: 0.937
+Episode 14 | Reward: -29.59 | Eps: 0.932
+Episode 15 | Reward: -30.69 | Eps: 0.928
+Episode 16 | Reward: 440.54 | Eps: 0.923
+Episode 17 | Reward: -30.39 | Eps: 0.918
+Episode 18 | Reward: 326.32 | Eps: 0.914
+Episode 19 | Reward: -30.59 | Eps: 0.909
+[Episode 20] Model saved to mario_dqn.pth
+Episode 20 | Reward: 114.31 | Eps: 0.905
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 351, in run_training
+    next_frame_1ch = preprocess_frame(next_obs)
+  File "/home/archer/code/super_mario_learning/train.py", line 79, in preprocess_frame
+    gray = cv2.cvtColor(obs, cv2.COLOR_RGB2GRAY)  # => (H,W)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 351, in run_training
+    next_frame_1ch = preprocess_frame(next_obs)
+  File "/home/archer/code/super_mario_learning/train.py", line 79, in preprocess_frame
+    gray = cv2.cvtColor(obs, cv2.COLOR_RGB2GRAY)  # => (H,W)
+KeyboardInterrupt

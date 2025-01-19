@@ -1,0 +1,15 @@
+{"time":"2025-01-19T14:42:30.693675352-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/archer/code/super_mario_learning/wandb/run-20250119_144230-th4baydb/logs/debug-core.log"}
+{"time":"2025-01-19T14:42:30.79912006-05:00","level":"INFO","msg":"created new stream","id":"th4baydb"}
+{"time":"2025-01-19T14:42:30.799180413-05:00","level":"INFO","msg":"stream: started","id":"th4baydb"}
+{"time":"2025-01-19T14:42:30.799234708-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"th4baydb"}
+{"time":"2025-01-19T14:42:30.799277979-05:00","level":"INFO","msg":"sender: started","stream_id":"th4baydb"}
+{"time":"2025-01-19T14:42:30.799250185-05:00","level":"INFO","msg":"handler: started","stream_id":"th4baydb"}
+{"time":"2025-01-19T14:42:31.03913507-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T15:01:07.946722-05:00","level":"INFO","msg":"stream: closing","id":"th4baydb"}
+{"time":"2025-01-19T15:01:07.94673978-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T15:01:07.947215548-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T15:01:08.301706817-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T15:01:08.533000626-05:00","level":"INFO","msg":"handler: closed","stream_id":"th4baydb"}
+{"time":"2025-01-19T15:01:08.533076318-05:00","level":"INFO","msg":"sender: closed","stream_id":"th4baydb"}
+{"time":"2025-01-19T15:01:08.533077254-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"th4baydb"}
+{"time":"2025-01-19T15:01:08.533360398-05:00","level":"INFO","msg":"stream: closed","id":"th4baydb"}

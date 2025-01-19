@@ -1,0 +1,15 @@
+{"time":"2025-01-19T14:23:56.004813511-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/archer/code/super_mario_learning/wandb/run-20250119_142355-8dfr7dsn/logs/debug-core.log"}
+{"time":"2025-01-19T14:23:56.108988842-05:00","level":"INFO","msg":"created new stream","id":"8dfr7dsn"}
+{"time":"2025-01-19T14:23:56.109070644-05:00","level":"INFO","msg":"stream: started","id":"8dfr7dsn"}
+{"time":"2025-01-19T14:23:56.109173926-05:00","level":"INFO","msg":"handler: started","stream_id":"8dfr7dsn"}
+{"time":"2025-01-19T14:23:56.109177494-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"8dfr7dsn"}
+{"time":"2025-01-19T14:23:56.109251885-05:00","level":"INFO","msg":"sender: started","stream_id":"8dfr7dsn"}
+{"time":"2025-01-19T14:23:56.244972083-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-19T14:30:09.956138372-05:00","level":"INFO","msg":"stream: closing","id":"8dfr7dsn"}
+{"time":"2025-01-19T14:30:09.95618188-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-19T14:30:09.957393206-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-19T14:30:10.264504264-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-19T14:30:10.474506222-05:00","level":"INFO","msg":"handler: closed","stream_id":"8dfr7dsn"}
+{"time":"2025-01-19T14:30:10.474552973-05:00","level":"INFO","msg":"sender: closed","stream_id":"8dfr7dsn"}
+{"time":"2025-01-19T14:30:10.474528831-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8dfr7dsn"}
+{"time":"2025-01-19T14:30:10.474608784-05:00","level":"INFO","msg":"stream: closed","id":"8dfr7dsn"}

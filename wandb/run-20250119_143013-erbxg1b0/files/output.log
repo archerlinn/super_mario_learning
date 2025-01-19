@@ -1,0 +1,43 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+No model found at mario_dqn.pth; starting from scratch.
+Training:   0%|                                                                                | 0/5000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 246.74 | Eps: 1.000
+Training:   0%|                                                                     | 5/5000 [04:25<73:37:20, 53.06s/it]
+Episode 2 | Reward: 240.02 | Eps: 1.000
+Episode 3 | Reward: -30.79 | Eps: 1.000
+Episode 4 | Reward: -28.39 | Eps: 1.000
+Episode 5 | Reward: -30.49 | Eps: 1.000
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 400, in <module>
+    if __name__ == "__main__":
+  File "/home/archer/code/super_mario_learning/train.py", line 356, in run_training
+    agent.experience_replay()
+  File "/home/archer/code/super_mario_learning/train.py", line 241, in experience_replay
+    loss.backward()
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 400, in <module>
+    if __name__ == "__main__":
+  File "/home/archer/code/super_mario_learning/train.py", line 356, in run_training
+    agent.experience_replay()
+  File "/home/archer/code/super_mario_learning/train.py", line 241, in experience_replay
+    loss.backward()
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/_tensor.py", line 581, in backward
+    torch.autograd.backward(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/autograd/__init__.py", line 347, in backward
+    _engine_run_backward(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/autograd/graph.py", line 825, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

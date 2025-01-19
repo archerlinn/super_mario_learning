@@ -1,0 +1,53 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+No model found at mario_dqn.pth; starting from scratch.
+Training:   0%|                                                                                | 0/5000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: -30.69 | Eps: 1.000
+Training:   0%|                                                                     | 3/5000 [02:52<79:57:06, 57.60s/it]
+Episode 2 | Reward: 113.01 | Eps: 1.000
+Episode 3 | Reward: 243.50 | Eps: 1.000
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 401, in <module>
+    if __name__ == "__main__":
+  File "/home/archer/code/super_mario_learning/train.py", line 356, in run_training
+    agent.experience_replay()
+  File "/home/archer/code/super_mario_learning/train.py", line 242, in experience_replay
+    self.optimizer.step()
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 487, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 223, in step
+    adam(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 154, in maybe_fallback
+    return func(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 784, in adam
+    func(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 611, in _multi_tensor_adam
+    exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 401, in <module>
+    if __name__ == "__main__":
+  File "/home/archer/code/super_mario_learning/train.py", line 356, in run_training
+    agent.experience_replay()
+  File "/home/archer/code/super_mario_learning/train.py", line 242, in experience_replay
+    self.optimizer.step()
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 487, in wrapper
+    out = func(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 91, in _use_grad
+    ret = func(self, *args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 223, in step
+    adam(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/optimizer.py", line 154, in maybe_fallback
+    return func(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 784, in adam
+    func(
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/optim/adam.py", line 611, in _multi_tensor_adam
+    exp_avg_sq_sqrt = torch._foreach_sqrt(device_exp_avg_sqs)
+KeyboardInterrupt

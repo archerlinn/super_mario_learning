@@ -1,0 +1,111 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+Loading model from mario_dqn.pth ...
+/home/archer/code/super_mario_learning/train.py:285: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  agent.local_net.load_state_dict(torch.load(load_model, map_location=device))
+Model loaded successfully. Training will resume from this checkpoint.
+Training:   0%|                                                                               | 0/50000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 629.00 | Eps: 0.036
+Training:   0%|                                                                  | 32/50000 [03:22<119:08:57,  8.58s/it]
+Episode 2 | Reward: 602.00 | Eps: 0.020
+Episode 3 | Reward: 633.00 | Eps: 0.020
+Episode 4 | Reward: 634.00 | Eps: 0.020
+Episode 5 | Reward: 637.00 | Eps: 0.020
+Episode 6 | Reward: 1074.00 | Eps: 0.020
+Episode 7 | Reward: 1795.00 | Eps: 0.020
+Episode 8 | Reward: 623.00 | Eps: 0.020
+Episode 9 | Reward: 623.00 | Eps: 0.020
+Episode 10 | Reward: 1315.00 | Eps: 0.020
+Episode 11 | Reward: 629.00 | Eps: 0.020
+Episode 12 | Reward: 599.00 | Eps: 0.020
+Episode 13 | Reward: 631.00 | Eps: 0.020
+Episode 14 | Reward: 636.00 | Eps: 0.020
+Episode 15 | Reward: 248.00 | Eps: 0.020
+Episode 16 | Reward: 962.00 | Eps: 0.020
+Episode 17 | Reward: 249.00 | Eps: 0.020
+Episode 18 | Reward: 248.00 | Eps: 0.020
+Episode 19 | Reward: 243.00 | Eps: 0.020
+Episode 20 | Reward: 625.00 | Eps: 0.020
+Episode 21 | Reward: 621.00 | Eps: 0.020
+Episode 22 | Reward: 610.00 | Eps: 0.020
+Episode 23 | Reward: 249.00 | Eps: 0.020
+Episode 24 | Reward: 626.00 | Eps: 0.020
+Episode 25 | Reward: 621.00 | Eps: 0.020
+Episode 26 | Reward: 628.00 | Eps: 0.020
+Episode 27 | Reward: 1550.00 | Eps: 0.020
+Episode 28 | Reward: 226.00 | Eps: 0.020
+Episode 29 | Reward: 1008.00 | Eps: 0.020
+Episode 30 | Reward: 1027.00 | Eps: 0.020
+Episode 31 | Reward: 231.00 | Eps: 0.020
+Episode 32 | Reward: 972.00 | Eps: 0.020
+Episode 33 | Reward: 626.00 | Eps: 0.020
+Episode 34 | Reward: 734.00 | Eps: 0.020
+Episode 35 | Reward: 589.00 | Eps: 0.020
+Episode 36 | Reward: 251.00 | Eps: 0.020
+Episode 37 | Reward: 744.00 | Eps: 0.020
+Episode 38 | Reward: 250.00 | Eps: 0.020
+Episode 39 | Reward: 248.00 | Eps: 0.020
+Episode 40 | Reward: 1278.00 | Eps: 0.020
+Episode 41 | Reward: 606.00 | Eps: 0.020
+Episode 42 | Reward: 245.00 | Eps: 0.020
+Episode 43 | Reward: 748.00 | Eps: 0.020
+Episode 44 | Reward: 810.00 | Eps: 0.020
+Episode 45 | Reward: 620.00 | Eps: 0.020
+Episode 46 | Reward: 251.00 | Eps: 0.020
+Episode 47 | Reward: 1305.00 | Eps: 0.020
+Episode 48 | Reward: 237.00 | Eps: 0.020
+Episode 49 | Reward: 1303.00 | Eps: 0.020
+Episode 50 | Reward: 247.00 | Eps: 0.020
+Episode 51 | Reward: 639.00 | Eps: 0.020
+Episode 52 | Reward: 1040.00 | Eps: 0.020
+Episode 53 | Reward: 627.00 | Eps: 0.020
+Episode 54 | Reward: 248.00 | Eps: 0.020
+Episode 55 | Reward: 793.00 | Eps: 0.020
+Episode 56 | Reward: 1331.00 | Eps: 0.020
+Episode 57 | Reward: 778.00 | Eps: 0.020
+Episode 58 | Reward: 1002.00 | Eps: 0.020
+Episode 59 | Reward: 1026.00 | Eps: 0.020
+Episode 60 | Reward: 615.00 | Eps: 0.020
+Episode 61 | Reward: 248.00 | Eps: 0.020
+Episode 62 | Reward: 245.00 | Eps: 0.020
+Episode 63 | Reward: 250.00 | Eps: 0.020
+Episode 64 | Reward: 1296.00 | Eps: 0.020
+Episode 65 | Reward: 1316.00 | Eps: 0.020
+Episode 66 | Reward: 249.00 | Eps: 0.020
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 359, in <module>
+    run_training(num_episodes=50000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 308, in run_training
+    next_obs, reward, terminated, truncated, info = env.step(action)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/wrappers/joypad_space.py", line 74, in step
+    return self.env.step(self._action_map[action])
+  File "/home/archer/code/super_mario_learning/train.py", line 40, in step
+    obs, reward, done, info = self.env.step(action)  # old (obs, reward, done, info)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/order_enforcing.py", line 37, in step
+    return self.env.step(action)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/env_checker.py", line 39, in step
+    return self.env.step(action)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/nes_env.py", line 300, in step
+    _LIB.Step(self._env)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 359, in <module>
+    run_training(num_episodes=50000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 308, in run_training
+    next_obs, reward, terminated, truncated, info = env.step(action)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/wrappers/joypad_space.py", line 74, in step
+    return self.env.step(self._action_map[action])
+  File "/home/archer/code/super_mario_learning/train.py", line 40, in step
+    obs, reward, done, info = self.env.step(action)  # old (obs, reward, done, info)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/order_enforcing.py", line 37, in step
+    return self.env.step(action)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/env_checker.py", line 39, in step
+    return self.env.step(action)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/nes_env.py", line 300, in step
+    _LIB.Step(self._env)
+KeyboardInterrupt

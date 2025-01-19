@@ -1,0 +1,65 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+No model found at mario_dqn.pth; starting from scratch.
+Training:   0%|                                                                                 | 0/500 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 1529.00 | Eps: 0.020
+Training:   4%|██▌                                                                     | 18/500 [01:34<42:10,  5.25s/it]
+Episode 2 | Reward: 597.00 | Eps: 0.020
+Episode 3 | Reward: 808.00 | Eps: 0.020
+Episode 4 | Reward: 245.00 | Eps: 0.020
+Episode 5 | Reward: 734.00 | Eps: 0.020
+Episode 6 | Reward: 612.00 | Eps: 0.020
+Episode 7 | Reward: 243.00 | Eps: 0.020
+Episode 8 | Reward: 631.00 | Eps: 0.020
+Episode 9 | Reward: 1433.00 | Eps: 0.020
+[Episode 10] Model saved to mario_dqn.pth
+Episode 10 | Reward: 241.00 | Eps: 0.020
+Episode 11 | Reward: 1043.00 | Eps: 0.020
+Episode 12 | Reward: 1294.00 | Eps: 0.020
+Episode 13 | Reward: 239.00 | Eps: 0.020
+Episode 14 | Reward: 1302.00 | Eps: 0.020
+Episode 15 | Reward: 1051.00 | Eps: 0.020
+Episode 16 | Reward: 627.00 | Eps: 0.020
+Episode 17 | Reward: 1026.00 | Eps: 0.020
+Episode 18 | Reward: 603.00 | Eps: 0.020
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 352, in <module>
+    run_training(num_episodes=50000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 310, in run_training
+    agent.experience_replay()
+  File "/home/archer/code/super_mario_learning/train.py", line 240, in experience_replay
+    loss = self.loss_fn(current, target)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 1040, in forward
+    return F.smooth_l1_loss(input, target, reduction=self.reduction, beta=self.beta)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 3677, in smooth_l1_loss
+    expanded_input, expanded_target, _Reduction.get_enum(reduction), beta
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/_reduction.py", line 9, in get_enum
+    if reduction == "none":
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 352, in <module>
+    run_training(num_episodes=50000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 310, in run_training
+    agent.experience_replay()
+  File "/home/archer/code/super_mario_learning/train.py", line 240, in experience_replay
+    loss = self.loss_fn(current, target)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/loss.py", line 1040, in forward
+    return F.smooth_l1_loss(input, target, reduction=self.reduction, beta=self.beta)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/functional.py", line 3677, in smooth_l1_loss
+    expanded_input, expanded_target, _Reduction.get_enum(reduction), beta
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/_reduction.py", line 9, in get_enum
+    if reduction == "none":
+KeyboardInterrupt

@@ -1,0 +1,30 @@
+2025-01-19 15:01:12,888 INFO    MainThread:249233 [wandb_setup.py:_flush():68] Current SDK version is 0.19.4
+2025-01-19 15:01:12,888 INFO    MainThread:249233 [wandb_setup.py:_flush():68] Configure stats pid to 249233
+2025-01-19 15:01:12,888 INFO    MainThread:249233 [wandb_setup.py:_flush():68] Loading settings from /home/archer/.config/wandb/settings
+2025-01-19 15:01:12,889 INFO    MainThread:249233 [wandb_setup.py:_flush():68] Loading settings from /home/archer/code/super_mario_learning/wandb/settings
+2025-01-19 15:01:12,889 INFO    MainThread:249233 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-01-19 15:01:12,889 INFO    MainThread:249233 [wandb_init.py:setup_run_log_directory():624] Logging user logs to /home/archer/code/super_mario_learning/wandb/run-20250119_150112-x4hyrnms/logs/debug.log
+2025-01-19 15:01:12,889 INFO    MainThread:249233 [wandb_init.py:setup_run_log_directory():625] Logging internal logs to /home/archer/code/super_mario_learning/wandb/run-20250119_150112-x4hyrnms/logs/debug-internal.log
+2025-01-19 15:01:12,889 INFO    MainThread:249233 [wandb_init.py:init():743] calling init triggers
+2025-01-19 15:01:12,889 INFO    MainThread:249233 [wandb_init.py:init():748] wandb.init called with sweep_config: {}
+config: {}
+2025-01-19 15:01:12,889 INFO    MainThread:249233 [wandb_init.py:init():776] starting backend
+2025-01-19 15:01:13,051 WARNING MainThread:249233 [wandb_init.py:init():1448] interrupted
+Traceback (most recent call last):
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1444, in init
+    return wi.init(run_settings, run_config)
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 779, in init
+    service = self._wl.ensure_service()
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 280, in ensure_service
+    self._connection = service_connection.connect_to_service(self._settings)
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 40, in connect_to_service
+    return _start_and_connect_service(settings)
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/lib/service_connection.py", line 75, in _start_and_connect_service
+    proc.start()
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 232, in start
+    self._launch_server()
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 224, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/home/archer/.local/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 105, in _wait_for_ports
+    time.sleep(0.2)
+KeyboardInterrupt
