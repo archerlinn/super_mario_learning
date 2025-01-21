@@ -1,0 +1,453 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+Loading model from mario_dqn.pth ...
+/home/archer/code/super_mario_learning/train.py:277: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  agent.local_net.load_state_dict(torch.load(load_model, map_location=device))
+Model loaded successfully. Training will resume from this checkpoint.
+Training:   0%|                                                                                              | 0/5000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 130.11 | Eps: 0.200
+Training:   1%|▍                                                                                  | 29/5000 [05:52<6:01:29,  4.36s/it]
+Episode 2 | Reward: 542.84 | Eps: 0.200
+Episode 3 | Reward: 76.78 | Eps: 0.200
+Episode 4 | Reward: 889.93 | Eps: 0.200
+Episode 5 | Reward: 1043.86 | Eps: 0.200
+Episode 6 | Reward: 866.03 | Eps: 0.199
+Episode 7 | Reward: 452.74 | Eps: 0.199
+Episode 8 | Reward: 455.06 | Eps: 0.199
+Episode 9 | Reward: 819.17 | Eps: 0.199
+[Episode 10] Model saved to mario_dqn.pth
+Episode 10 | Reward: 51.64 | Eps: 0.199
+Episode 11 | Reward: 2367.02 | Eps: 0.199
+Episode 12 | Reward: 868.79 | Eps: 0.199
+Episode 13 | Reward: 486.60 | Eps: 0.199
+Episode 14 | Reward: 79.02 | Eps: 0.199
+Episode 15 | Reward: 674.62 | Eps: 0.199
+Episode 16 | Reward: 976.73 | Eps: 0.198
+Episode 17 | Reward: 521.20 | Eps: 0.198
+Episode 18 | Reward: 80.18 | Eps: 0.198
+Episode 19 | Reward: 702.32 | Eps: 0.198
+[Episode 20] Model saved to mario_dqn.pth
+Episode 20 | Reward: 2330.11 | Eps: 0.198
+Episode 21 | Reward: 1536.72 | Eps: 0.198
+Episode 22 | Reward: 1224.64 | Eps: 0.198
+Episode 23 | Reward: 70.28 | Eps: 0.198
+Episode 24 | Reward: 502.98 | Eps: 0.198
+Episode 25 | Reward: 76.82 | Eps: 0.198
+Episode 26 | Reward: 63.66 | Eps: 0.197
+Episode 27 | Reward: 1657.08 | Eps: 0.197
+Episode 28 | Reward: 477.66 | Eps: 0.197
+Episode 29 | Reward: 1280.08 | Eps: 0.197
+[Episode 30] Model saved to mario_dqn.pth
+Episode 30 | Reward: 931.74 | Eps: 0.197
+Episode 31 | Reward: 480.74 | Eps: 0.197
+Episode 32 | Reward: 954.93 | Eps: 0.197
+Episode 33 | Reward: 1272.82 | Eps: 0.197
+Episode 34 | Reward: 499.60 | Eps: 0.197
+Episode 35 | Reward: 489.24 | Eps: 0.197
+Episode 36 | Reward: 1217.91 | Eps: 0.196
+Episode 37 | Reward: 82.34 | Eps: 0.196
+Episode 38 | Reward: 1781.34 | Eps: 0.196
+Episode 39 | Reward: 503.96 | Eps: 0.196
+[Episode 40] Model saved to mario_dqn.pth
+Episode 40 | Reward: 76.90 | Eps: 0.196
+Episode 41 | Reward: 1259.48 | Eps: 0.196
+Episode 42 | Reward: 74.54 | Eps: 0.196
+Episode 43 | Reward: 472.16 | Eps: 0.196
+Episode 44 | Reward: 62.64 | Eps: 0.196
+Episode 45 | Reward: 1848.96 | Eps: 0.196
+Episode 46 | Reward: 495.62 | Eps: 0.195
+Episode 47 | Reward: 498.24 | Eps: 0.195
+Episode 48 | Reward: 921.32 | Eps: 0.195
+Episode 49 | Reward: 581.04 | Eps: 0.195
+[Episode 50] Model saved to mario_dqn.pth
+Episode 50 | Reward: 519.12 | Eps: 0.195
+Episode 51 | Reward: 1226.08 | Eps: 0.195
+Episode 52 | Reward: 490.78 | Eps: 0.195
+Episode 53 | Reward: 905.70 | Eps: 0.195
+Episode 54 | Reward: 443.20 | Eps: 0.195
+Episode 55 | Reward: 486.30 | Eps: 0.195
+Episode 56 | Reward: 472.50 | Eps: 0.194
+Episode 57 | Reward: 617.20 | Eps: 0.194
+Episode 58 | Reward: 1606.28 | Eps: 0.194
+Episode 59 | Reward: 82.36 | Eps: 0.194
+[Episode 60] Model saved to mario_dqn.pth
+Episode 60 | Reward: 63.46 | Eps: 0.194
+Episode 61 | Reward: 606.64 | Eps: 0.194
+Episode 62 | Reward: 480.02 | Eps: 0.194
+Episode 63 | Reward: 488.30 | Eps: 0.194
+Episode 64 | Reward: 890.42 | Eps: 0.194
+Episode 65 | Reward: 493.96 | Eps: 0.194
+Episode 66 | Reward: 462.94 | Eps: 0.194
+Episode 67 | Reward: 482.14 | Eps: 0.193
+Episode 68 | Reward: 908.64 | Eps: 0.193
+Episode 69 | Reward: 945.82 | Eps: 0.193
+[Episode 70] Model saved to mario_dqn.pth
+Episode 70 | Reward: 653.56 | Eps: 0.193
+Episode 71 | Reward: 687.96 | Eps: 0.193
+Episode 72 | Reward: 474.28 | Eps: 0.193
+Episode 73 | Reward: 82.34 | Eps: 0.193
+Episode 74 | Reward: 487.50 | Eps: 0.193
+Episode 75 | Reward: 79.06 | Eps: 0.193
+Episode 76 | Reward: 1018.66 | Eps: 0.193
+Episode 77 | Reward: 59.04 | Eps: 0.192
+Episode 78 | Reward: 659.58 | Eps: 0.192
+Episode 79 | Reward: 882.55 | Eps: 0.192
+[Episode 80] Model saved to mario_dqn.pth
+Episode 80 | Reward: 648.64 | Eps: 0.192
+Episode 81 | Reward: 1330.80 | Eps: 0.192
+Episode 82 | Reward: 500.46 | Eps: 0.192
+Episode 83 | Reward: 77.92 | Eps: 0.192
+Episode 84 | Reward: 1391.92 | Eps: 0.192
+Episode 85 | Reward: 69.30 | Eps: 0.192
+Episode 86 | Reward: 70.14 | Eps: 0.192
+Episode 87 | Reward: 1265.91 | Eps: 0.191
+Episode 88 | Reward: 467.68 | Eps: 0.191
+Episode 89 | Reward: 613.08 | Eps: 0.191
+[Episode 90] Model saved to mario_dqn.pth
+Episode 90 | Reward: 1277.34 | Eps: 0.191
+Episode 91 | Reward: 60.52 | Eps: 0.191
+Episode 92 | Reward: 81.24 | Eps: 0.191
+Episode 93 | Reward: 456.12 | Eps: 0.191
+Episode 94 | Reward: 71.26 | Eps: 0.191
+Episode 95 | Reward: 465.16 | Eps: 0.191
+Episode 96 | Reward: 482.10 | Eps: 0.191
+Episode 97 | Reward: 901.83 | Eps: 0.191
+Episode 98 | Reward: 487.50 | Eps: 0.190
+Episode 99 | Reward: 482.60 | Eps: 0.190
+[Episode 100] Model saved to mario_dqn.pth
+Episode 100 | Reward: 62.30 | Eps: 0.190
+Episode 101 | Reward: 616.48 | Eps: 0.190
+Episode 102 | Reward: 614.32 | Eps: 0.190
+Episode 103 | Reward: 478.74 | Eps: 0.190
+Episode 104 | Reward: 468.00 | Eps: 0.190
+Episode 105 | Reward: 499.50 | Eps: 0.190
+Episode 106 | Reward: 506.04 | Eps: 0.190
+Episode 107 | Reward: 502.62 | Eps: 0.190
+Episode 108 | Reward: 489.56 | Eps: 0.189
+Episode 109 | Reward: 74.68 | Eps: 0.189
+[Episode 110] Model saved to mario_dqn.pth
+Episode 110 | Reward: 927.26 | Eps: 0.189
+Episode 111 | Reward: 465.42 | Eps: 0.189
+Episode 112 | Reward: 477.34 | Eps: 0.189
+Episode 113 | Reward: 77.98 | Eps: 0.189
+Episode 114 | Reward: 80.10 | Eps: 0.189
+Episode 115 | Reward: 1903.68 | Eps: 0.189
+Episode 116 | Reward: 497.24 | Eps: 0.189
+Episode 117 | Reward: 923.90 | Eps: 0.189
+Episode 118 | Reward: 621.30 | Eps: 0.189
+Episode 119 | Reward: 491.58 | Eps: 0.188
+[Episode 120] Model saved to mario_dqn.pth
+Episode 120 | Reward: 501.44 | Eps: 0.188
+Episode 121 | Reward: 660.54 | Eps: 0.188
+Episode 122 | Reward: 918.59 | Eps: 0.188
+Episode 123 | Reward: 492.16 | Eps: 0.188
+Episode 124 | Reward: 2400.60 | Eps: 0.188
+Episode 125 | Reward: 79.10 | Eps: 0.188
+Episode 126 | Reward: 1251.24 | Eps: 0.188
+Episode 127 | Reward: 76.78 | Eps: 0.188
+Episode 128 | Reward: 936.53 | Eps: 0.188
+Episode 129 | Reward: 476.28 | Eps: 0.188
+[Episode 130] Model saved to mario_dqn.pth
+Episode 130 | Reward: 615.18 | Eps: 0.187
+Episode 131 | Reward: 486.34 | Eps: 0.187
+Episode 132 | Reward: 967.23 | Eps: 0.187
+Episode 133 | Reward: 909.81 | Eps: 0.187
+Episode 134 | Reward: 1227.59 | Eps: 0.187
+Episode 135 | Reward: 70.28 | Eps: 0.187
+Episode 136 | Reward: 499.40 | Eps: 0.187
+Episode 137 | Reward: 68.12 | Eps: 0.187
+Episode 138 | Reward: 663.98 | Eps: 0.187
+Episode 139 | Reward: 583.98 | Eps: 0.187
+[Episode 140] Model saved to mario_dqn.pth
+Episode 140 | Reward: 930.62 | Eps: 0.186
+Episode 141 | Reward: 583.74 | Eps: 0.186
+Episode 142 | Reward: 440.78 | Eps: 0.186
+Episode 143 | Reward: 482.12 | Eps: 0.186
+Episode 144 | Reward: 497.18 | Eps: 0.186
+Episode 145 | Reward: 467.68 | Eps: 0.186
+Episode 146 | Reward: 1192.21 | Eps: 0.186
+Episode 147 | Reward: 916.06 | Eps: 0.186
+Episode 148 | Reward: 76.80 | Eps: 0.186
+Episode 149 | Reward: 1216.00 | Eps: 0.186
+[Episode 150] Model saved to mario_dqn.pth
+Episode 150 | Reward: 78.00 | Eps: 0.186
+Episode 151 | Reward: 79.06 | Eps: 0.185
+Episode 152 | Reward: 1195.68 | Eps: 0.185
+Episode 153 | Reward: 471.00 | Eps: 0.185
+Episode 154 | Reward: 76.78 | Eps: 0.185
+Episode 155 | Reward: 611.26 | Eps: 0.185
+Episode 156 | Reward: 1805.48 | Eps: 0.185
+Episode 157 | Reward: 81.26 | Eps: 0.185
+Episode 158 | Reward: 481.86 | Eps: 0.185
+Episode 159 | Reward: 73.34 | Eps: 0.185
+[Episode 160] Model saved to mario_dqn.pth
+Episode 160 | Reward: 77.80 | Eps: 0.185
+Episode 161 | Reward: 81.20 | Eps: 0.185
+Episode 162 | Reward: 858.38 | Eps: 0.184
+Episode 163 | Reward: 72.32 | Eps: 0.184
+Episode 164 | Reward: 79.08 | Eps: 0.184
+Episode 165 | Reward: 1309.62 | Eps: 0.184
+Episode 166 | Reward: 598.64 | Eps: 0.184
+Episode 167 | Reward: 483.94 | Eps: 0.184
+Episode 168 | Reward: 76.88 | Eps: 0.184
+Episode 169 | Reward: 80.18 | Eps: 0.184
+[Episode 170] Model saved to mario_dqn.pth
+Episode 170 | Reward: 473.84 | Eps: 0.184
+Episode 171 | Reward: 896.34 | Eps: 0.184
+Episode 172 | Reward: 463.98 | Eps: 0.184
+Episode 173 | Reward: 1642.84 | Eps: 0.183
+Episode 174 | Reward: 72.34 | Eps: 0.183
+Episode 175 | Reward: 924.75 | Eps: 0.183
+Episode 176 | Reward: 61.36 | Eps: 0.183
+Episode 177 | Reward: 80.14 | Eps: 0.183
+Episode 178 | Reward: 953.87 | Eps: 0.183
+Episode 179 | Reward: 586.60 | Eps: 0.183
+[Episode 180] Model saved to mario_dqn.pth
+Episode 180 | Reward: 689.90 | Eps: 0.183
+Episode 181 | Reward: 501.36 | Eps: 0.183
+Episode 182 | Reward: 61.26 | Eps: 0.183
+Episode 183 | Reward: 935.97 | Eps: 0.183
+Episode 184 | Reward: 450.40 | Eps: 0.182
+Episode 185 | Reward: 902.92 | Eps: 0.182
+Episode 186 | Reward: 454.84 | Eps: 0.182
+Episode 187 | Reward: 902.59 | Eps: 0.182
+Episode 188 | Reward: 70.08 | Eps: 0.182
+Episode 189 | Reward: 64.52 | Eps: 0.182
+[Episode 190] Model saved to mario_dqn.pth
+Episode 190 | Reward: 56.60 | Eps: 0.182
+Episode 191 | Reward: 56.04 | Eps: 0.182
+Episode 192 | Reward: 489.32 | Eps: 0.182
+Episode 193 | Reward: 71.30 | Eps: 0.182
+Episode 194 | Reward: 944.43 | Eps: 0.182
+Episode 195 | Reward: 455.30 | Eps: 0.181
+Episode 196 | Reward: 74.64 | Eps: 0.181
+Episode 197 | Reward: 75.72 | Eps: 0.181
+Episode 198 | Reward: 679.04 | Eps: 0.181
+Episode 199 | Reward: 597.10 | Eps: 0.181
+[Episode 200] Model saved to mario_dqn.pth
+Episode 200 | Reward: 76.86 | Eps: 0.181
+Episode 201 | Reward: 76.80 | Eps: 0.181
+Episode 202 | Reward: 521.32 | Eps: 0.181
+Episode 203 | Reward: 80.18 | Eps: 0.181
+Episode 204 | Reward: 688.04 | Eps: 0.181
+Episode 205 | Reward: 1280.18 | Eps: 0.181
+Episode 206 | Reward: 448.62 | Eps: 0.180
+Episode 207 | Reward: 624.70 | Eps: 0.180
+Episode 208 | Reward: 1178.33 | Eps: 0.180
+Episode 209 | Reward: 625.78 | Eps: 0.180
+[Episode 210] Model saved to mario_dqn.pth
+Episode 210 | Reward: 502.54 | Eps: 0.180
+Episode 211 | Reward: 45.82 | Eps: 0.180
+Episode 212 | Reward: 67.14 | Eps: 0.180
+Episode 213 | Reward: 76.72 | Eps: 0.180
+Episode 214 | Reward: 948.45 | Eps: 0.180
+Episode 215 | Reward: 82.44 | Eps: 0.180
+Episode 216 | Reward: 72.26 | Eps: 0.180
+Episode 217 | Reward: 77.86 | Eps: 0.179
+Episode 218 | Reward: 73.48 | Eps: 0.179
+Episode 219 | Reward: 81.26 | Eps: 0.179
+[Episode 220] Model saved to mario_dqn.pth
+Episode 220 | Reward: 72.40 | Eps: 0.179
+Episode 221 | Reward: 1282.28 | Eps: 0.179
+Episode 222 | Reward: 80.16 | Eps: 0.179
+Episode 223 | Reward: 487.00 | Eps: 0.179
+Episode 224 | Reward: 81.22 | Eps: 0.179
+Episode 225 | Reward: 451.10 | Eps: 0.179
+Episode 226 | Reward: 76.90 | Eps: 0.179
+Episode 227 | Reward: 635.84 | Eps: 0.179
+Episode 228 | Reward: 76.86 | Eps: 0.178
+Episode 229 | Reward: 521.32 | Eps: 0.178
+[Episode 230] Model saved to mario_dqn.pth
+Episode 230 | Reward: 79.08 | Eps: 0.178
+Episode 231 | Reward: 80.14 | Eps: 0.178
+Episode 232 | Reward: 483.10 | Eps: 0.178
+Episode 233 | Reward: 497.24 | Eps: 0.178
+Episode 234 | Reward: 653.70 | Eps: 0.178
+Episode 235 | Reward: 906.52 | Eps: 0.178
+Episode 236 | Reward: 60.64 | Eps: 0.178
+Episode 237 | Reward: 77.96 | Eps: 0.178
+Episode 238 | Reward: 76.74 | Eps: 0.178
+Episode 239 | Reward: 77.94 | Eps: 0.177
+[Episode 240] Model saved to mario_dqn.pth
+Episode 240 | Reward: 908.04 | Eps: 0.177
+Episode 241 | Reward: 73.56 | Eps: 0.177
+Episode 242 | Reward: 1149.65 | Eps: 0.177
+Episode 243 | Reward: 923.19 | Eps: 0.177
+Episode 244 | Reward: 919.40 | Eps: 0.177
+Episode 245 | Reward: 471.30 | Eps: 0.177
+Episode 246 | Reward: 496.06 | Eps: 0.177
+Episode 247 | Reward: 82.44 | Eps: 0.177
+Episode 248 | Reward: 983.56 | Eps: 0.177
+Episode 249 | Reward: 919.39 | Eps: 0.177
+[Episode 250] Model saved to mario_dqn.pth
+Episode 250 | Reward: 80.08 | Eps: 0.176
+Episode 251 | Reward: 589.14 | Eps: 0.176
+Episode 252 | Reward: 455.16 | Eps: 0.176
+Episode 253 | Reward: 918.27 | Eps: 0.176
+Episode 254 | Reward: 522.80 | Eps: 0.176
+Episode 255 | Reward: 1707.36 | Eps: 0.176
+Episode 256 | Reward: 471.14 | Eps: 0.176
+Episode 257 | Reward: 504.96 | Eps: 0.176
+Episode 258 | Reward: 500.36 | Eps: 0.176
+Episode 259 | Reward: 81.26 | Eps: 0.176
+[Episode 260] Model saved to mario_dqn.pth
+Episode 260 | Reward: 77.98 | Eps: 0.176
+Episode 261 | Reward: 687.02 | Eps: 0.176
+Episode 262 | Reward: 908.97 | Eps: 0.175
+Episode 263 | Reward: 949.12 | Eps: 0.175
+Episode 264 | Reward: 503.84 | Eps: 0.175
+Episode 265 | Reward: 1262.28 | Eps: 0.175
+Episode 266 | Reward: 474.28 | Eps: 0.175
+Episode 267 | Reward: 1269.32 | Eps: 0.175
+Episode 268 | Reward: 75.72 | Eps: 0.175
+Episode 269 | Reward: 79.02 | Eps: 0.175
+[Episode 270] Model saved to mario_dqn.pth
+Episode 270 | Reward: 79.02 | Eps: 0.175
+Mario reached the flag! Awarding huge reward!
+Episode 271 | Reward: 8199.22 | Eps: 0.175
+Episode 272 | Reward: 921.15 | Eps: 0.175
+Episode 273 | Reward: 491.58 | Eps: 0.174
+Episode 274 | Reward: 911.46 | Eps: 0.174
+Episode 275 | Reward: 1246.20 | Eps: 0.174
+Episode 276 | Reward: 67.96 | Eps: 0.174
+Episode 277 | Reward: 459.40 | Eps: 0.174
+Episode 278 | Reward: 1262.70 | Eps: 0.174
+Episode 279 | Reward: 77.72 | Eps: 0.174
+[Episode 280] Model saved to mario_dqn.pth
+Episode 280 | Reward: 596.32 | Eps: 0.174
+Episode 281 | Reward: 478.10 | Eps: 0.174
+Episode 282 | Reward: 44.62 | Eps: 0.174
+Episode 283 | Reward: 472.64 | Eps: 0.174
+Episode 284 | Reward: 1251.19 | Eps: 0.174
+Episode 285 | Reward: 1215.87 | Eps: 0.173
+Episode 286 | Reward: 1204.69 | Eps: 0.173
+Episode 287 | Reward: 571.28 | Eps: 0.173
+Episode 288 | Reward: 941.36 | Eps: 0.173
+Episode 289 | Reward: 920.04 | Eps: 0.173
+[Episode 290] Model saved to mario_dqn.pth
+Episode 290 | Reward: 49.14 | Eps: 0.173
+Episode 291 | Reward: 628.50 | Eps: 0.173
+Episode 292 | Reward: 456.06 | Eps: 0.173
+Episode 293 | Reward: 77.88 | Eps: 0.173
+Episode 294 | Reward: 81.20 | Eps: 0.173
+Episode 295 | Reward: 71.14 | Eps: 0.173
+Episode 296 | Reward: 1210.85 | Eps: 0.172
+Episode 297 | Reward: 77.96 | Eps: 0.172
+Episode 298 | Reward: 907.66 | Eps: 0.172
+Episode 299 | Reward: 892.44 | Eps: 0.172
+[Episode 300] Model saved to mario_dqn.pth
+Episode 300 | Reward: 438.52 | Eps: 0.172
+Episode 301 | Reward: 1257.84 | Eps: 0.172
+Episode 302 | Reward: 66.84 | Eps: 0.172
+Episode 303 | Reward: 1363.00 | Eps: 0.172
+Episode 304 | Reward: 502.58 | Eps: 0.172
+Episode 305 | Reward: 482.86 | Eps: 0.172
+Episode 306 | Reward: 634.64 | Eps: 0.172
+Episode 307 | Reward: 79.02 | Eps: 0.172
+Episode 308 | Reward: 605.36 | Eps: 0.171
+Episode 309 | Reward: 60.14 | Eps: 0.171
+[Episode 310] Model saved to mario_dqn.pth
+Episode 310 | Reward: 1224.00 | Eps: 0.171
+Episode 311 | Reward: 459.50 | Eps: 0.171
+Episode 312 | Reward: 76.68 | Eps: 0.171
+Episode 313 | Reward: 65.54 | Eps: 0.171
+Episode 314 | Reward: 498.14 | Eps: 0.171
+Episode 315 | Reward: 892.41 | Eps: 0.171
+Episode 316 | Reward: 477.46 | Eps: 0.171
+Episode 317 | Reward: 942.77 | Eps: 0.171
+Episode 318 | Reward: 902.98 | Eps: 0.171
+Episode 319 | Reward: 1039.86 | Eps: 0.171
+[Episode 320] Model saved to mario_dqn.pth
+Episode 320 | Reward: 468.66 | Eps: 0.170
+Episode 321 | Reward: 1360.70 | Eps: 0.170
+Episode 322 | Reward: 920.13 | Eps: 0.170
+Episode 323 | Reward: 945.89 | Eps: 0.170
+Episode 324 | Reward: 896.60 | Eps: 0.170
+Episode 325 | Reward: 77.98 | Eps: 0.170
+Episode 326 | Reward: 949.62 | Eps: 0.170
+Episode 327 | Reward: 1771.24 | Eps: 0.170
+Episode 328 | Reward: 1348.86 | Eps: 0.170
+Episode 329 | Reward: 944.52 | Eps: 0.170
+[Episode 330] Model saved to mario_dqn.pth
+Episode 330 | Reward: 520.28 | Eps: 0.170
+Episode 331 | Reward: 65.78 | Eps: 0.169
+Episode 332 | Reward: 64.66 | Eps: 0.169
+Episode 333 | Reward: 952.79 | Eps: 0.169
+Episode 334 | Reward: 1066.60 | Eps: 0.169
+Episode 335 | Reward: 519.14 | Eps: 0.169
+Episode 336 | Reward: 487.56 | Eps: 0.169
+Episode 337 | Reward: 76.80 | Eps: 0.169
+Episode 338 | Reward: 62.46 | Eps: 0.169
+Episode 339 | Reward: 948.02 | Eps: 0.169
+[Episode 340] Model saved to mario_dqn.pth
+Episode 340 | Reward: 81.30 | Eps: 0.169
+Episode 341 | Reward: 671.02 | Eps: 0.169
+Episode 342 | Reward: 484.16 | Eps: 0.169
+Episode 343 | Reward: 1903.46 | Eps: 0.168
+Episode 344 | Reward: 474.48 | Eps: 0.168
+Episode 345 | Reward: 1256.60 | Eps: 0.168
+Episode 346 | Reward: 475.58 | Eps: 0.168
+Episode 347 | Reward: 480.70 | Eps: 0.168
+Episode 348 | Reward: 980.50 | Eps: 0.168
+Episode 349 | Reward: 499.58 | Eps: 0.168
+[Episode 350] Model saved to mario_dqn.pth
+Episode 350 | Reward: 1271.45 | Eps: 0.168
+Episode 351 | Reward: 695.16 | Eps: 0.168
+Episode 352 | Reward: 75.68 | Eps: 0.168
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 310, in run_training
+    action = agent.act(stacked_state)
+  File "/home/archer/code/super_mario_learning/train.py", line 190, in act
+    q_values = self.local_net(state_tensor)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/code/super_mario_learning/train.py", line 124, in forward
+    return self.fc(conv_out)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 310, in run_training
+    action = agent.act(stacked_state)
+  File "/home/archer/code/super_mario_learning/train.py", line 190, in act
+    q_values = self.local_net(state_tensor)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/code/super_mario_learning/train.py", line 124, in forward
+    return self.fc(conv_out)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

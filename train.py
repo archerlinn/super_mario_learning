@@ -136,9 +136,9 @@ class DQNAgent:
         batch_size=32,
         gamma=0.99,
         lr=0.00025,
-        exploration_max=1.0,
-        exploration_min=0.02,
-        exploration_decay=0.995,
+        exploration_max=0.2,
+        exploration_min=0.05,
+        exploration_decay=0.9995,
         copy_every=1000,
         device=device
     ):
@@ -262,9 +262,9 @@ def run_training(
         batch_size=32,
         gamma=0.99,                # Higher gamma to emphasize long-term reward (finishing)
         lr=0.00025,
-        exploration_max=1.0,
-        exploration_min=0.02,
-        exploration_decay=0.995,   # Slow decay to ensure enough exploration
+        exploration_max=0.2,
+        exploration_min=0.05,
+        exploration_decay=0.9995,   # Slow decay to ensure enough exploration
         copy_every=1000,
         device=device
     )
@@ -286,7 +286,7 @@ def run_training(
     STEP_PENALTY = -0.01    # Small negative reward each step, encourages speed
     STUCK_PENALTY = -1      # Penalty if stuck for too many steps
     MAX_STUCK_STEPS = 60    # How many steps allowed without x_pos change
-    DEATH_PENALTY = -20     # Penalty if Mario dies (done but no flag)
+    DEATH_PENALTY = -200     # Penalty if Mario dies (done but no flag)
 
     rewards_history = []
 
@@ -399,4 +399,4 @@ def run_training(
 
 
 if __name__ == "__main__":
-    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+    run_training(num_episodes=20000, render=True, load_model="mario_dqn.pth")

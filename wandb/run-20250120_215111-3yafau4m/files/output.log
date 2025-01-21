@@ -1,0 +1,2337 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+Loading model from mario_dqn.pth ...
+/home/archer/code/super_mario_learning/train.py:277: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  agent.local_net.load_state_dict(torch.load(load_model, map_location=device))
+Model loaded successfully. Training will resume from this checkpoint.
+Training:   0%|                                                                                              | 0/5000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 498.12 | Eps: 0.200
+Training:   1%|▍                                                                                  | 29/5000 [02:20<7:16:07,  5.26s/it]
+Episode 2 | Reward: 487.12 | Eps: 0.200
+Episode 3 | Reward: 689.36 | Eps: 0.200
+Episode 4 | Reward: 480.78 | Eps: 0.200
+Episode 5 | Reward: 470.82 | Eps: 0.200
+Episode 6 | Reward: 74.54 | Eps: 0.199
+Episode 7 | Reward: 504.94 | Eps: 0.199
+Episode 8 | Reward: 472.90 | Eps: 0.199
+Episode 9 | Reward: 76.88 | Eps: 0.199
+[Episode 10] Model saved to mario_dqn.pth
+Episode 10 | Reward: 1264.73 | Eps: 0.199
+Episode 11 | Reward: 523.54 | Eps: 0.199
+Episode 12 | Reward: 491.88 | Eps: 0.199
+Episode 13 | Reward: 1898.22 | Eps: 0.199
+Episode 14 | Reward: 64.80 | Eps: 0.199
+Episode 15 | Reward: 77.96 | Eps: 0.199
+Episode 16 | Reward: 580.02 | Eps: 0.198
+Episode 17 | Reward: 64.64 | Eps: 0.198
+Episode 18 | Reward: 82.38 | Eps: 0.198
+Episode 19 | Reward: 472.30 | Eps: 0.198
+[Episode 20] Model saved to mario_dqn.pth
+Episode 20 | Reward: 77.92 | Eps: 0.198
+Episode 21 | Reward: 830.97 | Eps: 0.198
+Episode 22 | Reward: 604.84 | Eps: 0.198
+Episode 23 | Reward: 76.76 | Eps: 0.198
+Episode 24 | Reward: 479.50 | Eps: 0.198
+Episode 25 | Reward: 77.96 | Eps: 0.198
+Episode 26 | Reward: 69.06 | Eps: 0.197
+Episode 27 | Reward: 77.92 | Eps: 0.197
+Episode 28 | Reward: 486.10 | Eps: 0.197
+Episode 29 | Reward: 1244.63 | Eps: 0.197
+[Episode 30] Model saved to mario_dqn.pth
+Episode 30 | Reward: 479.46 | Eps: 0.197
+Episode 31 | Reward: 468.84 | Eps: 0.197
+Episode 32 | Reward: 694.82 | Eps: 0.197
+Episode 33 | Reward: 503.98 | Eps: 0.197
+Episode 34 | Reward: 666.14 | Eps: 0.197
+Episode 35 | Reward: 63.60 | Eps: 0.197
+Episode 36 | Reward: 1253.49 | Eps: 0.196
+Episode 37 | Reward: 922.53 | Eps: 0.196
+Episode 38 | Reward: 499.28 | Eps: 0.196
+Episode 39 | Reward: 482.72 | Eps: 0.196
+[Episode 40] Model saved to mario_dqn.pth
+Episode 40 | Reward: 1261.07 | Eps: 0.196
+Episode 41 | Reward: 1312.42 | Eps: 0.196
+Episode 42 | Reward: 61.22 | Eps: 0.196
+Episode 43 | Reward: 1693.38 | Eps: 0.196
+Episode 44 | Reward: 1363.80 | Eps: 0.196
+Episode 45 | Reward: 928.09 | Eps: 0.196
+Episode 46 | Reward: 485.98 | Eps: 0.195
+Episode 47 | Reward: 659.96 | Eps: 0.195
+Episode 48 | Reward: 62.50 | Eps: 0.195
+Episode 49 | Reward: 501.82 | Eps: 0.195
+[Episode 50] Model saved to mario_dqn.pth
+Episode 50 | Reward: 28.10 | Eps: 0.195
+Episode 51 | Reward: 82.36 | Eps: 0.195
+Episode 52 | Reward: 77.86 | Eps: 0.195
+Episode 53 | Reward: 470.60 | Eps: 0.195
+Episode 54 | Reward: 920.15 | Eps: 0.195
+Episode 55 | Reward: 493.80 | Eps: 0.195
+Episode 56 | Reward: 487.36 | Eps: 0.194
+Episode 57 | Reward: 1216.01 | Eps: 0.194
+Episode 58 | Reward: 56.94 | Eps: 0.194
+Episode 59 | Reward: 62.24 | Eps: 0.194
+[Episode 60] Model saved to mario_dqn.pth
+Episode 60 | Reward: 1301.38 | Eps: 0.194
+Episode 61 | Reward: 500.40 | Eps: 0.194
+Episode 62 | Reward: 492.52 | Eps: 0.194
+Episode 63 | Reward: 77.96 | Eps: 0.194
+Episode 64 | Reward: 946.97 | Eps: 0.194
+Episode 65 | Reward: 913.66 | Eps: 0.194
+Episode 66 | Reward: 892.79 | Eps: 0.194
+Episode 67 | Reward: 501.38 | Eps: 0.193
+Episode 68 | Reward: 868.55 | Eps: 0.193
+Episode 69 | Reward: 483.90 | Eps: 0.193
+[Episode 70] Model saved to mario_dqn.pth
+Episode 70 | Reward: 615.60 | Eps: 0.193
+Episode 71 | Reward: 543.28 | Eps: 0.193
+Episode 72 | Reward: 501.62 | Eps: 0.193
+Episode 73 | Reward: 65.74 | Eps: 0.193
+Episode 74 | Reward: 617.80 | Eps: 0.193
+Episode 75 | Reward: 595.72 | Eps: 0.193
+Episode 76 | Reward: 665.18 | Eps: 0.193
+Episode 77 | Reward: 591.18 | Eps: 0.192
+Episode 78 | Reward: 80.10 | Eps: 0.192
+Episode 79 | Reward: 78.96 | Eps: 0.192
+[Episode 80] Model saved to mario_dqn.pth
+Episode 80 | Reward: 1213.90 | Eps: 0.192
+Episode 81 | Reward: 79.10 | Eps: 0.192
+Episode 82 | Reward: 1052.24 | Eps: 0.192
+Episode 83 | Reward: 500.64 | Eps: 0.192
+Episode 84 | Reward: 486.30 | Eps: 0.192
+Episode 85 | Reward: 1350.58 | Eps: 0.192
+Episode 86 | Reward: 480.78 | Eps: 0.192
+Episode 87 | Reward: 924.11 | Eps: 0.191
+Episode 88 | Reward: 1274.06 | Eps: 0.191
+Episode 89 | Reward: 1243.18 | Eps: 0.191
+[Episode 90] Model saved to mario_dqn.pth
+Episode 90 | Reward: 559.70 | Eps: 0.191
+Episode 91 | Reward: 469.34 | Eps: 0.191
+Episode 92 | Reward: 67.94 | Eps: 0.191
+Episode 93 | Reward: 81.22 | Eps: 0.191
+Episode 94 | Reward: 455.18 | Eps: 0.191
+Episode 95 | Reward: 78.94 | Eps: 0.191
+Episode 96 | Reward: 67.60 | Eps: 0.191
+Episode 97 | Reward: 682.24 | Eps: 0.191
+Episode 98 | Reward: 497.24 | Eps: 0.190
+Episode 99 | Reward: 689.10 | Eps: 0.190
+[Episode 100] Model saved to mario_dqn.pth
+Episode 100 | Reward: 501.76 | Eps: 0.190
+Episode 101 | Reward: 659.30 | Eps: 0.190
+Episode 102 | Reward: 649.46 | Eps: 0.190
+Episode 103 | Reward: 450.78 | Eps: 0.190
+Episode 104 | Reward: 80.20 | Eps: 0.190
+Episode 105 | Reward: 501.32 | Eps: 0.190
+Episode 106 | Reward: 65.70 | Eps: 0.190
+Episode 107 | Reward: 71.28 | Eps: 0.190
+Episode 108 | Reward: 501.76 | Eps: 0.189
+Episode 109 | Reward: 78.98 | Eps: 0.189
+[Episode 110] Model saved to mario_dqn.pth
+Episode 110 | Reward: 502.90 | Eps: 0.189
+Episode 111 | Reward: 682.10 | Eps: 0.189
+Episode 112 | Reward: 78.96 | Eps: 0.189
+Episode 113 | Reward: 854.53 | Eps: 0.189
+Episode 114 | Reward: 72.42 | Eps: 0.189
+Episode 115 | Reward: 60.20 | Eps: 0.189
+Episode 116 | Reward: 446.22 | Eps: 0.189
+Episode 117 | Reward: 473.20 | Eps: 0.189
+Episode 118 | Reward: 74.42 | Eps: 0.189
+Episode 119 | Reward: 604.14 | Eps: 0.188
+[Episode 120] Model saved to mario_dqn.pth
+Episode 120 | Reward: 477.62 | Eps: 0.188
+Episode 121 | Reward: 673.90 | Eps: 0.188
+Episode 122 | Reward: 76.82 | Eps: 0.188
+Episode 123 | Reward: 459.72 | Eps: 0.188
+Episode 124 | Reward: 566.52 | Eps: 0.188
+Episode 125 | Reward: 893.71 | Eps: 0.188
+Episode 126 | Reward: 495.92 | Eps: 0.188
+Episode 127 | Reward: 496.40 | Eps: 0.188
+Episode 128 | Reward: 72.44 | Eps: 0.188
+Episode 129 | Reward: 2606.80 | Eps: 0.188
+[Episode 130] Model saved to mario_dqn.pth
+Episode 130 | Reward: 924.45 | Eps: 0.187
+Episode 131 | Reward: 446.10 | Eps: 0.187
+Episode 132 | Reward: 79.06 | Eps: 0.187
+Episode 133 | Reward: 1068.60 | Eps: 0.187
+Episode 134 | Reward: 916.63 | Eps: 0.187
+Episode 135 | Reward: 939.89 | Eps: 0.187
+Episode 136 | Reward: 478.68 | Eps: 0.187
+Episode 137 | Reward: 430.02 | Eps: 0.187
+Episode 138 | Reward: 624.88 | Eps: 0.187
+Episode 139 | Reward: 67.98 | Eps: 0.187
+[Episode 140] Model saved to mario_dqn.pth
+Episode 140 | Reward: 470.78 | Eps: 0.186
+Episode 141 | Reward: 67.86 | Eps: 0.186
+Episode 142 | Reward: 921.60 | Eps: 0.186
+Episode 143 | Reward: 649.72 | Eps: 0.186
+Episode 144 | Reward: 693.90 | Eps: 0.186
+Episode 145 | Reward: 1253.01 | Eps: 0.186
+Episode 146 | Reward: 838.86 | Eps: 0.186
+Episode 147 | Reward: 869.57 | Eps: 0.186
+Episode 148 | Reward: 872.12 | Eps: 0.186
+Episode 149 | Reward: 915.54 | Eps: 0.186
+[Episode 150] Model saved to mario_dqn.pth
+Episode 150 | Reward: 74.52 | Eps: 0.186
+Episode 151 | Reward: 483.84 | Eps: 0.185
+Episode 152 | Reward: 1296.14 | Eps: 0.185
+Episode 153 | Reward: 454.10 | Eps: 0.185
+Episode 154 | Reward: 66.76 | Eps: 0.185
+Episode 155 | Reward: 510.88 | Eps: 0.185
+Episode 156 | Reward: 1261.32 | Eps: 0.185
+Episode 157 | Reward: 561.98 | Eps: 0.185
+Episode 158 | Reward: 947.65 | Eps: 0.185
+Episode 159 | Reward: 502.52 | Eps: 0.185
+[Episode 160] Model saved to mario_dqn.pth
+Episode 160 | Reward: 64.60 | Eps: 0.185
+Episode 161 | Reward: 77.94 | Eps: 0.185
+Episode 162 | Reward: 463.36 | Eps: 0.184
+Episode 163 | Reward: 482.88 | Eps: 0.184
+Episode 164 | Reward: 495.82 | Eps: 0.184
+Episode 165 | Reward: 468.96 | Eps: 0.184
+Episode 166 | Reward: 497.84 | Eps: 0.184
+Episode 167 | Reward: 67.90 | Eps: 0.184
+Episode 168 | Reward: 1118.77 | Eps: 0.184
+Episode 169 | Reward: 454.94 | Eps: 0.184
+[Episode 170] Model saved to mario_dqn.pth
+Episode 170 | Reward: 71.20 | Eps: 0.184
+Episode 171 | Reward: 60.24 | Eps: 0.184
+Episode 172 | Reward: 1176.01 | Eps: 0.184
+Episode 173 | Reward: 444.66 | Eps: 0.183
+Episode 174 | Reward: 460.96 | Eps: 0.183
+Episode 175 | Reward: 494.88 | Eps: 0.183
+Episode 176 | Reward: 495.54 | Eps: 0.183
+Episode 177 | Reward: 605.28 | Eps: 0.183
+Episode 178 | Reward: 62.22 | Eps: 0.183
+Episode 179 | Reward: 490.10 | Eps: 0.183
+[Episode 180] Model saved to mario_dqn.pth
+Episode 180 | Reward: 446.28 | Eps: 0.183
+Episode 181 | Reward: 76.78 | Eps: 0.183
+Episode 182 | Reward: 871.51 | Eps: 0.183
+Episode 183 | Reward: 502.68 | Eps: 0.183
+Episode 184 | Reward: 464.50 | Eps: 0.182
+Episode 185 | Reward: 768.96 | Eps: 0.182
+Episode 186 | Reward: 521.22 | Eps: 0.182
+Episode 187 | Reward: 594.80 | Eps: 0.182
+Episode 188 | Reward: 502.68 | Eps: 0.182
+Episode 189 | Reward: 490.64 | Eps: 0.182
+[Episode 190] Model saved to mario_dqn.pth
+Episode 190 | Reward: 66.90 | Eps: 0.182
+Episode 191 | Reward: 71.22 | Eps: 0.182
+Episode 192 | Reward: 691.32 | Eps: 0.182
+Episode 193 | Reward: 71.34 | Eps: 0.182
+Episode 194 | Reward: 501.70 | Eps: 0.182
+Episode 195 | Reward: 912.17 | Eps: 0.181
+Episode 196 | Reward: 840.95 | Eps: 0.181
+Episode 197 | Reward: 498.36 | Eps: 0.181
+Episode 198 | Reward: 82.36 | Eps: 0.181
+Episode 199 | Reward: 647.86 | Eps: 0.181
+[Episode 200] Model saved to mario_dqn.pth
+Episode 200 | Reward: 596.30 | Eps: 0.181
+Episode 201 | Reward: 77.98 | Eps: 0.181
+Episode 202 | Reward: 63.44 | Eps: 0.181
+Episode 203 | Reward: 904.71 | Eps: 0.181
+Episode 204 | Reward: 504.76 | Eps: 0.181
+Episode 205 | Reward: 56.82 | Eps: 0.181
+Episode 206 | Reward: 845.10 | Eps: 0.180
+Episode 207 | Reward: 77.92 | Eps: 0.180
+Episode 208 | Reward: 599.88 | Eps: 0.180
+Episode 209 | Reward: 498.26 | Eps: 0.180
+[Episode 210] Model saved to mario_dqn.pth
+Episode 210 | Reward: 504.24 | Eps: 0.180
+Episode 211 | Reward: 1171.72 | Eps: 0.180
+Episode 212 | Reward: 467.42 | Eps: 0.180
+Episode 213 | Reward: 67.92 | Eps: 0.180
+Episode 214 | Reward: 819.49 | Eps: 0.180
+Episode 215 | Reward: 76.94 | Eps: 0.180
+Episode 216 | Reward: 502.98 | Eps: 0.180
+Episode 217 | Reward: 474.24 | Eps: 0.179
+Episode 218 | Reward: 882.23 | Eps: 0.179
+Episode 219 | Reward: 70.06 | Eps: 0.179
+[Episode 220] Model saved to mario_dqn.pth
+Episode 220 | Reward: 454.64 | Eps: 0.179
+Episode 221 | Reward: 496.30 | Eps: 0.179
+Episode 222 | Reward: 794.59 | Eps: 0.179
+Episode 223 | Reward: 873.46 | Eps: 0.179
+Episode 224 | Reward: 626.20 | Eps: 0.179
+Episode 225 | Reward: 51.34 | Eps: 0.179
+Episode 226 | Reward: 475.14 | Eps: 0.179
+Episode 227 | Reward: 73.44 | Eps: 0.179
+Episode 228 | Reward: 70.04 | Eps: 0.178
+Episode 229 | Reward: 507.72 | Eps: 0.178
+[Episode 230] Model saved to mario_dqn.pth
+Episode 230 | Reward: 774.43 | Eps: 0.178
+Episode 231 | Reward: 499.04 | Eps: 0.178
+Episode 232 | Reward: 73.42 | Eps: 0.178
+Episode 233 | Reward: 458.46 | Eps: 0.178
+Episode 234 | Reward: 688.98 | Eps: 0.178
+Episode 235 | Reward: 72.32 | Eps: 0.178
+Episode 236 | Reward: 828.09 | Eps: 0.178
+Episode 237 | Reward: 588.12 | Eps: 0.178
+Episode 238 | Reward: 501.46 | Eps: 0.178
+Episode 239 | Reward: 500.50 | Eps: 0.177
+[Episode 240] Model saved to mario_dqn.pth
+Episode 240 | Reward: 1174.29 | Eps: 0.177
+Episode 241 | Reward: 669.90 | Eps: 0.177
+Episode 242 | Reward: 447.06 | Eps: 0.177
+Episode 243 | Reward: 74.48 | Eps: 0.177
+Episode 244 | Reward: 943.18 | Eps: 0.177
+Episode 245 | Reward: 72.28 | Eps: 0.177
+Episode 246 | Reward: 650.76 | Eps: 0.177
+Episode 247 | Reward: 619.46 | Eps: 0.177
+Episode 248 | Reward: 479.42 | Eps: 0.177
+Episode 249 | Reward: 488.30 | Eps: 0.177
+[Episode 250] Model saved to mario_dqn.pth
+Episode 250 | Reward: 901.78 | Eps: 0.176
+Episode 251 | Reward: 502.78 | Eps: 0.176
+Episode 252 | Reward: 450.26 | Eps: 0.176
+Episode 253 | Reward: 59.06 | Eps: 0.176
+Episode 254 | Reward: 962.25 | Eps: 0.176
+Episode 255 | Reward: 912.14 | Eps: 0.176
+Episode 256 | Reward: 467.48 | Eps: 0.176
+Episode 257 | Reward: 1242.05 | Eps: 0.176
+Episode 258 | Reward: 490.54 | Eps: 0.176
+Episode 259 | Reward: 477.48 | Eps: 0.176
+[Episode 260] Model saved to mario_dqn.pth
+Episode 260 | Reward: 503.20 | Eps: 0.176
+Episode 261 | Reward: 614.64 | Eps: 0.176
+Episode 262 | Reward: 472.48 | Eps: 0.175
+Episode 263 | Reward: 904.11 | Eps: 0.175
+Episode 264 | Reward: 482.92 | Eps: 0.175
+Episode 265 | Reward: 499.72 | Eps: 0.175
+Episode 266 | Reward: 1263.74 | Eps: 0.175
+Episode 267 | Reward: 465.60 | Eps: 0.175
+Episode 268 | Reward: 902.15 | Eps: 0.175
+Episode 269 | Reward: 1673.50 | Eps: 0.175
+[Episode 270] Model saved to mario_dqn.pth
+Episode 270 | Reward: 1320.30 | Eps: 0.175
+Episode 271 | Reward: 81.24 | Eps: 0.175
+Episode 272 | Reward: 1250.70 | Eps: 0.175
+Episode 273 | Reward: 696.20 | Eps: 0.174
+Episode 274 | Reward: 957.19 | Eps: 0.174
+Episode 275 | Reward: 79.02 | Eps: 0.174
+Episode 276 | Reward: 80.14 | Eps: 0.174
+Episode 277 | Reward: 1673.40 | Eps: 0.174
+Episode 278 | Reward: 480.60 | Eps: 0.174
+Episode 279 | Reward: 70.28 | Eps: 0.174
+[Episode 280] Model saved to mario_dqn.pth
+Episode 280 | Reward: 503.86 | Eps: 0.174
+Episode 281 | Reward: 604.08 | Eps: 0.174
+Episode 282 | Reward: 521.46 | Eps: 0.174
+Episode 283 | Reward: 77.92 | Eps: 0.174
+Episode 284 | Reward: 934.23 | Eps: 0.174
+Episode 285 | Reward: 520.20 | Eps: 0.173
+Episode 286 | Reward: 80.16 | Eps: 0.173
+Episode 287 | Reward: 66.86 | Eps: 0.173
+Episode 288 | Reward: 476.24 | Eps: 0.173
+Episode 289 | Reward: 1923.84 | Eps: 0.173
+[Episode 290] Model saved to mario_dqn.pth
+Episode 290 | Reward: 81.26 | Eps: 0.173
+Episode 291 | Reward: 695.10 | Eps: 0.173
+Episode 292 | Reward: 1152.47 | Eps: 0.173
+Episode 293 | Reward: 76.82 | Eps: 0.173
+Episode 294 | Reward: 500.14 | Eps: 0.173
+Episode 295 | Reward: 1269.59 | Eps: 0.173
+Episode 296 | Reward: 933.08 | Eps: 0.172
+Episode 297 | Reward: 66.74 | Eps: 0.172
+Episode 298 | Reward: 497.32 | Eps: 0.172
+Episode 299 | Reward: 1260.92 | Eps: 0.172
+[Episode 300] Model saved to mario_dqn.pth
+Episode 300 | Reward: 65.76 | Eps: 0.172
+Episode 301 | Reward: 73.52 | Eps: 0.172
+Episode 302 | Reward: 1266.53 | Eps: 0.172
+Episode 303 | Reward: 480.92 | Eps: 0.172
+Episode 304 | Reward: 1197.38 | Eps: 0.172
+Episode 305 | Reward: 464.00 | Eps: 0.172
+Episode 306 | Reward: 928.13 | Eps: 0.172
+Episode 307 | Reward: 59.16 | Eps: 0.172
+Episode 308 | Reward: 941.96 | Eps: 0.171
+Episode 309 | Reward: 59.04 | Eps: 0.171
+[Episode 310] Model saved to mario_dqn.pth
+Episode 310 | Reward: 74.64 | Eps: 0.171
+Episode 311 | Reward: 495.08 | Eps: 0.171
+Episode 312 | Reward: 502.64 | Eps: 0.171
+Episode 313 | Reward: 955.28 | Eps: 0.171
+Episode 314 | Reward: 479.48 | Eps: 0.171
+Episode 315 | Reward: 938.68 | Eps: 0.171
+Episode 316 | Reward: 650.88 | Eps: 0.171
+Episode 317 | Reward: 500.52 | Eps: 0.171
+Episode 318 | Reward: 80.12 | Eps: 0.171
+Episode 319 | Reward: 490.52 | Eps: 0.171
+[Episode 320] Model saved to mario_dqn.pth
+Episode 320 | Reward: 493.82 | Eps: 0.170
+Episode 321 | Reward: 468.66 | Eps: 0.170
+Episode 322 | Reward: 523.54 | Eps: 0.170
+Episode 323 | Reward: 72.32 | Eps: 0.170
+Episode 324 | Reward: 490.46 | Eps: 0.170
+Episode 325 | Reward: 506.00 | Eps: 0.170
+Episode 326 | Reward: 691.30 | Eps: 0.170
+Episode 327 | Reward: 623.56 | Eps: 0.170
+Episode 328 | Reward: 60.18 | Eps: 0.170
+Episode 329 | Reward: 939.38 | Eps: 0.170
+[Episode 330] Model saved to mario_dqn.pth
+Episode 330 | Reward: 1068.82 | Eps: 0.170
+Episode 331 | Reward: 1331.22 | Eps: 0.169
+Episode 332 | Reward: 1269.06 | Eps: 0.169
+Episode 333 | Reward: 74.58 | Eps: 0.169
+Episode 334 | Reward: 64.54 | Eps: 0.169
+Episode 335 | Reward: 668.94 | Eps: 0.169
+Episode 336 | Reward: 916.78 | Eps: 0.169
+Episode 337 | Reward: 2637.94 | Eps: 0.169
+Episode 338 | Reward: 658.24 | Eps: 0.169
+Episode 339 | Reward: 796.24 | Eps: 0.169
+[Episode 340] Model saved to mario_dqn.pth
+Episode 340 | Reward: 892.71 | Eps: 0.169
+Episode 341 | Reward: 497.36 | Eps: 0.169
+Episode 342 | Reward: 2312.15 | Eps: 0.169
+Episode 343 | Reward: 1235.30 | Eps: 0.168
+Episode 344 | Reward: 70.22 | Eps: 0.168
+Episode 345 | Reward: 495.96 | Eps: 0.168
+Episode 346 | Reward: 1663.16 | Eps: 0.168
+Episode 347 | Reward: 600.08 | Eps: 0.168
+Episode 348 | Reward: 643.18 | Eps: 0.168
+Episode 349 | Reward: 935.45 | Eps: 0.168
+[Episode 350] Model saved to mario_dqn.pth
+Episode 350 | Reward: 628.58 | Eps: 0.168
+Episode 351 | Reward: 1252.06 | Eps: 0.168
+Episode 352 | Reward: 59.16 | Eps: 0.168
+Episode 353 | Reward: 640.08 | Eps: 0.168
+Episode 354 | Reward: 56.86 | Eps: 0.168
+Episode 355 | Reward: 72.32 | Eps: 0.167
+Episode 356 | Reward: 65.68 | Eps: 0.167
+Episode 357 | Reward: 949.51 | Eps: 0.167
+Episode 358 | Reward: 941.25 | Eps: 0.167
+Episode 359 | Reward: 67.80 | Eps: 0.167
+[Episode 360] Model saved to mario_dqn.pth
+Episode 360 | Reward: 905.45 | Eps: 0.167
+Episode 361 | Reward: 1255.32 | Eps: 0.167
+Episode 362 | Reward: 1225.23 | Eps: 0.167
+Episode 363 | Reward: 82.34 | Eps: 0.167
+Episode 364 | Reward: 434.56 | Eps: 0.167
+Episode 365 | Reward: 1586.04 | Eps: 0.167
+Episode 366 | Reward: 479.08 | Eps: 0.167
+Episode 367 | Reward: 579.28 | Eps: 0.166
+Episode 368 | Reward: 1214.76 | Eps: 0.166
+Episode 369 | Reward: 60.22 | Eps: 0.166
+[Episode 370] Model saved to mario_dqn.pth
+Episode 370 | Reward: 61.24 | Eps: 0.166
+Episode 371 | Reward: 482.88 | Eps: 0.166
+Episode 372 | Reward: 80.12 | Eps: 0.166
+Episode 373 | Reward: 79.08 | Eps: 0.166
+Episode 374 | Reward: 82.30 | Eps: 0.166
+Episode 375 | Reward: 70.20 | Eps: 0.166
+Episode 376 | Reward: 929.32 | Eps: 0.166
+Episode 377 | Reward: 486.04 | Eps: 0.166
+Episode 378 | Reward: 478.56 | Eps: 0.166
+Episode 379 | Reward: 925.47 | Eps: 0.165
+[Episode 380] Model saved to mario_dqn.pth
+Episode 380 | Reward: 498.26 | Eps: 0.165
+Episode 381 | Reward: 71.08 | Eps: 0.165
+Episode 382 | Reward: 891.36 | Eps: 0.165
+Episode 383 | Reward: 906.14 | Eps: 0.165
+Episode 384 | Reward: 63.58 | Eps: 0.165
+Episode 385 | Reward: 55.98 | Eps: 0.165
+Episode 386 | Reward: 1249.08 | Eps: 0.165
+Episode 387 | Reward: 64.56 | Eps: 0.165
+Episode 388 | Reward: 79.06 | Eps: 0.165
+Episode 389 | Reward: 75.60 | Eps: 0.165
+[Episode 390] Model saved to mario_dqn.pth
+Episode 390 | Reward: 463.00 | Eps: 0.165
+Episode 391 | Reward: 81.04 | Eps: 0.164
+Episode 392 | Reward: 469.30 | Eps: 0.164
+Episode 393 | Reward: 935.97 | Eps: 0.164
+Episode 394 | Reward: 650.08 | Eps: 0.164
+Episode 395 | Reward: 76.74 | Eps: 0.164
+Episode 396 | Reward: 80.24 | Eps: 0.164
+Episode 397 | Reward: 918.29 | Eps: 0.164
+Episode 398 | Reward: 77.76 | Eps: 0.164
+Episode 399 | Reward: 66.80 | Eps: 0.164
+[Episode 400] Model saved to mario_dqn.pth
+Episode 400 | Reward: 60.22 | Eps: 0.164
+Episode 401 | Reward: 501.56 | Eps: 0.164
+Episode 402 | Reward: 568.08 | Eps: 0.164
+Episode 403 | Reward: 491.24 | Eps: 0.163
+Episode 404 | Reward: 1360.76 | Eps: 0.163
+Episode 405 | Reward: 692.46 | Eps: 0.163
+Episode 406 | Reward: 459.58 | Eps: 0.163
+Episode 407 | Reward: 699.88 | Eps: 0.163
+Episode 408 | Reward: 519.22 | Eps: 0.163
+Episode 409 | Reward: 470.52 | Eps: 0.163
+[Episode 410] Model saved to mario_dqn.pth
+Episode 410 | Reward: 69.02 | Eps: 0.163
+Episode 411 | Reward: 692.86 | Eps: 0.163
+Episode 412 | Reward: 464.24 | Eps: 0.163
+Episode 413 | Reward: 1264.76 | Eps: 0.163
+Mario reached the flag! Awarding huge reward!
+Episode 414 | Reward: 8342.63 | Eps: 0.163
+Episode 415 | Reward: 480.88 | Eps: 0.163
+Episode 416 | Reward: 1666.22 | Eps: 0.162
+Episode 417 | Reward: 466.50 | Eps: 0.162
+Episode 418 | Reward: 508.20 | Eps: 0.162
+Episode 419 | Reward: 951.88 | Eps: 0.162
+[Episode 420] Model saved to mario_dqn.pth
+Episode 420 | Reward: 955.98 | Eps: 0.162
+Episode 421 | Reward: 465.26 | Eps: 0.162
+Episode 422 | Reward: 76.82 | Eps: 0.162
+Episode 423 | Reward: 876.28 | Eps: 0.162
+Episode 424 | Reward: 71.28 | Eps: 0.162
+Episode 425 | Reward: 65.84 | Eps: 0.162
+Episode 426 | Reward: 78.86 | Eps: 0.162
+Episode 427 | Reward: 505.12 | Eps: 0.162
+Episode 428 | Reward: 1261.31 | Eps: 0.161
+Episode 429 | Reward: 921.97 | Eps: 0.161
+[Episode 430] Model saved to mario_dqn.pth
+Episode 430 | Reward: 82.40 | Eps: 0.161
+Episode 431 | Reward: 72.24 | Eps: 0.161
+Episode 432 | Reward: 649.54 | Eps: 0.161
+Episode 433 | Reward: 960.43 | Eps: 0.161
+Episode 434 | Reward: 479.94 | Eps: 0.161
+Episode 435 | Reward: 72.10 | Eps: 0.161
+Episode 436 | Reward: 702.20 | Eps: 0.161
+Episode 437 | Reward: 76.88 | Eps: 0.161
+Episode 438 | Reward: 76.86 | Eps: 0.161
+Episode 439 | Reward: 588.50 | Eps: 0.161
+[Episode 440] Model saved to mario_dqn.pth
+Episode 440 | Reward: 80.06 | Eps: 0.160
+Episode 441 | Reward: 79.02 | Eps: 0.160
+Episode 442 | Reward: 544.72 | Eps: 0.160
+Episode 443 | Reward: 1269.49 | Eps: 0.160
+Episode 444 | Reward: 65.86 | Eps: 0.160
+Episode 445 | Reward: 49.06 | Eps: 0.160
+Episode 446 | Reward: 948.22 | Eps: 0.160
+Episode 447 | Reward: 82.36 | Eps: 0.160
+Episode 448 | Reward: 498.40 | Eps: 0.160
+Episode 449 | Reward: 79.02 | Eps: 0.160
+[Episode 450] Model saved to mario_dqn.pth
+Episode 450 | Reward: 472.08 | Eps: 0.160
+Episode 451 | Reward: 612.50 | Eps: 0.160
+Episode 452 | Reward: 468.88 | Eps: 0.160
+Episode 453 | Reward: 615.00 | Eps: 0.159
+Episode 454 | Reward: 537.36 | Eps: 0.159
+Episode 455 | Reward: 76.60 | Eps: 0.159
+Episode 456 | Reward: 602.10 | Eps: 0.159
+Episode 457 | Reward: 977.01 | Eps: 0.159
+Episode 458 | Reward: 68.94 | Eps: 0.159
+Episode 459 | Reward: 61.22 | Eps: 0.159
+[Episode 460] Model saved to mario_dqn.pth
+Episode 460 | Reward: 488.82 | Eps: 0.159
+Episode 461 | Reward: 474.78 | Eps: 0.159
+Episode 462 | Reward: 1480.24 | Eps: 0.159
+Episode 463 | Reward: 627.42 | Eps: 0.159
+Episode 464 | Reward: 642.26 | Eps: 0.159
+Episode 465 | Reward: 949.53 | Eps: 0.159
+Episode 466 | Reward: 64.52 | Eps: 0.158
+Episode 467 | Reward: 1159.12 | Eps: 0.158
+Episode 468 | Reward: 589.04 | Eps: 0.158
+Episode 469 | Reward: 677.34 | Eps: 0.158
+[Episode 470] Model saved to mario_dqn.pth
+Episode 470 | Reward: 858.11 | Eps: 0.158
+Episode 471 | Reward: 66.74 | Eps: 0.158
+Episode 472 | Reward: 1205.55 | Eps: 0.158
+Episode 473 | Reward: 442.58 | Eps: 0.158
+Episode 474 | Reward: 892.57 | Eps: 0.158
+Episode 475 | Reward: 1199.95 | Eps: 0.158
+Episode 476 | Reward: 497.06 | Eps: 0.158
+Episode 477 | Reward: 1305.10 | Eps: 0.158
+Episode 478 | Reward: 480.66 | Eps: 0.157
+Episode 479 | Reward: 73.50 | Eps: 0.157
+[Episode 480] Model saved to mario_dqn.pth
+Episode 480 | Reward: 61.14 | Eps: 0.157
+Episode 481 | Reward: 80.10 | Eps: 0.157
+Episode 482 | Reward: 514.22 | Eps: 0.157
+Episode 483 | Reward: 462.76 | Eps: 0.157
+Episode 484 | Reward: 472.78 | Eps: 0.157
+Episode 485 | Reward: 56.96 | Eps: 0.157
+Episode 486 | Reward: 674.26 | Eps: 0.157
+Episode 487 | Reward: 687.92 | Eps: 0.157
+Episode 488 | Reward: 903.89 | Eps: 0.157
+Episode 489 | Reward: 472.76 | Eps: 0.157
+[Episode 490] Model saved to mario_dqn.pth
+Episode 490 | Reward: 500.34 | Eps: 0.157
+Episode 491 | Reward: 564.50 | Eps: 0.156
+Episode 492 | Reward: 495.06 | Eps: 0.156
+Episode 493 | Reward: 66.74 | Eps: 0.156
+Episode 494 | Reward: 485.00 | Eps: 0.156
+Episode 495 | Reward: 64.60 | Eps: 0.156
+Episode 496 | Reward: 1153.14 | Eps: 0.156
+Episode 497 | Reward: 477.52 | Eps: 0.156
+Episode 498 | Reward: 77.88 | Eps: 0.156
+Episode 499 | Reward: 684.54 | Eps: 0.156
+[Episode 500] Model saved to mario_dqn.pth
+Episode 500 | Reward: 588.50 | Eps: 0.156
+Episode 501 | Reward: 604.78 | Eps: 0.156
+Episode 502 | Reward: 869.30 | Eps: 0.156
+Episode 503 | Reward: 610.38 | Eps: 0.156
+Episode 504 | Reward: 489.50 | Eps: 0.155
+Episode 505 | Reward: 899.14 | Eps: 0.155
+Episode 506 | Reward: 606.98 | Eps: 0.155
+Episode 507 | Reward: 639.78 | Eps: 0.155
+Episode 508 | Reward: 503.82 | Eps: 0.155
+Episode 509 | Reward: 952.59 | Eps: 0.155
+[Episode 510] Model saved to mario_dqn.pth
+Episode 510 | Reward: 77.86 | Eps: 0.155
+Episode 511 | Reward: 1295.64 | Eps: 0.155
+Episode 512 | Reward: 499.18 | Eps: 0.155
+Episode 513 | Reward: 941.16 | Eps: 0.155
+Episode 514 | Reward: 61.32 | Eps: 0.155
+Episode 515 | Reward: 69.00 | Eps: 0.155
+Episode 516 | Reward: 499.02 | Eps: 0.155
+Episode 517 | Reward: 49.36 | Eps: 0.154
+Episode 518 | Reward: 888.91 | Eps: 0.154
+Episode 519 | Reward: 954.60 | Eps: 0.154
+[Episode 520] Model saved to mario_dqn.pth
+Episode 520 | Reward: 878.69 | Eps: 0.154
+Episode 521 | Reward: 487.42 | Eps: 0.154
+Episode 522 | Reward: 914.50 | Eps: 0.154
+Episode 523 | Reward: 78.98 | Eps: 0.154
+Episode 524 | Reward: 490.02 | Eps: 0.154
+Episode 525 | Reward: 689.28 | Eps: 0.154
+Episode 526 | Reward: 498.78 | Eps: 0.154
+Episode 527 | Reward: 1020.34 | Eps: 0.154
+Episode 528 | Reward: 1245.83 | Eps: 0.154
+Episode 529 | Reward: 65.58 | Eps: 0.154
+[Episode 530] Model saved to mario_dqn.pth
+Episode 530 | Reward: 499.30 | Eps: 0.153
+Episode 531 | Reward: 515.86 | Eps: 0.153
+Episode 532 | Reward: 1065.06 | Eps: 0.153
+Episode 533 | Reward: 499.36 | Eps: 0.153
+Episode 534 | Reward: 507.02 | Eps: 0.153
+Episode 535 | Reward: 71.26 | Eps: 0.153
+Episode 536 | Reward: 914.50 | Eps: 0.153
+Episode 537 | Reward: 1251.80 | Eps: 0.153
+Episode 538 | Reward: 41.50 | Eps: 0.153
+Episode 539 | Reward: 496.28 | Eps: 0.153
+[Episode 540] Model saved to mario_dqn.pth
+Episode 540 | Reward: 79.96 | Eps: 0.153
+Episode 541 | Reward: 67.72 | Eps: 0.153
+Episode 542 | Reward: 618.76 | Eps: 0.153
+Episode 543 | Reward: 1507.54 | Eps: 0.152
+Episode 544 | Reward: 62.44 | Eps: 0.152
+Episode 545 | Reward: 950.84 | Eps: 0.152
+Episode 546 | Reward: 516.36 | Eps: 0.152
+Episode 547 | Reward: 61.38 | Eps: 0.152
+Episode 548 | Reward: 68.78 | Eps: 0.152
+Episode 549 | Reward: 583.70 | Eps: 0.152
+[Episode 550] Model saved to mario_dqn.pth
+Episode 550 | Reward: 71.20 | Eps: 0.152
+Episode 551 | Reward: 473.84 | Eps: 0.152
+Episode 552 | Reward: 1242.85 | Eps: 0.152
+Episode 553 | Reward: 652.60 | Eps: 0.152
+Episode 554 | Reward: 917.73 | Eps: 0.152
+Episode 555 | Reward: 70.10 | Eps: 0.152
+Episode 556 | Reward: 1251.85 | Eps: 0.151
+Episode 557 | Reward: 684.76 | Eps: 0.151
+Episode 558 | Reward: 675.48 | Eps: 0.151
+Episode 559 | Reward: 77.84 | Eps: 0.151
+[Episode 560] Model saved to mario_dqn.pth
+Episode 560 | Reward: 1508.24 | Eps: 0.151
+Episode 561 | Reward: 74.52 | Eps: 0.151
+Episode 562 | Reward: 569.78 | Eps: 0.151
+Episode 563 | Reward: 78.04 | Eps: 0.151
+Episode 564 | Reward: 79.06 | Eps: 0.151
+Episode 565 | Reward: 502.72 | Eps: 0.151
+Episode 566 | Reward: 79.08 | Eps: 0.151
+Episode 567 | Reward: 78.86 | Eps: 0.151
+Episode 568 | Reward: 81.28 | Eps: 0.151
+Episode 569 | Reward: 430.54 | Eps: 0.150
+[Episode 570] Model saved to mario_dqn.pth
+Episode 570 | Reward: 76.82 | Eps: 0.150
+Episode 571 | Reward: 900.41 | Eps: 0.150
+Episode 572 | Reward: 585.10 | Eps: 0.150
+Episode 573 | Reward: 502.72 | Eps: 0.150
+Episode 574 | Reward: 484.36 | Eps: 0.150
+Episode 575 | Reward: 78.84 | Eps: 0.150
+Episode 576 | Reward: 483.60 | Eps: 0.150
+Episode 577 | Reward: 882.00 | Eps: 0.150
+Episode 578 | Reward: 607.14 | Eps: 0.150
+Episode 579 | Reward: 69.00 | Eps: 0.150
+[Episode 580] Model saved to mario_dqn.pth
+Episode 580 | Reward: 943.78 | Eps: 0.150
+Episode 581 | Reward: 472.60 | Eps: 0.150
+Episode 582 | Reward: 948.90 | Eps: 0.149
+Episode 583 | Reward: 64.56 | Eps: 0.149
+Episode 584 | Reward: 66.68 | Eps: 0.149
+Episode 585 | Reward: 62.40 | Eps: 0.149
+Episode 586 | Reward: 61.12 | Eps: 0.149
+Episode 587 | Reward: 1186.87 | Eps: 0.149
+Episode 588 | Reward: 676.06 | Eps: 0.149
+Episode 589 | Reward: 1249.48 | Eps: 0.149
+[Episode 590] Model saved to mario_dqn.pth
+Episode 590 | Reward: 470.42 | Eps: 0.149
+Episode 591 | Reward: 59.00 | Eps: 0.149
+Episode 592 | Reward: 641.80 | Eps: 0.149
+Episode 593 | Reward: 693.64 | Eps: 0.149
+Episode 594 | Reward: 788.91 | Eps: 0.149
+Episode 595 | Reward: 495.80 | Eps: 0.149
+Episode 596 | Reward: 66.82 | Eps: 0.148
+Episode 597 | Reward: 459.30 | Eps: 0.148
+Episode 598 | Reward: 2179.98 | Eps: 0.148
+Episode 599 | Reward: 503.76 | Eps: 0.148
+[Episode 600] Model saved to mario_dqn.pth
+Episode 600 | Reward: 690.30 | Eps: 0.148
+Episode 601 | Reward: 696.82 | Eps: 0.148
+Episode 602 | Reward: 485.88 | Eps: 0.148
+Episode 603 | Reward: 72.44 | Eps: 0.148
+Episode 604 | Reward: 894.40 | Eps: 0.148
+Episode 605 | Reward: 652.20 | Eps: 0.148
+Episode 606 | Reward: 70.02 | Eps: 0.148
+Episode 607 | Reward: 501.40 | Eps: 0.148
+Episode 608 | Reward: 462.92 | Eps: 0.148
+Episode 609 | Reward: 47.88 | Eps: 0.147
+[Episode 610] Model saved to mario_dqn.pth
+Episode 610 | Reward: 675.48 | Eps: 0.147
+Episode 611 | Reward: 1528.44 | Eps: 0.147
+Episode 612 | Reward: 72.22 | Eps: 0.147
+Episode 613 | Reward: 65.60 | Eps: 0.147
+Episode 614 | Reward: 496.94 | Eps: 0.147
+Episode 615 | Reward: 502.34 | Eps: 0.147
+Episode 616 | Reward: 601.74 | Eps: 0.147
+Episode 617 | Reward: 63.58 | Eps: 0.147
+Episode 618 | Reward: 1230.68 | Eps: 0.147
+Episode 619 | Reward: 79.06 | Eps: 0.147
+[Episode 620] Model saved to mario_dqn.pth
+Episode 620 | Reward: 474.52 | Eps: 0.147
+Episode 621 | Reward: 916.51 | Eps: 0.147
+Episode 622 | Reward: 660.32 | Eps: 0.147
+Episode 623 | Reward: 72.26 | Eps: 0.146
+Episode 624 | Reward: 1525.62 | Eps: 0.146
+Episode 625 | Reward: 76.66 | Eps: 0.146
+Episode 626 | Reward: 76.88 | Eps: 0.146
+Episode 627 | Reward: 474.88 | Eps: 0.146
+Episode 628 | Reward: 633.64 | Eps: 0.146
+Episode 629 | Reward: 79.04 | Eps: 0.146
+[Episode 630] Model saved to mario_dqn.pth
+Episode 630 | Reward: 472.14 | Eps: 0.146
+Episode 631 | Reward: 62.26 | Eps: 0.146
+Episode 632 | Reward: 913.30 | Eps: 0.146
+Episode 633 | Reward: 498.34 | Eps: 0.146
+Episode 634 | Reward: 667.44 | Eps: 0.146
+Episode 635 | Reward: 80.14 | Eps: 0.146
+Episode 636 | Reward: 64.64 | Eps: 0.146
+Episode 637 | Reward: 936.47 | Eps: 0.145
+Episode 638 | Reward: 74.56 | Eps: 0.145
+Episode 639 | Reward: 683.54 | Eps: 0.145
+[Episode 640] Model saved to mario_dqn.pth
+Episode 640 | Reward: 1171.20 | Eps: 0.145
+Episode 641 | Reward: 1362.44 | Eps: 0.145
+Episode 642 | Reward: 621.74 | Eps: 0.145
+Episode 643 | Reward: 79.06 | Eps: 0.145
+Episode 644 | Reward: 471.98 | Eps: 0.145
+Episode 645 | Reward: 689.42 | Eps: 0.145
+Episode 646 | Reward: 1070.02 | Eps: 0.145
+Episode 647 | Reward: 76.90 | Eps: 0.145
+Episode 648 | Reward: 626.18 | Eps: 0.145
+Episode 649 | Reward: 465.90 | Eps: 0.145
+[Episode 650] Model saved to mario_dqn.pth
+Episode 650 | Reward: 1236.99 | Eps: 0.144
+Episode 651 | Reward: 690.56 | Eps: 0.144
+Episode 652 | Reward: 486.00 | Eps: 0.144
+Episode 653 | Reward: 599.88 | Eps: 0.144
+Episode 654 | Reward: 501.54 | Eps: 0.144
+Episode 655 | Reward: 464.80 | Eps: 0.144
+Episode 656 | Reward: 619.48 | Eps: 0.144
+Episode 657 | Reward: 77.70 | Eps: 0.144
+Episode 658 | Reward: 502.74 | Eps: 0.144
+Episode 659 | Reward: 499.08 | Eps: 0.144
+[Episode 660] Model saved to mario_dqn.pth
+Episode 660 | Reward: 468.62 | Eps: 0.144
+Episode 661 | Reward: 949.03 | Eps: 0.144
+Episode 662 | Reward: 692.46 | Eps: 0.144
+Episode 663 | Reward: 453.16 | Eps: 0.144
+Episode 664 | Reward: 933.57 | Eps: 0.143
+Episode 665 | Reward: 623.00 | Eps: 0.143
+Episode 666 | Reward: 59.18 | Eps: 0.143
+Episode 667 | Reward: 493.74 | Eps: 0.143
+Episode 668 | Reward: 1233.65 | Eps: 0.143
+Episode 669 | Reward: 449.32 | Eps: 0.143
+[Episode 670] Model saved to mario_dqn.pth
+Episode 670 | Reward: 70.04 | Eps: 0.143
+Episode 671 | Reward: 74.60 | Eps: 0.143
+Episode 672 | Reward: 59.00 | Eps: 0.143
+Episode 673 | Reward: 485.64 | Eps: 0.143
+Episode 674 | Reward: 73.34 | Eps: 0.143
+Episode 675 | Reward: 72.22 | Eps: 0.143
+Episode 676 | Reward: 955.49 | Eps: 0.143
+Episode 677 | Reward: 938.73 | Eps: 0.143
+Episode 678 | Reward: 911.00 | Eps: 0.142
+Episode 679 | Reward: 939.69 | Eps: 0.142
+[Episode 680] Model saved to mario_dqn.pth
+Episode 680 | Reward: 470.40 | Eps: 0.142
+Episode 681 | Reward: 469.14 | Eps: 0.142
+Episode 682 | Reward: 69.96 | Eps: 0.142
+Episode 683 | Reward: 483.64 | Eps: 0.142
+Episode 684 | Reward: 456.76 | Eps: 0.142
+Episode 685 | Reward: 621.58 | Eps: 0.142
+Episode 686 | Reward: 656.84 | Eps: 0.142
+Episode 687 | Reward: 1319.18 | Eps: 0.142
+Episode 688 | Reward: 500.28 | Eps: 0.142
+Episode 689 | Reward: 553.34 | Eps: 0.142
+[Episode 690] Model saved to mario_dqn.pth
+Episode 690 | Reward: 944.49 | Eps: 0.142
+Episode 691 | Reward: 1253.57 | Eps: 0.142
+Episode 692 | Reward: 492.32 | Eps: 0.141
+Episode 693 | Reward: 69.00 | Eps: 0.141
+Episode 694 | Reward: 1261.64 | Eps: 0.141
+Episode 695 | Reward: 77.96 | Eps: 0.141
+Episode 696 | Reward: 693.44 | Eps: 0.141
+Episode 697 | Reward: 651.40 | Eps: 0.141
+Episode 698 | Reward: 1335.06 | Eps: 0.141
+Episode 699 | Reward: 79.04 | Eps: 0.141
+[Episode 700] Model saved to mario_dqn.pth
+Episode 700 | Reward: 79.02 | Eps: 0.141
+Episode 701 | Reward: 82.40 | Eps: 0.141
+Episode 702 | Reward: 476.58 | Eps: 0.141
+Episode 703 | Reward: 784.68 | Eps: 0.141
+Episode 704 | Reward: 927.88 | Eps: 0.141
+Episode 705 | Reward: 1232.45 | Eps: 0.141
+Episode 706 | Reward: 688.22 | Eps: 0.141
+Episode 707 | Reward: 470.90 | Eps: 0.140
+Episode 708 | Reward: 696.28 | Eps: 0.140
+Episode 709 | Reward: 59.12 | Eps: 0.140
+[Episode 710] Model saved to mario_dqn.pth
+Episode 710 | Reward: 1037.68 | Eps: 0.140
+Episode 711 | Reward: 71.02 | Eps: 0.140
+Episode 712 | Reward: 1229.60 | Eps: 0.140
+Episode 713 | Reward: 502.82 | Eps: 0.140
+Episode 714 | Reward: 589.54 | Eps: 0.140
+Episode 715 | Reward: 696.34 | Eps: 0.140
+Episode 716 | Reward: 501.32 | Eps: 0.140
+Episode 717 | Reward: 444.92 | Eps: 0.140
+Episode 718 | Reward: 518.94 | Eps: 0.140
+Episode 719 | Reward: 73.34 | Eps: 0.140
+[Episode 720] Model saved to mario_dqn.pth
+Episode 720 | Reward: 627.54 | Eps: 0.140
+Episode 721 | Reward: 919.28 | Eps: 0.139
+Episode 722 | Reward: 53.56 | Eps: 0.139
+Episode 723 | Reward: 655.80 | Eps: 0.139
+Episode 724 | Reward: 949.33 | Eps: 0.139
+Episode 725 | Reward: 472.02 | Eps: 0.139
+Episode 726 | Reward: 462.98 | Eps: 0.139
+Episode 727 | Reward: 1322.56 | Eps: 0.139
+Episode 728 | Reward: 938.13 | Eps: 0.139
+Episode 729 | Reward: 905.15 | Eps: 0.139
+[Episode 730] Model saved to mario_dqn.pth
+Episode 730 | Reward: 1272.96 | Eps: 0.139
+Episode 731 | Reward: 66.90 | Eps: 0.139
+Episode 732 | Reward: 1162.56 | Eps: 0.139
+Episode 733 | Reward: 74.58 | Eps: 0.139
+Episode 734 | Reward: 72.12 | Eps: 0.139
+Episode 735 | Reward: 464.54 | Eps: 0.138
+Episode 736 | Reward: 484.74 | Eps: 0.138
+Episode 737 | Reward: 477.98 | Eps: 0.138
+Episode 738 | Reward: 80.12 | Eps: 0.138
+Episode 739 | Reward: 75.78 | Eps: 0.138
+[Episode 740] Model saved to mario_dqn.pth
+Episode 740 | Reward: 454.16 | Eps: 0.138
+Episode 741 | Reward: 80.12 | Eps: 0.138
+Episode 742 | Reward: 74.56 | Eps: 0.138
+Episode 743 | Reward: 66.66 | Eps: 0.138
+Episode 744 | Reward: 899.25 | Eps: 0.138
+Episode 745 | Reward: 630.36 | Eps: 0.138
+Episode 746 | Reward: 938.17 | Eps: 0.138
+Episode 747 | Reward: 73.48 | Eps: 0.138
+Episode 748 | Reward: 498.18 | Eps: 0.138
+Episode 749 | Reward: 895.61 | Eps: 0.138
+[Episode 750] Model saved to mario_dqn.pth
+Episode 750 | Reward: 613.48 | Eps: 0.137
+Episode 751 | Reward: 911.61 | Eps: 0.137
+Episode 752 | Reward: 63.42 | Eps: 0.137
+Episode 753 | Reward: 941.17 | Eps: 0.137
+Episode 754 | Reward: 467.90 | Eps: 0.137
+Episode 755 | Reward: 875.87 | Eps: 0.137
+Episode 756 | Reward: 64.34 | Eps: 0.137
+Episode 757 | Reward: 75.68 | Eps: 0.137
+Episode 758 | Reward: 462.24 | Eps: 0.137
+Episode 759 | Reward: 69.08 | Eps: 0.137
+[Episode 760] Model saved to mario_dqn.pth
+Episode 760 | Reward: 885.10 | Eps: 0.137
+Episode 761 | Reward: 588.24 | Eps: 0.137
+Episode 762 | Reward: 73.34 | Eps: 0.137
+Episode 763 | Reward: 59.02 | Eps: 0.137
+Episode 764 | Reward: 925.00 | Eps: 0.136
+Episode 765 | Reward: 1339.34 | Eps: 0.136
+Episode 766 | Reward: 57.00 | Eps: 0.136
+Episode 767 | Reward: 75.66 | Eps: 0.136
+Episode 768 | Reward: 908.21 | Eps: 0.136
+Episode 769 | Reward: 502.56 | Eps: 0.136
+[Episode 770] Model saved to mario_dqn.pth
+Episode 770 | Reward: 77.92 | Eps: 0.136
+Episode 771 | Reward: 61.10 | Eps: 0.136
+Episode 772 | Reward: 1229.56 | Eps: 0.136
+Episode 773 | Reward: 493.76 | Eps: 0.136
+Episode 774 | Reward: 573.74 | Eps: 0.136
+Episode 775 | Reward: 81.28 | Eps: 0.136
+Episode 776 | Reward: 74.46 | Eps: 0.136
+Episode 777 | Reward: 916.10 | Eps: 0.136
+Episode 778 | Reward: 473.78 | Eps: 0.136
+Episode 779 | Reward: 1037.66 | Eps: 0.135
+[Episode 780] Model saved to mario_dqn.pth
+Episode 780 | Reward: 648.56 | Eps: 0.135
+Episode 781 | Reward: 624.12 | Eps: 0.135
+Episode 782 | Reward: 75.46 | Eps: 0.135
+Episode 783 | Reward: 70.02 | Eps: 0.135
+Episode 784 | Reward: 78.92 | Eps: 0.135
+Episode 785 | Reward: 519.82 | Eps: 0.135
+Episode 786 | Reward: 493.50 | Eps: 0.135
+Episode 787 | Reward: 59.00 | Eps: 0.135
+Episode 788 | Reward: 67.86 | Eps: 0.135
+Mario reached the flag! Awarding huge reward!
+Episode 789 | Reward: 8327.09 | Eps: 0.135
+[Episode 790] Model saved to mario_dqn.pth
+Episode 790 | Reward: 66.60 | Eps: 0.135
+Episode 791 | Reward: 64.54 | Eps: 0.135
+Episode 792 | Reward: 2349.63 | Eps: 0.135
+Episode 793 | Reward: 578.78 | Eps: 0.135
+Episode 794 | Reward: 950.27 | Eps: 0.134
+Episode 795 | Reward: 64.44 | Eps: 0.134
+Episode 796 | Reward: 478.08 | Eps: 0.134
+Episode 797 | Reward: 491.48 | Eps: 0.134
+Episode 798 | Reward: 485.96 | Eps: 0.134
+Episode 799 | Reward: 1229.76 | Eps: 0.134
+[Episode 800] Model saved to mario_dqn.pth
+Episode 800 | Reward: 941.17 | Eps: 0.134
+Episode 801 | Reward: 594.38 | Eps: 0.134
+Episode 802 | Reward: 498.16 | Eps: 0.134
+Episode 803 | Reward: 920.30 | Eps: 0.134
+Episode 804 | Reward: 458.64 | Eps: 0.134
+Episode 805 | Reward: 64.46 | Eps: 0.134
+Episode 806 | Reward: 499.36 | Eps: 0.134
+Episode 807 | Reward: 52.32 | Eps: 0.134
+Episode 808 | Reward: 71.18 | Eps: 0.134
+Episode 809 | Reward: 505.74 | Eps: 0.133
+[Episode 810] Model saved to mario_dqn.pth
+Episode 810 | Reward: 958.15 | Eps: 0.133
+Episode 811 | Reward: 609.40 | Eps: 0.133
+Episode 812 | Reward: 496.80 | Eps: 0.133
+Episode 813 | Reward: 1076.74 | Eps: 0.133
+Episode 814 | Reward: 941.29 | Eps: 0.133
+Episode 815 | Reward: 636.06 | Eps: 0.133
+Episode 816 | Reward: 1248.56 | Eps: 0.133
+Episode 817 | Reward: 62.46 | Eps: 0.133
+Episode 818 | Reward: 495.92 | Eps: 0.133
+Episode 819 | Reward: 864.13 | Eps: 0.133
+[Episode 820] Model saved to mario_dqn.pth
+Episode 820 | Reward: 66.82 | Eps: 0.133
+Episode 821 | Reward: 896.92 | Eps: 0.133
+Episode 822 | Reward: 487.38 | Eps: 0.133
+Episode 823 | Reward: 58.12 | Eps: 0.133
+Episode 824 | Reward: 1782.24 | Eps: 0.132
+Episode 825 | Reward: 958.32 | Eps: 0.132
+Episode 826 | Reward: 595.80 | Eps: 0.132
+Episode 827 | Reward: 71.22 | Eps: 0.132
+Episode 828 | Reward: 77.84 | Eps: 0.132
+Episode 829 | Reward: 505.98 | Eps: 0.132
+[Episode 830] Model saved to mario_dqn.pth
+Episode 830 | Reward: 82.36 | Eps: 0.132
+Episode 831 | Reward: 79.08 | Eps: 0.132
+Episode 832 | Reward: 500.38 | Eps: 0.132
+Episode 833 | Reward: 62.24 | Eps: 0.132
+Episode 834 | Reward: 927.13 | Eps: 0.132
+Episode 835 | Reward: 923.25 | Eps: 0.132
+Episode 836 | Reward: 474.10 | Eps: 0.132
+Episode 837 | Reward: 76.62 | Eps: 0.132
+Episode 838 | Reward: 77.86 | Eps: 0.132
+Episode 839 | Reward: 56.76 | Eps: 0.131
+[Episode 840] Model saved to mario_dqn.pth
+Episode 840 | Reward: 1033.74 | Eps: 0.131
+Episode 841 | Reward: 81.14 | Eps: 0.131
+Episode 842 | Reward: 636.80 | Eps: 0.131
+Episode 843 | Reward: 70.08 | Eps: 0.131
+Episode 844 | Reward: 1921.44 | Eps: 0.131
+Episode 845 | Reward: 1848.20 | Eps: 0.131
+Episode 846 | Reward: 643.72 | Eps: 0.131
+Episode 847 | Reward: 1370.76 | Eps: 0.131
+Episode 848 | Reward: 496.30 | Eps: 0.131
+Episode 849 | Reward: 475.40 | Eps: 0.131
+[Episode 850] Model saved to mario_dqn.pth
+Episode 850 | Reward: 453.08 | Eps: 0.131
+Episode 851 | Reward: 474.44 | Eps: 0.131
+Episode 852 | Reward: 500.50 | Eps: 0.131
+Episode 853 | Reward: 1076.18 | Eps: 0.131
+Episode 854 | Reward: 955.21 | Eps: 0.130
+Episode 855 | Reward: 64.66 | Eps: 0.130
+Episode 856 | Reward: 81.28 | Eps: 0.130
+Episode 857 | Reward: 1249.49 | Eps: 0.130
+Episode 858 | Reward: 953.74 | Eps: 0.130
+Episode 859 | Reward: 80.16 | Eps: 0.130
+[Episode 860] Model saved to mario_dqn.pth
+Episode 860 | Reward: 629.52 | Eps: 0.130
+Episode 861 | Reward: 1328.74 | Eps: 0.130
+Episode 862 | Reward: 946.91 | Eps: 0.130
+Episode 863 | Reward: 947.32 | Eps: 0.130
+Episode 864 | Reward: 81.24 | Eps: 0.130
+Episode 865 | Reward: 949.44 | Eps: 0.130
+Episode 866 | Reward: 943.42 | Eps: 0.130
+Episode 867 | Reward: 480.78 | Eps: 0.130
+Episode 868 | Reward: 927.39 | Eps: 0.130
+Episode 869 | Reward: 1199.48 | Eps: 0.130
+[Episode 870] Model saved to mario_dqn.pth
+Episode 870 | Reward: 698.84 | Eps: 0.129
+Episode 871 | Reward: 1263.81 | Eps: 0.129
+Episode 872 | Reward: 521.06 | Eps: 0.129
+Episode 873 | Reward: 64.74 | Eps: 0.129
+Episode 874 | Reward: 519.08 | Eps: 0.129
+Episode 875 | Reward: 934.28 | Eps: 0.129
+Episode 876 | Reward: 80.18 | Eps: 0.129
+Episode 877 | Reward: 81.28 | Eps: 0.129
+Episode 878 | Reward: 503.04 | Eps: 0.129
+Episode 879 | Reward: 484.28 | Eps: 0.129
+[Episode 880] Model saved to mario_dqn.pth
+Episode 880 | Reward: 941.50 | Eps: 0.129
+Episode 881 | Reward: 80.10 | Eps: 0.129
+Episode 882 | Reward: 1255.77 | Eps: 0.129
+Episode 883 | Reward: 1077.18 | Eps: 0.129
+Episode 884 | Reward: 1841.10 | Eps: 0.129
+Episode 885 | Reward: 492.68 | Eps: 0.128
+Episode 886 | Reward: 80.20 | Eps: 0.128
+Episode 887 | Reward: 1252.17 | Eps: 0.128
+Episode 888 | Reward: 502.78 | Eps: 0.128
+Episode 889 | Reward: 80.20 | Eps: 0.128
+[Episode 890] Model saved to mario_dqn.pth
+Episode 890 | Reward: 493.00 | Eps: 0.128
+Episode 891 | Reward: 80.02 | Eps: 0.128
+Episode 892 | Reward: 70.20 | Eps: 0.128
+Episode 893 | Reward: 504.84 | Eps: 0.128
+Episode 894 | Reward: 484.90 | Eps: 0.128
+Episode 895 | Reward: 441.90 | Eps: 0.128
+Episode 896 | Reward: 448.30 | Eps: 0.128
+Episode 897 | Reward: 82.44 | Eps: 0.128
+Episode 898 | Reward: 1020.92 | Eps: 0.128
+Episode 899 | Reward: 501.46 | Eps: 0.128
+[Episode 900] Model saved to mario_dqn.pth
+Episode 900 | Reward: 68.04 | Eps: 0.128
+Episode 901 | Reward: 79.08 | Eps: 0.127
+Episode 902 | Reward: 77.98 | Eps: 0.127
+Episode 903 | Reward: 75.80 | Eps: 0.127
+Episode 904 | Reward: 77.98 | Eps: 0.127
+Episode 905 | Reward: 1527.80 | Eps: 0.127
+Episode 906 | Reward: 453.08 | Eps: 0.127
+Episode 907 | Reward: 1235.63 | Eps: 0.127
+Episode 908 | Reward: 80.18 | Eps: 0.127
+Episode 909 | Reward: 492.20 | Eps: 0.127
+[Episode 910] Model saved to mario_dqn.pth
+Episode 910 | Reward: 1875.00 | Eps: 0.127
+Episode 911 | Reward: 77.92 | Eps: 0.127
+Episode 912 | Reward: 499.48 | Eps: 0.127
+Episode 913 | Reward: 470.98 | Eps: 0.127
+Episode 914 | Reward: 1236.06 | Eps: 0.127
+Episode 915 | Reward: 644.48 | Eps: 0.127
+Episode 916 | Reward: 437.24 | Eps: 0.126
+Episode 917 | Reward: 611.42 | Eps: 0.126
+Episode 918 | Reward: 63.74 | Eps: 0.126
+Episode 919 | Reward: 596.00 | Eps: 0.126
+[Episode 920] Model saved to mario_dqn.pth
+Episode 920 | Reward: 77.92 | Eps: 0.126
+Episode 921 | Reward: 502.86 | Eps: 0.126
+Episode 922 | Reward: 1675.30 | Eps: 0.126
+Episode 923 | Reward: 500.74 | Eps: 0.126
+Episode 924 | Reward: 966.88 | Eps: 0.126
+Episode 925 | Reward: 487.56 | Eps: 0.126
+Episode 926 | Reward: 471.98 | Eps: 0.126
+Episode 927 | Reward: 475.36 | Eps: 0.126
+Episode 928 | Reward: 496.46 | Eps: 0.126
+Episode 929 | Reward: 80.16 | Eps: 0.126
+[Episode 930] Model saved to mario_dqn.pth
+Episode 930 | Reward: 942.38 | Eps: 0.126
+Episode 931 | Reward: 575.76 | Eps: 0.126
+Episode 932 | Reward: 76.88 | Eps: 0.125
+Episode 933 | Reward: 476.62 | Eps: 0.125
+Episode 934 | Reward: 64.52 | Eps: 0.125
+Episode 935 | Reward: 939.92 | Eps: 0.125
+Episode 936 | Reward: 1065.14 | Eps: 0.125
+Episode 937 | Reward: 81.18 | Eps: 0.125
+Episode 938 | Reward: 1282.12 | Eps: 0.125
+Episode 939 | Reward: 937.24 | Eps: 0.125
+[Episode 940] Model saved to mario_dqn.pth
+Episode 940 | Reward: 1261.09 | Eps: 0.125
+Episode 941 | Reward: 497.18 | Eps: 0.125
+Episode 942 | Reward: 480.70 | Eps: 0.125
+Episode 943 | Reward: 1829.46 | Eps: 0.125
+Episode 944 | Reward: 72.46 | Eps: 0.125
+Episode 945 | Reward: 497.06 | Eps: 0.125
+Episode 946 | Reward: 82.44 | Eps: 0.125
+Episode 947 | Reward: 79.08 | Eps: 0.125
+Episode 948 | Reward: 65.76 | Eps: 0.124
+Episode 949 | Reward: 457.98 | Eps: 0.124
+[Episode 950] Model saved to mario_dqn.pth
+Episode 950 | Reward: 606.24 | Eps: 0.124
+Episode 951 | Reward: 493.82 | Eps: 0.124
+Episode 952 | Reward: 80.20 | Eps: 0.124
+Episode 953 | Reward: 467.50 | Eps: 0.124
+Episode 954 | Reward: 902.26 | Eps: 0.124
+Episode 955 | Reward: 65.78 | Eps: 0.124
+Episode 956 | Reward: 601.86 | Eps: 0.124
+Episode 957 | Reward: 472.04 | Eps: 0.124
+Episode 958 | Reward: 501.80 | Eps: 0.124
+Episode 959 | Reward: 79.08 | Eps: 0.124
+[Episode 960] Model saved to mario_dqn.pth
+Episode 960 | Reward: 79.10 | Eps: 0.124
+Episode 961 | Reward: 474.36 | Eps: 0.124
+Episode 962 | Reward: 79.08 | Eps: 0.124
+Episode 963 | Reward: 1340.88 | Eps: 0.124
+Episode 964 | Reward: 1542.60 | Eps: 0.123
+Episode 965 | Reward: 1249.68 | Eps: 0.123
+Episode 966 | Reward: 479.36 | Eps: 0.123
+Episode 967 | Reward: 80.18 | Eps: 0.123
+Episode 968 | Reward: 79.02 | Eps: 0.123
+Episode 969 | Reward: 616.98 | Eps: 0.123
+[Episode 970] Model saved to mario_dqn.pth
+Episode 970 | Reward: 475.46 | Eps: 0.123
+Episode 971 | Reward: 979.08 | Eps: 0.123
+Episode 972 | Reward: 1362.74 | Eps: 0.123
+Episode 973 | Reward: 484.36 | Eps: 0.123
+Episode 974 | Reward: 76.88 | Eps: 0.123
+Episode 975 | Reward: 77.94 | Eps: 0.123
+Episode 976 | Reward: 61.58 | Eps: 0.123
+Episode 977 | Reward: 79.08 | Eps: 0.123
+Episode 978 | Reward: 77.98 | Eps: 0.123
+Episode 979 | Reward: 82.32 | Eps: 0.123
+[Episode 980] Model saved to mario_dqn.pth
+Episode 980 | Reward: 82.36 | Eps: 0.123
+Episode 981 | Reward: 65.66 | Eps: 0.122
+Episode 982 | Reward: 507.14 | Eps: 0.122
+Episode 983 | Reward: 521.50 | Eps: 0.122
+Episode 984 | Reward: 490.64 | Eps: 0.122
+Episode 985 | Reward: 1268.60 | Eps: 0.122
+Episode 986 | Reward: 81.22 | Eps: 0.122
+Episode 987 | Reward: 475.56 | Eps: 0.122
+Episode 988 | Reward: 494.94 | Eps: 0.122
+Episode 989 | Reward: 69.14 | Eps: 0.122
+[Episode 990] Model saved to mario_dqn.pth
+Episode 990 | Reward: 467.76 | Eps: 0.122
+Episode 991 | Reward: 77.96 | Eps: 0.122
+Episode 992 | Reward: 478.48 | Eps: 0.122
+Episode 993 | Reward: 501.72 | Eps: 0.122
+Episode 994 | Reward: 696.42 | Eps: 0.122
+Episode 995 | Reward: 76.72 | Eps: 0.122
+Episode 996 | Reward: 471.00 | Eps: 0.122
+Episode 997 | Reward: 484.24 | Eps: 0.121
+Episode 998 | Reward: 1284.27 | Eps: 0.121
+Episode 999 | Reward: 488.30 | Eps: 0.121
+[Episode 1000] Model saved to mario_dqn.pth
+Episode 1000 | Reward: 491.70 | Eps: 0.121
+Episode 1001 | Reward: 1069.14 | Eps: 0.121
+Episode 1002 | Reward: 46.24 | Eps: 0.121
+Episode 1003 | Reward: 80.14 | Eps: 0.121
+Episode 1004 | Reward: 945.19 | Eps: 0.121
+Episode 1005 | Reward: 490.40 | Eps: 0.121
+Episode 1006 | Reward: 622.58 | Eps: 0.121
+Episode 1007 | Reward: 80.20 | Eps: 0.121
+Episode 1008 | Reward: 1076.04 | Eps: 0.121
+Episode 1009 | Reward: 82.36 | Eps: 0.121
+[Episode 1010] Model saved to mario_dqn.pth
+Episode 1010 | Reward: 942.16 | Eps: 0.121
+Episode 1011 | Reward: 80.20 | Eps: 0.121
+Episode 1012 | Reward: 691.56 | Eps: 0.121
+Episode 1013 | Reward: 82.38 | Eps: 0.121
+Episode 1014 | Reward: 80.18 | Eps: 0.120
+Episode 1015 | Reward: 484.90 | Eps: 0.120
+Episode 1016 | Reward: 1230.91 | Eps: 0.120
+Episode 1017 | Reward: 81.30 | Eps: 0.120
+Episode 1018 | Reward: 474.34 | Eps: 0.120
+Episode 1019 | Reward: 63.46 | Eps: 0.120
+[Episode 1020] Model saved to mario_dqn.pth
+Episode 1020 | Reward: 70.30 | Eps: 0.120
+Episode 1021 | Reward: 611.80 | Eps: 0.120
+Episode 1022 | Reward: 1369.68 | Eps: 0.120
+Episode 1023 | Reward: 927.02 | Eps: 0.120
+Episode 1024 | Reward: 496.22 | Eps: 0.120
+Episode 1025 | Reward: 486.08 | Eps: 0.120
+Episode 1026 | Reward: 82.28 | Eps: 0.120
+Episode 1027 | Reward: 475.18 | Eps: 0.120
+Episode 1028 | Reward: 80.18 | Eps: 0.120
+Episode 1029 | Reward: 1262.54 | Eps: 0.120
+[Episode 1030] Model saved to mario_dqn.pth
+Episode 1030 | Reward: 939.88 | Eps: 0.119
+Episode 1031 | Reward: 930.84 | Eps: 0.119
+Episode 1032 | Reward: 485.02 | Eps: 0.119
+Episode 1033 | Reward: 1267.60 | Eps: 0.119
+Episode 1034 | Reward: 938.64 | Eps: 0.119
+Episode 1035 | Reward: 943.22 | Eps: 0.119
+Episode 1036 | Reward: 82.40 | Eps: 0.119
+Episode 1037 | Reward: 475.54 | Eps: 0.119
+Episode 1038 | Reward: 62.66 | Eps: 0.119
+Episode 1039 | Reward: 521.18 | Eps: 0.119
+[Episode 1040] Model saved to mario_dqn.pth
+Episode 1040 | Reward: 61.42 | Eps: 0.119
+Episode 1041 | Reward: 79.08 | Eps: 0.119
+Episode 1042 | Reward: 1232.87 | Eps: 0.119
+Episode 1043 | Reward: 75.68 | Eps: 0.119
+Episode 1044 | Reward: 468.52 | Eps: 0.119
+Episode 1045 | Reward: 634.46 | Eps: 0.119
+Episode 1046 | Reward: 1052.64 | Eps: 0.119
+Episode 1047 | Reward: 1221.35 | Eps: 0.118
+Episode 1048 | Reward: 77.92 | Eps: 0.118
+Episode 1049 | Reward: 946.21 | Eps: 0.118
+[Episode 1050] Model saved to mario_dqn.pth
+Episode 1050 | Reward: 948.94 | Eps: 0.118
+Episode 1051 | Reward: 595.22 | Eps: 0.118
+Episode 1052 | Reward: 1210.33 | Eps: 0.118
+Episode 1053 | Reward: 438.40 | Eps: 0.118
+Episode 1054 | Reward: 601.14 | Eps: 0.118
+Episode 1055 | Reward: 71.02 | Eps: 0.118
+Episode 1056 | Reward: 473.22 | Eps: 0.118
+Episode 1057 | Reward: 497.20 | Eps: 0.118
+Episode 1058 | Reward: 483.00 | Eps: 0.118
+Episode 1059 | Reward: 594.44 | Eps: 0.118
+[Episode 1060] Model saved to mario_dqn.pth
+Episode 1060 | Reward: 471.18 | Eps: 0.118
+Episode 1061 | Reward: 963.21 | Eps: 0.118
+Episode 1062 | Reward: 462.94 | Eps: 0.118
+Episode 1063 | Reward: 80.12 | Eps: 0.118
+Episode 1064 | Reward: 67.96 | Eps: 0.117
+Episode 1065 | Reward: 502.96 | Eps: 0.117
+Episode 1066 | Reward: 482.64 | Eps: 0.117
+Episode 1067 | Reward: 1674.46 | Eps: 0.117
+Episode 1068 | Reward: 79.10 | Eps: 0.117
+Episode 1069 | Reward: 944.45 | Eps: 0.117
+[Episode 1070] Model saved to mario_dqn.pth
+Episode 1070 | Reward: 1247.64 | Eps: 0.117
+Episode 1071 | Reward: 1210.65 | Eps: 0.117
+Episode 1072 | Reward: 461.44 | Eps: 0.117
+Episode 1073 | Reward: 1228.80 | Eps: 0.117
+Episode 1074 | Reward: 82.36 | Eps: 0.117
+Episode 1075 | Reward: 474.54 | Eps: 0.117
+Episode 1076 | Reward: 76.84 | Eps: 0.117
+Episode 1077 | Reward: 77.92 | Eps: 0.117
+Episode 1078 | Reward: 950.37 | Eps: 0.117
+Episode 1079 | Reward: 76.72 | Eps: 0.117
+[Episode 1080] Model saved to mario_dqn.pth
+Episode 1080 | Reward: 80.20 | Eps: 0.117
+Episode 1081 | Reward: 450.86 | Eps: 0.116
+Episode 1082 | Reward: 638.90 | Eps: 0.116
+Episode 1083 | Reward: 64.60 | Eps: 0.116
+Episode 1084 | Reward: 492.88 | Eps: 0.116
+Episode 1085 | Reward: 1522.60 | Eps: 0.116
+Episode 1086 | Reward: 485.22 | Eps: 0.116
+Episode 1087 | Reward: 475.58 | Eps: 0.116
+Episode 1088 | Reward: 63.48 | Eps: 0.116
+Episode 1089 | Reward: 940.95 | Eps: 0.116
+[Episode 1090] Model saved to mario_dqn.pth
+Episode 1090 | Reward: 76.80 | Eps: 0.116
+Episode 1091 | Reward: 486.34 | Eps: 0.116
+Episode 1092 | Reward: 483.92 | Eps: 0.116
+Episode 1093 | Reward: 66.98 | Eps: 0.116
+Episode 1094 | Reward: 498.04 | Eps: 0.116
+Episode 1095 | Reward: 63.46 | Eps: 0.116
+Episode 1096 | Reward: 76.80 | Eps: 0.116
+Episode 1097 | Reward: 78.00 | Eps: 0.116
+Episode 1098 | Reward: 77.98 | Eps: 0.115
+Episode 1099 | Reward: 80.20 | Eps: 0.115
+[Episode 1100] Model saved to mario_dqn.pth
+Episode 1100 | Reward: 471.04 | Eps: 0.115
+Episode 1101 | Reward: 500.42 | Eps: 0.115
+Episode 1102 | Reward: 474.38 | Eps: 0.115
+Episode 1103 | Reward: 76.84 | Eps: 0.115
+Episode 1104 | Reward: 971.22 | Eps: 0.115
+Episode 1105 | Reward: 940.69 | Eps: 0.115
+Episode 1106 | Reward: 475.58 | Eps: 0.115
+Episode 1107 | Reward: 686.64 | Eps: 0.115
+Episode 1108 | Reward: 940.87 | Eps: 0.115
+Episode 1109 | Reward: 485.50 | Eps: 0.115
+[Episode 1110] Model saved to mario_dqn.pth
+Episode 1110 | Reward: 467.78 | Eps: 0.115
+Episode 1111 | Reward: 521.44 | Eps: 0.115
+Episode 1112 | Reward: 952.84 | Eps: 0.115
+Episode 1113 | Reward: 62.50 | Eps: 0.115
+Episode 1114 | Reward: 492.84 | Eps: 0.115
+Episode 1115 | Reward: 81.28 | Eps: 0.115
+Episode 1116 | Reward: 506.12 | Eps: 0.114
+Episode 1117 | Reward: 935.37 | Eps: 0.114
+Episode 1118 | Reward: 62.66 | Eps: 0.114
+Episode 1119 | Reward: 81.28 | Eps: 0.114
+[Episode 1120] Model saved to mario_dqn.pth
+Episode 1120 | Reward: 1284.89 | Eps: 0.114
+Episode 1121 | Reward: 80.20 | Eps: 0.114
+Episode 1122 | Reward: 499.48 | Eps: 0.114
+Episode 1123 | Reward: 81.28 | Eps: 0.114
+Episode 1124 | Reward: 522.58 | Eps: 0.114
+Episode 1125 | Reward: 950.27 | Eps: 0.114
+Episode 1126 | Reward: 70.18 | Eps: 0.114
+Episode 1127 | Reward: 81.18 | Eps: 0.114
+Episode 1128 | Reward: 919.32 | Eps: 0.114
+Episode 1129 | Reward: 957.46 | Eps: 0.114
+[Episode 1130] Model saved to mario_dqn.pth
+Episode 1130 | Reward: 945.88 | Eps: 0.114
+Episode 1131 | Reward: 1273.20 | Eps: 0.114
+Episode 1132 | Reward: 597.86 | Eps: 0.114
+Episode 1133 | Reward: 474.30 | Eps: 0.113
+Episode 1134 | Reward: 584.26 | Eps: 0.113
+Episode 1135 | Reward: 1243.33 | Eps: 0.113
+Episode 1136 | Reward: 71.26 | Eps: 0.113
+Episode 1137 | Reward: 1838.30 | Eps: 0.113
+Episode 1138 | Reward: 502.74 | Eps: 0.113
+Episode 1139 | Reward: 1387.06 | Eps: 0.113
+[Episode 1140] Model saved to mario_dqn.pth
+Episode 1140 | Reward: 1250.62 | Eps: 0.113
+Episode 1141 | Reward: 944.51 | Eps: 0.113
+Episode 1142 | Reward: 483.94 | Eps: 0.113
+Episode 1143 | Reward: 501.66 | Eps: 0.113
+Episode 1144 | Reward: 1256.97 | Eps: 0.113
+Episode 1145 | Reward: 79.98 | Eps: 0.113
+Episode 1146 | Reward: 76.74 | Eps: 0.113
+Episode 1147 | Reward: 465.50 | Eps: 0.113
+Episode 1148 | Reward: 72.28 | Eps: 0.113
+Episode 1149 | Reward: 946.20 | Eps: 0.113
+[Episode 1150] Model saved to mario_dqn.pth
+Episode 1150 | Reward: 934.05 | Eps: 0.113
+Episode 1151 | Reward: 1281.36 | Eps: 0.112
+Episode 1152 | Reward: 480.76 | Eps: 0.112
+Episode 1153 | Reward: 477.74 | Eps: 0.112
+Episode 1154 | Reward: 621.26 | Eps: 0.112
+Episode 1155 | Reward: 82.30 | Eps: 0.112
+Episode 1156 | Reward: 78.94 | Eps: 0.112
+Episode 1157 | Reward: 1260.77 | Eps: 0.112
+Episode 1158 | Reward: 473.44 | Eps: 0.112
+Episode 1159 | Reward: 479.60 | Eps: 0.112
+[Episode 1160] Model saved to mario_dqn.pth
+Episode 1160 | Reward: 75.74 | Eps: 0.112
+Episode 1161 | Reward: 72.44 | Eps: 0.112
+Episode 1162 | Reward: 467.34 | Eps: 0.112
+Episode 1163 | Reward: 488.68 | Eps: 0.112
+Episode 1164 | Reward: 644.70 | Eps: 0.112
+Episode 1165 | Reward: 495.26 | Eps: 0.112
+Episode 1166 | Reward: 654.00 | Eps: 0.112
+Episode 1167 | Reward: 638.18 | Eps: 0.112
+Episode 1168 | Reward: 497.46 | Eps: 0.112
+Episode 1169 | Reward: 949.16 | Eps: 0.111
+[Episode 1170] Model saved to mario_dqn.pth
+Episode 1170 | Reward: 81.24 | Eps: 0.111
+Episode 1171 | Reward: 561.06 | Eps: 0.111
+Episode 1172 | Reward: 1096.26 | Eps: 0.111
+Episode 1173 | Reward: 73.48 | Eps: 0.111
+Episode 1174 | Reward: 943.77 | Eps: 0.111
+Episode 1175 | Reward: 1279.06 | Eps: 0.111
+Episode 1176 | Reward: 80.20 | Eps: 0.111
+Episode 1177 | Reward: 82.26 | Eps: 0.111
+Episode 1178 | Reward: 82.36 | Eps: 0.111
+Episode 1179 | Reward: 76.88 | Eps: 0.111
+[Episode 1180] Model saved to mario_dqn.pth
+Episode 1180 | Reward: 461.44 | Eps: 0.111
+Episode 1181 | Reward: 1082.44 | Eps: 0.111
+Episode 1182 | Reward: 627.30 | Eps: 0.111
+Episode 1183 | Reward: 80.16 | Eps: 0.111
+Episode 1184 | Reward: 492.38 | Eps: 0.111
+Episode 1185 | Reward: 82.32 | Eps: 0.111
+Episode 1186 | Reward: 469.74 | Eps: 0.111
+Episode 1187 | Reward: 950.03 | Eps: 0.110
+Episode 1188 | Reward: 502.52 | Eps: 0.110
+Episode 1189 | Reward: 901.77 | Eps: 0.110
+[Episode 1190] Model saved to mario_dqn.pth
+Episode 1190 | Reward: 490.56 | Eps: 0.110
+Episode 1191 | Reward: 497.50 | Eps: 0.110
+Episode 1192 | Reward: 1259.72 | Eps: 0.110
+Episode 1193 | Reward: 1361.86 | Eps: 0.110
+Episode 1194 | Reward: 938.41 | Eps: 0.110
+Episode 1195 | Reward: 80.18 | Eps: 0.110
+Episode 1196 | Reward: 78.98 | Eps: 0.110
+Episode 1197 | Reward: 82.38 | Eps: 0.110
+Episode 1198 | Reward: 616.24 | Eps: 0.110
+Episode 1199 | Reward: 486.68 | Eps: 0.110
+[Episode 1200] Model saved to mario_dqn.pth
+Episode 1200 | Reward: 82.34 | Eps: 0.110
+Episode 1201 | Reward: 485.00 | Eps: 0.110
+Episode 1202 | Reward: 925.23 | Eps: 0.110
+Episode 1203 | Reward: 659.48 | Eps: 0.110
+Episode 1204 | Reward: 76.88 | Eps: 0.110
+Episode 1205 | Reward: 629.88 | Eps: 0.109
+Episode 1206 | Reward: 65.84 | Eps: 0.109
+Episode 1207 | Reward: 76.90 | Eps: 0.109
+Episode 1208 | Reward: 969.81 | Eps: 0.109
+Episode 1209 | Reward: 473.70 | Eps: 0.109
+[Episode 1210] Model saved to mario_dqn.pth
+Episode 1210 | Reward: 943.56 | Eps: 0.109
+Episode 1211 | Reward: 82.32 | Eps: 0.109
+Episode 1212 | Reward: 482.16 | Eps: 0.109
+Episode 1213 | Reward: 77.86 | Eps: 0.109
+Episode 1214 | Reward: 491.70 | Eps: 0.109
+Episode 1215 | Reward: 81.28 | Eps: 0.109
+Episode 1216 | Reward: 82.38 | Eps: 0.109
+Episode 1217 | Reward: 74.64 | Eps: 0.109
+Episode 1218 | Reward: 615.58 | Eps: 0.109
+Episode 1219 | Reward: 81.24 | Eps: 0.109
+[Episode 1220] Model saved to mario_dqn.pth
+Episode 1220 | Reward: 520.26 | Eps: 0.109
+Episode 1221 | Reward: 472.98 | Eps: 0.109
+Episode 1222 | Reward: 697.36 | Eps: 0.109
+Episode 1223 | Reward: 57.92 | Eps: 0.108
+Episode 1224 | Reward: 488.52 | Eps: 0.108
+Episode 1225 | Reward: 2371.55 | Eps: 0.108
+Episode 1226 | Reward: 500.44 | Eps: 0.108
+Episode 1227 | Reward: 1231.24 | Eps: 0.108
+Episode 1228 | Reward: 77.84 | Eps: 0.108
+Episode 1229 | Reward: 694.10 | Eps: 0.108
+[Episode 1230] Model saved to mario_dqn.pth
+Episode 1230 | Reward: 926.29 | Eps: 0.108
+Episode 1231 | Reward: 79.06 | Eps: 0.108
+Episode 1232 | Reward: 71.38 | Eps: 0.108
+Episode 1233 | Reward: 82.32 | Eps: 0.108
+Episode 1234 | Reward: 66.94 | Eps: 0.108
+Episode 1235 | Reward: 1222.75 | Eps: 0.108
+Episode 1236 | Reward: 78.00 | Eps: 0.108
+Episode 1237 | Reward: 79.08 | Eps: 0.108
+Episode 1238 | Reward: 81.22 | Eps: 0.108
+Episode 1239 | Reward: 1267.29 | Eps: 0.108
+[Episode 1240] Model saved to mario_dqn.pth
+Episode 1240 | Reward: 1515.42 | Eps: 0.108
+Episode 1241 | Reward: 78.98 | Eps: 0.108
+Episode 1242 | Reward: 77.84 | Eps: 0.107
+Episode 1243 | Reward: 1777.80 | Eps: 0.107
+Episode 1244 | Reward: 496.10 | Eps: 0.107
+Episode 1245 | Reward: 699.64 | Eps: 0.107
+Episode 1246 | Reward: 489.68 | Eps: 0.107
+Episode 1247 | Reward: 81.24 | Eps: 0.107
+Episode 1248 | Reward: 64.64 | Eps: 0.107
+Episode 1249 | Reward: 501.52 | Eps: 0.107
+[Episode 1250] Model saved to mario_dqn.pth
+Episode 1250 | Reward: 698.80 | Eps: 0.107
+Episode 1251 | Reward: 501.82 | Eps: 0.107
+Episode 1252 | Reward: 77.96 | Eps: 0.107
+Episode 1253 | Reward: 1282.39 | Eps: 0.107
+Episode 1254 | Reward: 965.67 | Eps: 0.107
+Episode 1255 | Reward: 77.98 | Eps: 0.107
+Episode 1256 | Reward: 66.80 | Eps: 0.107
+Episode 1257 | Reward: 73.48 | Eps: 0.107
+Episode 1258 | Reward: 61.28 | Eps: 0.107
+Episode 1259 | Reward: 492.72 | Eps: 0.107
+[Episode 1260] Model saved to mario_dqn.pth
+Episode 1260 | Reward: 82.42 | Eps: 0.107
+Episode 1261 | Reward: 64.60 | Eps: 0.106
+Episode 1262 | Reward: 80.18 | Eps: 0.106
+Episode 1263 | Reward: 500.58 | Eps: 0.106
+Episode 1264 | Reward: 77.98 | Eps: 0.106
+Episode 1265 | Reward: 924.98 | Eps: 0.106
+Episode 1266 | Reward: 924.84 | Eps: 0.106
+Episode 1267 | Reward: 1285.71 | Eps: 0.106
+Episode 1268 | Reward: 1249.01 | Eps: 0.106
+Episode 1269 | Reward: 62.42 | Eps: 0.106
+[Episode 1270] Model saved to mario_dqn.pth
+Episode 1270 | Reward: 1661.46 | Eps: 0.106
+Episode 1271 | Reward: 1280.18 | Eps: 0.106
+Episode 1272 | Reward: 485.06 | Eps: 0.106
+Episode 1273 | Reward: 474.94 | Eps: 0.106
+Episode 1274 | Reward: 1278.91 | Eps: 0.106
+Episode 1275 | Reward: 939.73 | Eps: 0.106
+Episode 1276 | Reward: 80.12 | Eps: 0.106
+Episode 1277 | Reward: 1535.82 | Eps: 0.106
+Episode 1278 | Reward: 76.88 | Eps: 0.106
+Episode 1279 | Reward: 1379.20 | Eps: 0.105
+[Episode 1280] Model saved to mario_dqn.pth
+Episode 1280 | Reward: 956.07 | Eps: 0.105
+Episode 1281 | Reward: 76.86 | Eps: 0.105
+Episode 1282 | Reward: 77.96 | Eps: 0.105
+Episode 1283 | Reward: 615.40 | Eps: 0.105
+Episode 1284 | Reward: 488.20 | Eps: 0.105
+Episode 1285 | Reward: 510.92 | Eps: 0.105
+Episode 1286 | Reward: 77.98 | Eps: 0.105
+Episode 1287 | Reward: 64.96 | Eps: 0.105
+Episode 1288 | Reward: 79.06 | Eps: 0.105
+Episode 1289 | Reward: 494.16 | Eps: 0.105
+[Episode 1290] Model saved to mario_dqn.pth
+Episode 1290 | Reward: 79.08 | Eps: 0.105
+Episode 1291 | Reward: 505.16 | Eps: 0.105
+Episode 1292 | Reward: 80.20 | Eps: 0.105
+Episode 1293 | Reward: 940.33 | Eps: 0.105
+Episode 1294 | Reward: 1833.98 | Eps: 0.105
+Episode 1295 | Reward: 1071.68 | Eps: 0.105
+Episode 1296 | Reward: 1385.78 | Eps: 0.105
+Episode 1297 | Reward: 1274.25 | Eps: 0.105
+Episode 1298 | Reward: 80.16 | Eps: 0.104
+Episode 1299 | Reward: 487.90 | Eps: 0.104
+[Episode 1300] Model saved to mario_dqn.pth
+Episode 1300 | Reward: 503.20 | Eps: 0.104
+Episode 1301 | Reward: 82.36 | Eps: 0.104
+Episode 1302 | Reward: 62.42 | Eps: 0.104
+Episode 1303 | Reward: 1258.24 | Eps: 0.104
+Episode 1304 | Reward: 1267.34 | Eps: 0.104
+Episode 1305 | Reward: 1064.74 | Eps: 0.104
+Episode 1306 | Reward: 498.30 | Eps: 0.104
+Episode 1307 | Reward: 71.38 | Eps: 0.104
+Episode 1308 | Reward: 691.36 | Eps: 0.104
+Episode 1309 | Reward: 930.90 | Eps: 0.104
+[Episode 1310] Model saved to mario_dqn.pth
+Episode 1310 | Reward: 1288.02 | Eps: 0.104
+Episode 1311 | Reward: 489.16 | Eps: 0.104
+Episode 1312 | Reward: 689.24 | Eps: 0.104
+Episode 1313 | Reward: 72.38 | Eps: 0.104
+Episode 1314 | Reward: 76.88 | Eps: 0.104
+Episode 1315 | Reward: 73.38 | Eps: 0.104
+Episode 1316 | Reward: 471.28 | Eps: 0.104
+Episode 1317 | Reward: 479.52 | Eps: 0.104
+Episode 1318 | Reward: 77.96 | Eps: 0.103
+Episode 1319 | Reward: 903.02 | Eps: 0.103
+[Episode 1320] Model saved to mario_dqn.pth
+Episode 1320 | Reward: 77.96 | Eps: 0.103
+Episode 1321 | Reward: 496.04 | Eps: 0.103
+Episode 1322 | Reward: 1274.18 | Eps: 0.103
+Episode 1323 | Reward: 491.68 | Eps: 0.103
+Episode 1324 | Reward: 79.08 | Eps: 0.103
+Episode 1325 | Reward: 692.72 | Eps: 0.103
+Episode 1326 | Reward: 672.54 | Eps: 0.103
+Episode 1327 | Reward: 639.86 | Eps: 0.103
+Episode 1328 | Reward: 470.54 | Eps: 0.103
+Episode 1329 | Reward: 64.74 | Eps: 0.103
+[Episode 1330] Model saved to mario_dqn.pth
+Episode 1330 | Reward: 902.23 | Eps: 0.103
+Episode 1331 | Reward: 1215.32 | Eps: 0.103
+Episode 1332 | Reward: 696.40 | Eps: 0.103
+Episode 1333 | Reward: 496.22 | Eps: 0.103
+Episode 1334 | Reward: 466.48 | Eps: 0.103
+Episode 1335 | Reward: 912.24 | Eps: 0.103
+Episode 1336 | Reward: 916.62 | Eps: 0.103
+Episode 1337 | Reward: 67.96 | Eps: 0.102
+Episode 1338 | Reward: 1266.05 | Eps: 0.102
+Episode 1339 | Reward: 76.80 | Eps: 0.102
+[Episode 1340] Model saved to mario_dqn.pth
+Episode 1340 | Reward: 880.67 | Eps: 0.102
+Episode 1341 | Reward: 1532.60 | Eps: 0.102
+Episode 1342 | Reward: 79.08 | Eps: 0.102
+Episode 1343 | Reward: 1902.30 | Eps: 0.102
+Episode 1344 | Reward: 522.42 | Eps: 0.102
+Episode 1345 | Reward: 76.84 | Eps: 0.102
+Episode 1346 | Reward: 485.32 | Eps: 0.102
+Episode 1347 | Reward: 77.98 | Eps: 0.102
+Episode 1348 | Reward: 501.90 | Eps: 0.102
+Episode 1349 | Reward: 699.88 | Eps: 0.102
+[Episode 1350] Model saved to mario_dqn.pth
+Episode 1350 | Reward: 76.86 | Eps: 0.102
+Episode 1351 | Reward: 466.32 | Eps: 0.102
+Episode 1352 | Reward: 76.74 | Eps: 0.102
+Episode 1353 | Reward: 475.30 | Eps: 0.102
+Episode 1354 | Reward: 79.14 | Eps: 0.102
+Episode 1355 | Reward: 80.20 | Eps: 0.102
+Episode 1356 | Reward: 465.16 | Eps: 0.102
+Episode 1357 | Reward: 75.72 | Eps: 0.101
+Episode 1358 | Reward: 79.02 | Eps: 0.101
+Episode 1359 | Reward: 874.31 | Eps: 0.101
+[Episode 1360] Model saved to mario_dqn.pth
+Episode 1360 | Reward: 72.54 | Eps: 0.101
+Episode 1361 | Reward: 34.94 | Eps: 0.101
+Episode 1362 | Reward: 474.44 | Eps: 0.101
+Episode 1363 | Reward: 78.92 | Eps: 0.101
+Episode 1364 | Reward: 62.50 | Eps: 0.101
+Episode 1365 | Reward: 64.94 | Eps: 0.101
+Episode 1366 | Reward: 78.04 | Eps: 0.101
+Episode 1367 | Reward: 1506.56 | Eps: 0.101
+Episode 1368 | Reward: 948.02 | Eps: 0.101
+Episode 1369 | Reward: 470.78 | Eps: 0.101
+[Episode 1370] Model saved to mario_dqn.pth
+Episode 1370 | Reward: 469.66 | Eps: 0.101
+Episode 1371 | Reward: 466.38 | Eps: 0.101
+Episode 1372 | Reward: 76.88 | Eps: 0.101
+Episode 1373 | Reward: 631.94 | Eps: 0.101
+Episode 1374 | Reward: 947.87 | Eps: 0.101
+Episode 1375 | Reward: 80.20 | Eps: 0.101
+Episode 1376 | Reward: 80.20 | Eps: 0.100
+Episode 1377 | Reward: 923.60 | Eps: 0.100
+Episode 1378 | Reward: 483.16 | Eps: 0.100
+Episode 1379 | Reward: 78.00 | Eps: 0.100
+[Episode 1380] Model saved to mario_dqn.pth
+Episode 1380 | Reward: 486.34 | Eps: 0.100
+Episode 1381 | Reward: 951.99 | Eps: 0.100
+Episode 1382 | Reward: 1653.30 | Eps: 0.100
+Episode 1383 | Reward: 503.16 | Eps: 0.100
+Episode 1384 | Reward: 81.24 | Eps: 0.100
+Episode 1385 | Reward: 24.98 | Eps: 0.100
+Episode 1386 | Reward: 625.16 | Eps: 0.100
+Episode 1387 | Reward: 1250.85 | Eps: 0.100
+Episode 1388 | Reward: 491.86 | Eps: 0.100
+Episode 1389 | Reward: 947.44 | Eps: 0.100
+[Episode 1390] Model saved to mario_dqn.pth
+Episode 1390 | Reward: 474.48 | Eps: 0.100
+Episode 1391 | Reward: 77.98 | Eps: 0.100
+Episode 1392 | Reward: 919.55 | Eps: 0.100
+Episode 1393 | Reward: 664.24 | Eps: 0.100
+Episode 1394 | Reward: 1248.56 | Eps: 0.100
+Episode 1395 | Reward: 1529.84 | Eps: 0.100
+Episode 1396 | Reward: 81.22 | Eps: 0.099
+Episode 1397 | Reward: 1277.38 | Eps: 0.099
+Episode 1398 | Reward: 496.16 | Eps: 0.099
+Episode 1399 | Reward: 949.08 | Eps: 0.099
+[Episode 1400] Model saved to mario_dqn.pth
+Episode 1400 | Reward: 77.98 | Eps: 0.099
+Episode 1401 | Reward: 79.02 | Eps: 0.099
+Episode 1402 | Reward: 479.54 | Eps: 0.099
+Episode 1403 | Reward: 76.94 | Eps: 0.099
+Episode 1404 | Reward: 495.38 | Eps: 0.099
+Episode 1405 | Reward: 76.88 | Eps: 0.099
+Episode 1406 | Reward: 57.88 | Eps: 0.099
+Episode 1407 | Reward: 475.58 | Eps: 0.099
+Episode 1408 | Reward: 498.58 | Eps: 0.099
+Episode 1409 | Reward: 948.23 | Eps: 0.099
+[Episode 1410] Model saved to mario_dqn.pth
+Episode 1410 | Reward: 599.52 | Eps: 0.099
+Episode 1411 | Reward: 475.52 | Eps: 0.099
+Episode 1412 | Reward: 77.84 | Eps: 0.099
+Episode 1413 | Reward: 648.38 | Eps: 0.099
+Episode 1414 | Reward: 921.77 | Eps: 0.099
+Episode 1415 | Reward: 1642.60 | Eps: 0.099
+Episode 1416 | Reward: 77.96 | Eps: 0.099
+Episode 1417 | Reward: 1354.96 | Eps: 0.098
+Episode 1418 | Reward: 1373.36 | Eps: 0.098
+Episode 1419 | Reward: 82.38 | Eps: 0.098
+[Episode 1420] Model saved to mario_dqn.pth
+Episode 1420 | Reward: 692.82 | Eps: 0.098
+Episode 1421 | Reward: 484.06 | Eps: 0.098
+Episode 1422 | Reward: 501.60 | Eps: 0.098
+Episode 1423 | Reward: 1280.08 | Eps: 0.098
+Episode 1424 | Reward: 609.90 | Eps: 0.098
+Episode 1425 | Reward: 1265.95 | Eps: 0.098
+Episode 1426 | Reward: 1260.64 | Eps: 0.098
+Episode 1427 | Reward: 79.10 | Eps: 0.098
+Episode 1428 | Reward: 898.89 | Eps: 0.098
+Episode 1429 | Reward: 484.72 | Eps: 0.098
+[Episode 1430] Model saved to mario_dqn.pth
+Episode 1430 | Reward: 919.30 | Eps: 0.098
+Episode 1431 | Reward: 500.68 | Eps: 0.098
+Episode 1432 | Reward: 970.29 | Eps: 0.098
+Episode 1433 | Reward: 652.60 | Eps: 0.098
+Episode 1434 | Reward: 647.70 | Eps: 0.098
+Episode 1435 | Reward: 76.82 | Eps: 0.098
+Episode 1436 | Reward: 500.38 | Eps: 0.098
+Episode 1437 | Reward: 924.52 | Eps: 0.097
+Episode 1438 | Reward: 77.96 | Eps: 0.097
+Episode 1439 | Reward: 475.60 | Eps: 0.097
+[Episode 1440] Model saved to mario_dqn.pth
+Episode 1440 | Reward: 60.10 | Eps: 0.097
+Episode 1441 | Reward: 500.52 | Eps: 0.097
+Episode 1442 | Reward: 1224.22 | Eps: 0.097
+Episode 1443 | Reward: 80.16 | Eps: 0.097
+Episode 1444 | Reward: 1246.50 | Eps: 0.097
+Episode 1445 | Reward: 611.54 | Eps: 0.097
+Episode 1446 | Reward: 80.20 | Eps: 0.097
+Episode 1447 | Reward: 67.88 | Eps: 0.097
+Episode 1448 | Reward: 76.86 | Eps: 0.097
+Episode 1449 | Reward: 522.62 | Eps: 0.097
+[Episode 1450] Model saved to mario_dqn.pth
+Episode 1450 | Reward: 1280.20 | Eps: 0.097
+Episode 1451 | Reward: 65.70 | Eps: 0.097
+Episode 1452 | Reward: 659.34 | Eps: 0.097
+Episode 1453 | Reward: 1501.90 | Eps: 0.097
+Episode 1454 | Reward: 476.66 | Eps: 0.097
+Episode 1455 | Reward: 1262.88 | Eps: 0.097
+Episode 1456 | Reward: 503.76 | Eps: 0.097
+Episode 1457 | Reward: 76.88 | Eps: 0.097
+Episode 1458 | Reward: 930.91 | Eps: 0.096
+Episode 1459 | Reward: 64.64 | Eps: 0.096
+[Episode 1460] Model saved to mario_dqn.pth
+Episode 1460 | Reward: 634.30 | Eps: 0.096
+Episode 1461 | Reward: 640.14 | Eps: 0.096
+Episode 1462 | Reward: 79.08 | Eps: 0.096
+Episode 1463 | Reward: 75.76 | Eps: 0.096
+Episode 1464 | Reward: 973.76 | Eps: 0.096
+Episode 1465 | Reward: 76.88 | Eps: 0.096
+Episode 1466 | Reward: 64.70 | Eps: 0.096
+Episode 1467 | Reward: 1268.29 | Eps: 0.096
+Episode 1468 | Reward: 490.86 | Eps: 0.096
+Episode 1469 | Reward: 467.36 | Eps: 0.096
+[Episode 1470] Model saved to mario_dqn.pth
+Episode 1470 | Reward: 482.10 | Eps: 0.096
+Episode 1471 | Reward: 76.80 | Eps: 0.096
+Episode 1472 | Reward: 937.71 | Eps: 0.096
+Episode 1473 | Reward: 949.33 | Eps: 0.096
+Episode 1474 | Reward: 1641.08 | Eps: 0.096
+Episode 1475 | Reward: 1382.36 | Eps: 0.096
+Episode 1476 | Reward: 477.26 | Eps: 0.096
+Episode 1477 | Reward: 1282.18 | Eps: 0.096
+Episode 1478 | Reward: 81.28 | Eps: 0.096
+Episode 1479 | Reward: 695.16 | Eps: 0.095
+[Episode 1480] Model saved to mario_dqn.pth
+Episode 1480 | Reward: 79.08 | Eps: 0.095
+Episode 1481 | Reward: 497.06 | Eps: 0.095
+Episode 1482 | Reward: 1273.09 | Eps: 0.095
+Episode 1483 | Reward: 939.00 | Eps: 0.095
+Episode 1484 | Reward: 954.73 | Eps: 0.095
+Episode 1485 | Reward: 946.92 | Eps: 0.095
+Episode 1486 | Reward: 929.71 | Eps: 0.095
+Episode 1487 | Reward: 481.88 | Eps: 0.095
+Episode 1488 | Reward: 55.42 | Eps: 0.095
+Episode 1489 | Reward: 1242.39 | Eps: 0.095
+[Episode 1490] Model saved to mario_dqn.pth
+Episode 1490 | Reward: 1532.24 | Eps: 0.095
+Episode 1491 | Reward: 497.26 | Eps: 0.095
+Episode 1492 | Reward: 82.34 | Eps: 0.095
+Episode 1493 | Reward: 1254.52 | Eps: 0.095
+Episode 1494 | Reward: 945.00 | Eps: 0.095
+Episode 1495 | Reward: 74.26 | Eps: 0.095
+Episode 1496 | Reward: 80.12 | Eps: 0.095
+Episode 1497 | Reward: 80.20 | Eps: 0.095
+Episode 1498 | Reward: 487.58 | Eps: 0.095
+Episode 1499 | Reward: 1287.17 | Eps: 0.095
+[Episode 1500] Model saved to mario_dqn.pth
+Episode 1500 | Reward: 491.78 | Eps: 0.094
+Episode 1501 | Reward: 639.10 | Eps: 0.094
+Episode 1502 | Reward: 1276.27 | Eps: 0.094
+Episode 1503 | Reward: 500.58 | Eps: 0.094
+Episode 1504 | Reward: 503.98 | Eps: 0.094
+Episode 1505 | Reward: 76.90 | Eps: 0.094
+Episode 1506 | Reward: 473.38 | Eps: 0.094
+Episode 1507 | Reward: 690.48 | Eps: 0.094
+Episode 1508 | Reward: 1264.98 | Eps: 0.094
+Episode 1509 | Reward: 523.54 | Eps: 0.094
+[Episode 1510] Model saved to mario_dqn.pth
+Episode 1510 | Reward: 475.42 | Eps: 0.094
+Episode 1511 | Reward: 80.20 | Eps: 0.094
+Episode 1512 | Reward: 473.18 | Eps: 0.094
+Episode 1513 | Reward: 469.28 | Eps: 0.094
+Episode 1514 | Reward: 80.12 | Eps: 0.094
+Episode 1515 | Reward: 950.52 | Eps: 0.094
+Episode 1516 | Reward: 1259.51 | Eps: 0.094
+Episode 1517 | Reward: 619.24 | Eps: 0.094
+Episode 1518 | Reward: 497.18 | Eps: 0.094
+Episode 1519 | Reward: 77.84 | Eps: 0.094
+[Episode 1520] Model saved to mario_dqn.pth
+Episode 1520 | Reward: 694.00 | Eps: 0.094
+Episode 1521 | Reward: 77.98 | Eps: 0.093
+Episode 1522 | Reward: 70.14 | Eps: 0.093
+Episode 1523 | Reward: 472.64 | Eps: 0.093
+Episode 1524 | Reward: 73.54 | Eps: 0.093
+Episode 1525 | Reward: 1254.18 | Eps: 0.093
+Episode 1526 | Reward: 77.98 | Eps: 0.093
+Episode 1527 | Reward: 920.36 | Eps: 0.093
+Episode 1528 | Reward: 487.96 | Eps: 0.093
+Episode 1529 | Reward: 80.16 | Eps: 0.093
+[Episode 1530] Model saved to mario_dqn.pth
+Episode 1530 | Reward: 700.82 | Eps: 0.093
+Episode 1531 | Reward: 698.00 | Eps: 0.093
+Episode 1532 | Reward: 486.28 | Eps: 0.093
+Episode 1533 | Reward: 66.00 | Eps: 0.093
+Episode 1534 | Reward: 1280.11 | Eps: 0.093
+Episode 1535 | Reward: 77.98 | Eps: 0.093
+Episode 1536 | Reward: 487.04 | Eps: 0.093
+Episode 1537 | Reward: 496.28 | Eps: 0.093
+Episode 1538 | Reward: 83.44 | Eps: 0.093
+Episode 1539 | Reward: 81.28 | Eps: 0.093
+[Episode 1540] Model saved to mario_dqn.pth
+Episode 1540 | Reward: 523.64 | Eps: 0.093
+Episode 1541 | Reward: 1842.40 | Eps: 0.093
+Episode 1542 | Reward: 82.36 | Eps: 0.092
+Episode 1543 | Reward: 78.98 | Eps: 0.092
+Episode 1544 | Reward: 79.10 | Eps: 0.092
+Episode 1545 | Reward: 483.88 | Eps: 0.092
+Episode 1546 | Reward: 466.42 | Eps: 0.092
+Episode 1547 | Reward: 81.34 | Eps: 0.092
+Episode 1548 | Reward: 76.88 | Eps: 0.092
+Episode 1549 | Reward: 619.16 | Eps: 0.092
+[Episode 1550] Model saved to mario_dqn.pth
+Episode 1550 | Reward: 64.58 | Eps: 0.092
+Episode 1551 | Reward: 495.26 | Eps: 0.092
+Episode 1552 | Reward: 621.30 | Eps: 0.092
+Episode 1553 | Reward: 499.30 | Eps: 0.092
+Episode 1554 | Reward: 80.18 | Eps: 0.092
+Episode 1555 | Reward: 1187.79 | Eps: 0.092
+Episode 1556 | Reward: 940.93 | Eps: 0.092
+Episode 1557 | Reward: 70.26 | Eps: 0.092
+Episode 1558 | Reward: 932.85 | Eps: 0.092
+Episode 1559 | Reward: 943.40 | Eps: 0.092
+[Episode 1560] Model saved to mario_dqn.pth
+Episode 1560 | Reward: 71.32 | Eps: 0.092
+Episode 1561 | Reward: 489.76 | Eps: 0.092
+Episode 1562 | Reward: 502.84 | Eps: 0.092
+Episode 1563 | Reward: 72.36 | Eps: 0.092
+Episode 1564 | Reward: 495.18 | Eps: 0.091
+Episode 1565 | Reward: 76.88 | Eps: 0.091
+Episode 1566 | Reward: 69.20 | Eps: 0.091
+Episode 1567 | Reward: 78.00 | Eps: 0.091
+Episode 1568 | Reward: 76.62 | Eps: 0.091
+Episode 1569 | Reward: 80.20 | Eps: 0.091
+[Episode 1570] Model saved to mario_dqn.pth
+Episode 1570 | Reward: 80.06 | Eps: 0.091
+Episode 1571 | Reward: 489.22 | Eps: 0.091
+Episode 1572 | Reward: 634.60 | Eps: 0.091
+Episode 1573 | Reward: 953.80 | Eps: 0.091
+Episode 1574 | Reward: 503.86 | Eps: 0.091
+Episode 1575 | Reward: 80.20 | Eps: 0.091
+Episode 1576 | Reward: 476.64 | Eps: 0.091
+Episode 1577 | Reward: 500.70 | Eps: 0.091
+Episode 1578 | Reward: 475.46 | Eps: 0.091
+Episode 1579 | Reward: 464.46 | Eps: 0.091
+[Episode 1580] Model saved to mario_dqn.pth
+Episode 1580 | Reward: 79.06 | Eps: 0.091
+Episode 1581 | Reward: 919.34 | Eps: 0.091
+Episode 1582 | Reward: 72.36 | Eps: 0.091
+Episode 1583 | Reward: 470.00 | Eps: 0.091
+Episode 1584 | Reward: 505.04 | Eps: 0.091
+Episode 1585 | Reward: 958.52 | Eps: 0.091
+Episode 1586 | Reward: 478.46 | Eps: 0.090
+Episode 1587 | Reward: 951.26 | Eps: 0.090
+Episode 1588 | Reward: 481.98 | Eps: 0.090
+Episode 1589 | Reward: 1537.08 | Eps: 0.090
+[Episode 1590] Model saved to mario_dqn.pth
+Episode 1590 | Reward: 473.40 | Eps: 0.090
+Episode 1591 | Reward: 472.18 | Eps: 0.090
+Episode 1592 | Reward: 941.28 | Eps: 0.090
+Episode 1593 | Reward: 2371.51 | Eps: 0.090
+Episode 1594 | Reward: 481.46 | Eps: 0.090
+Episode 1595 | Reward: 481.90 | Eps: 0.090
+Episode 1596 | Reward: 521.12 | Eps: 0.090
+Episode 1597 | Reward: 1277.60 | Eps: 0.090
+Episode 1598 | Reward: 937.02 | Eps: 0.090
+Episode 1599 | Reward: 75.64 | Eps: 0.090
+[Episode 1600] Model saved to mario_dqn.pth
+Episode 1600 | Reward: 477.44 | Eps: 0.090
+Episode 1601 | Reward: 77.92 | Eps: 0.090
+Episode 1602 | Reward: 502.70 | Eps: 0.090
+Episode 1603 | Reward: 637.94 | Eps: 0.090
+Episode 1604 | Reward: 646.08 | Eps: 0.090
+Episode 1605 | Reward: 505.14 | Eps: 0.090
+Episode 1606 | Reward: 73.30 | Eps: 0.090
+Episode 1607 | Reward: 475.90 | Eps: 0.090
+Episode 1608 | Reward: 76.84 | Eps: 0.089
+Episode 1609 | Reward: 971.44 | Eps: 0.089
+[Episode 1610] Model saved to mario_dqn.pth
+Episode 1610 | Reward: 1278.84 | Eps: 0.089
+Episode 1611 | Reward: 76.88 | Eps: 0.089
+Episode 1612 | Reward: 489.58 | Eps: 0.089
+Episode 1613 | Reward: 948.12 | Eps: 0.089
+Episode 1614 | Reward: 80.20 | Eps: 0.089
+Episode 1615 | Reward: 1910.32 | Eps: 0.089
+Episode 1616 | Reward: 1274.32 | Eps: 0.089
+Episode 1617 | Reward: 491.58 | Eps: 0.089
+Episode 1618 | Reward: 76.74 | Eps: 0.089
+Episode 1619 | Reward: 498.12 | Eps: 0.089
+[Episode 1620] Model saved to mario_dqn.pth
+Episode 1620 | Reward: 82.34 | Eps: 0.089
+Episode 1621 | Reward: 502.76 | Eps: 0.089
+Episode 1622 | Reward: 941.94 | Eps: 0.089
+Episode 1623 | Reward: 76.88 | Eps: 0.089
+Episode 1624 | Reward: 949.23 | Eps: 0.089
+Episode 1625 | Reward: 471.92 | Eps: 0.089
+Episode 1626 | Reward: 79.02 | Eps: 0.089
+Episode 1627 | Reward: 950.39 | Eps: 0.089
+Episode 1628 | Reward: 693.98 | Eps: 0.089
+Episode 1629 | Reward: 1090.32 | Eps: 0.089
+[Episode 1630] Model saved to mario_dqn.pth
+Episode 1630 | Reward: 500.62 | Eps: 0.089
+Episode 1631 | Reward: 81.30 | Eps: 0.088
+Episode 1632 | Reward: 1267.30 | Eps: 0.088
+Episode 1633 | Reward: 936.55 | Eps: 0.088
+Episode 1634 | Reward: 635.68 | Eps: 0.088
+Episode 1635 | Reward: 77.92 | Eps: 0.088
+Episode 1636 | Reward: 506.12 | Eps: 0.088
+Episode 1637 | Reward: 523.42 | Eps: 0.088
+Episode 1638 | Reward: 569.10 | Eps: 0.088
+Episode 1639 | Reward: 492.66 | Eps: 0.088
+[Episode 1640] Model saved to mario_dqn.pth
+Episode 1640 | Reward: 1272.71 | Eps: 0.088
+Episode 1641 | Reward: 493.22 | Eps: 0.088
+Episode 1642 | Reward: 691.88 | Eps: 0.088
+Episode 1643 | Reward: 79.02 | Eps: 0.088
+Episode 1644 | Reward: 1502.76 | Eps: 0.088
+Episode 1645 | Reward: 80.18 | Eps: 0.088
+Episode 1646 | Reward: 474.26 | Eps: 0.088
+Episode 1647 | Reward: 937.68 | Eps: 0.088
+Episode 1648 | Reward: 1080.02 | Eps: 0.088
+Episode 1649 | Reward: 637.04 | Eps: 0.088
+[Episode 1650] Model saved to mario_dqn.pth
+Episode 1650 | Reward: 61.68 | Eps: 0.088
+Episode 1651 | Reward: 462.56 | Eps: 0.088
+Episode 1652 | Reward: 81.28 | Eps: 0.088
+Episode 1653 | Reward: 1242.41 | Eps: 0.087
+Episode 1654 | Reward: 65.86 | Eps: 0.087
+Episode 1655 | Reward: 64.60 | Eps: 0.087
+Episode 1656 | Reward: 80.12 | Eps: 0.087
+Episode 1657 | Reward: 1260.21 | Eps: 0.087
+Episode 1658 | Reward: 505.10 | Eps: 0.087
+Episode 1659 | Reward: 484.98 | Eps: 0.087
+[Episode 1660] Model saved to mario_dqn.pth
+Episode 1660 | Reward: 493.84 | Eps: 0.087
+Episode 1661 | Reward: 1252.35 | Eps: 0.087
+Episode 1662 | Reward: 1278.98 | Eps: 0.087
+Episode 1663 | Reward: 507.26 | Eps: 0.087
+Episode 1664 | Reward: 471.94 | Eps: 0.087
+Episode 1665 | Reward: 79.06 | Eps: 0.087
+Episode 1666 | Reward: 1081.56 | Eps: 0.087
+Episode 1667 | Reward: 1252.25 | Eps: 0.087
+Episode 1668 | Reward: 1385.92 | Eps: 0.087
+Episode 1669 | Reward: 77.96 | Eps: 0.087
+[Episode 1670] Model saved to mario_dqn.pth
+Episode 1670 | Reward: 504.20 | Eps: 0.087
+Episode 1671 | Reward: 502.98 | Eps: 0.087
+Episode 1672 | Reward: 68.10 | Eps: 0.087
+Episode 1673 | Reward: 493.04 | Eps: 0.087
+Episode 1674 | Reward: 1367.12 | Eps: 0.087
+Episode 1675 | Reward: 81.30 | Eps: 0.087
+Episode 1676 | Reward: 653.68 | Eps: 0.086
+Episode 1677 | Reward: 588.66 | Eps: 0.086
+Episode 1678 | Reward: 1375.68 | Eps: 0.086
+Episode 1679 | Reward: 1276.27 | Eps: 0.086
+[Episode 1680] Model saved to mario_dqn.pth
+Episode 1680 | Reward: 931.93 | Eps: 0.086
+Episode 1681 | Reward: 81.24 | Eps: 0.086
+Episode 1682 | Reward: 77.98 | Eps: 0.086
+Episode 1683 | Reward: 474.32 | Eps: 0.086
+Episode 1684 | Reward: 1295.81 | Eps: 0.086
+Episode 1685 | Reward: 476.38 | Eps: 0.086
+Episode 1686 | Reward: 80.20 | Eps: 0.086
+Episode 1687 | Reward: 948.11 | Eps: 0.086
+Episode 1688 | Reward: 74.66 | Eps: 0.086
+Episode 1689 | Reward: 675.04 | Eps: 0.086
+[Episode 1690] Model saved to mario_dqn.pth
+Episode 1690 | Reward: 76.88 | Eps: 0.086
+Episode 1691 | Reward: 79.00 | Eps: 0.086
+Episode 1692 | Reward: 501.72 | Eps: 0.086
+Episode 1693 | Reward: 76.82 | Eps: 0.086
+Episode 1694 | Reward: 76.88 | Eps: 0.086
+Episode 1695 | Reward: 1265.48 | Eps: 0.086
+Episode 1696 | Reward: 632.96 | Eps: 0.086
+Episode 1697 | Reward: 1664.06 | Eps: 0.086
+Episode 1698 | Reward: 487.00 | Eps: 0.086
+Episode 1699 | Reward: 76.90 | Eps: 0.086
+[Episode 1700] Model saved to mario_dqn.pth
+Episode 1700 | Reward: 499.46 | Eps: 0.085
+Episode 1701 | Reward: 496.12 | Eps: 0.085
+Episode 1702 | Reward: 949.42 | Eps: 0.085
+Episode 1703 | Reward: 1075.86 | Eps: 0.085
+Episode 1704 | Reward: 1262.20 | Eps: 0.085
+Episode 1705 | Reward: 480.88 | Eps: 0.085
+Episode 1706 | Reward: 936.80 | Eps: 0.085
+Episode 1707 | Reward: 64.86 | Eps: 0.085
+Episode 1708 | Reward: 465.30 | Eps: 0.085
+Episode 1709 | Reward: 484.54 | Eps: 0.085
+[Episode 1710] Model saved to mario_dqn.pth
+Episode 1710 | Reward: 489.44 | Eps: 0.085
+Episode 1711 | Reward: 475.10 | Eps: 0.085
+Episode 1712 | Reward: 484.20 | Eps: 0.085
+Episode 1713 | Reward: 936.72 | Eps: 0.085
+Episode 1714 | Reward: 1547.22 | Eps: 0.085
+Episode 1715 | Reward: 474.42 | Eps: 0.085
+Episode 1716 | Reward: 496.02 | Eps: 0.085
+Episode 1717 | Reward: 77.94 | Eps: 0.085
+Episode 1718 | Reward: 499.48 | Eps: 0.085
+Episode 1719 | Reward: 959.56 | Eps: 0.085
+[Episode 1720] Model saved to mario_dqn.pth
+Episode 1720 | Reward: 79.04 | Eps: 0.085
+Episode 1721 | Reward: 929.96 | Eps: 0.085
+Episode 1722 | Reward: 949.24 | Eps: 0.085
+Episode 1723 | Reward: 77.98 | Eps: 0.084
+Episode 1724 | Reward: 80.20 | Eps: 0.084
+Episode 1725 | Reward: 488.28 | Eps: 0.084
+Episode 1726 | Reward: 500.34 | Eps: 0.084
+Episode 1727 | Reward: 1069.78 | Eps: 0.084
+Episode 1728 | Reward: 472.70 | Eps: 0.084
+Episode 1729 | Reward: 1022.04 | Eps: 0.084
+[Episode 1730] Model saved to mario_dqn.pth
+Episode 1730 | Reward: 944.67 | Eps: 0.084
+Episode 1731 | Reward: 468.94 | Eps: 0.084
+Episode 1732 | Reward: 496.18 | Eps: 0.084
+Episode 1733 | Reward: 475.54 | Eps: 0.084
+Episode 1734 | Reward: 503.70 | Eps: 0.084
+Episode 1735 | Reward: 1369.80 | Eps: 0.084
+Episode 1736 | Reward: 1073.02 | Eps: 0.084
+Episode 1737 | Reward: 77.72 | Eps: 0.084
+Episode 1738 | Reward: 490.80 | Eps: 0.084
+Episode 1739 | Reward: 462.28 | Eps: 0.084
+[Episode 1740] Model saved to mario_dqn.pth
+Episode 1740 | Reward: 65.64 | Eps: 0.084
+Episode 1741 | Reward: 81.28 | Eps: 0.084
+Episode 1742 | Reward: 910.05 | Eps: 0.084
+Episode 1743 | Reward: 953.61 | Eps: 0.084
+Episode 1744 | Reward: 76.86 | Eps: 0.084
+Episode 1745 | Reward: 80.20 | Eps: 0.084
+Episode 1746 | Reward: 481.42 | Eps: 0.084
+Episode 1747 | Reward: 1296.92 | Eps: 0.083
+Episode 1748 | Reward: 77.94 | Eps: 0.083
+Episode 1749 | Reward: 80.20 | Eps: 0.083
+[Episode 1750] Model saved to mario_dqn.pth
+Episode 1750 | Reward: 499.70 | Eps: 0.083
+Episode 1751 | Reward: 1258.05 | Eps: 0.083
+Episode 1752 | Reward: 71.22 | Eps: 0.083
+Episode 1753 | Reward: 77.96 | Eps: 0.083
+Episode 1754 | Reward: 77.90 | Eps: 0.083
+Episode 1755 | Reward: 1374.66 | Eps: 0.083
+Episode 1756 | Reward: 64.74 | Eps: 0.083
+Episode 1757 | Reward: 80.12 | Eps: 0.083
+Episode 1758 | Reward: 81.28 | Eps: 0.083
+Episode 1759 | Reward: 494.84 | Eps: 0.083
+[Episode 1760] Model saved to mario_dqn.pth
+Episode 1760 | Reward: 77.88 | Eps: 0.083
+Episode 1761 | Reward: 73.58 | Eps: 0.083
+Episode 1762 | Reward: 82.40 | Eps: 0.083
+Episode 1763 | Reward: 76.88 | Eps: 0.083
+Episode 1764 | Reward: 82.44 | Eps: 0.083
+Episode 1765 | Reward: 82.36 | Eps: 0.083
+Episode 1766 | Reward: 80.16 | Eps: 0.083
+Episode 1767 | Reward: 519.04 | Eps: 0.083
+Episode 1768 | Reward: 74.58 | Eps: 0.083
+Episode 1769 | Reward: 69.08 | Eps: 0.083
+[Episode 1770] Model saved to mario_dqn.pth
+Episode 1770 | Reward: 82.36 | Eps: 0.083
+Episode 1771 | Reward: 975.71 | Eps: 0.082
+Episode 1772 | Reward: 946.44 | Eps: 0.082
+Episode 1773 | Reward: 479.88 | Eps: 0.082
+Episode 1774 | Reward: 81.28 | Eps: 0.082
+Episode 1775 | Reward: 77.98 | Eps: 0.082
+Episode 1776 | Reward: 475.54 | Eps: 0.082
+Episode 1777 | Reward: 616.54 | Eps: 0.082
+Episode 1778 | Reward: 588.46 | Eps: 0.082
+Episode 1779 | Reward: 80.16 | Eps: 0.082
+[Episode 1780] Model saved to mario_dqn.pth
+Episode 1780 | Reward: 1221.79 | Eps: 0.082
+Episode 1781 | Reward: 474.48 | Eps: 0.082
+Episode 1782 | Reward: 71.24 | Eps: 0.082
+Episode 1783 | Reward: 78.92 | Eps: 0.082
+Episode 1784 | Reward: 651.56 | Eps: 0.082
+Episode 1785 | Reward: 1899.02 | Eps: 0.082
+Episode 1786 | Reward: 481.70 | Eps: 0.082
+Episode 1787 | Reward: 81.24 | Eps: 0.082
+Episode 1788 | Reward: 493.72 | Eps: 0.082
+Episode 1789 | Reward: 79.10 | Eps: 0.082
+[Episode 1790] Model saved to mario_dqn.pth
+Episode 1790 | Reward: 79.08 | Eps: 0.082
+Episode 1791 | Reward: 490.52 | Eps: 0.082
+Episode 1792 | Reward: 1281.00 | Eps: 0.082
+Episode 1793 | Reward: 70.32 | Eps: 0.082
+Episode 1794 | Reward: 701.98 | Eps: 0.082
+Episode 1795 | Reward: 484.18 | Eps: 0.081
+Episode 1796 | Reward: 485.68 | Eps: 0.081
+Episode 1797 | Reward: 1386.72 | Eps: 0.081
+Episode 1798 | Reward: 941.24 | Eps: 0.081
+Episode 1799 | Reward: 702.12 | Eps: 0.081
+[Episode 1800] Model saved to mario_dqn.pth
+Episode 1800 | Reward: 1281.36 | Eps: 0.081
+Episode 1801 | Reward: 940.19 | Eps: 0.081
+Episode 1802 | Reward: 1047.00 | Eps: 0.081
+Episode 1803 | Reward: 77.98 | Eps: 0.081
+Episode 1804 | Reward: 65.68 | Eps: 0.081
+Episode 1805 | Reward: 1369.82 | Eps: 0.081
+Episode 1806 | Reward: 65.90 | Eps: 0.081
+Episode 1807 | Reward: 1252.60 | Eps: 0.081
+Episode 1808 | Reward: 469.90 | Eps: 0.081
+Episode 1809 | Reward: 463.92 | Eps: 0.081
+[Episode 1810] Model saved to mario_dqn.pth
+Episode 1810 | Reward: 492.98 | Eps: 0.081
+Episode 1811 | Reward: 971.46 | Eps: 0.081
+Episode 1812 | Reward: 70.26 | Eps: 0.081
+Episode 1813 | Reward: 492.66 | Eps: 0.081
+Episode 1814 | Reward: 1540.30 | Eps: 0.081
+Episode 1815 | Reward: 80.16 | Eps: 0.081
+Episode 1816 | Reward: 1379.14 | Eps: 0.081
+Episode 1817 | Reward: 484.44 | Eps: 0.081
+Episode 1818 | Reward: 79.02 | Eps: 0.081
+Episode 1819 | Reward: 926.45 | Eps: 0.081
+[Episode 1820] Model saved to mario_dqn.pth
+Episode 1820 | Reward: 952.81 | Eps: 0.080
+Episode 1821 | Reward: 469.86 | Eps: 0.080
+Episode 1822 | Reward: 71.26 | Eps: 0.080
+Episode 1823 | Reward: 68.10 | Eps: 0.080
+Episode 1824 | Reward: 935.70 | Eps: 0.080
+Episode 1825 | Reward: 1365.30 | Eps: 0.080
+Episode 1826 | Reward: 1239.68 | Eps: 0.080
+Episode 1827 | Reward: 1656.38 | Eps: 0.080
+Episode 1828 | Reward: 499.66 | Eps: 0.080
+Episode 1829 | Reward: 466.68 | Eps: 0.080
+[Episode 1830] Model saved to mario_dqn.pth
+Episode 1830 | Reward: 82.38 | Eps: 0.080
+Episode 1831 | Reward: 71.50 | Eps: 0.080
+Episode 1832 | Reward: 82.44 | Eps: 0.080
+Episode 1833 | Reward: 81.28 | Eps: 0.080
+Episode 1834 | Reward: 603.36 | Eps: 0.080
+Episode 1835 | Reward: 1590.30 | Eps: 0.080
+Episode 1836 | Reward: 70.14 | Eps: 0.080
+Episode 1837 | Reward: 928.62 | Eps: 0.080
+Episode 1838 | Reward: 81.14 | Eps: 0.080
+Episode 1839 | Reward: 1240.69 | Eps: 0.080
+[Episode 1840] Model saved to mario_dqn.pth
+Episode 1840 | Reward: 79.08 | Eps: 0.080
+Episode 1841 | Reward: 471.74 | Eps: 0.080
+Episode 1842 | Reward: 505.22 | Eps: 0.080
+Episode 1843 | Reward: 491.76 | Eps: 0.080
+Episode 1844 | Reward: 475.42 | Eps: 0.080
+Episode 1845 | Reward: 77.92 | Eps: 0.079
+Episode 1846 | Reward: 78.00 | Eps: 0.079
+Episode 1847 | Reward: 950.03 | Eps: 0.079
+Episode 1848 | Reward: 628.58 | Eps: 0.079
+Episode 1849 | Reward: 463.54 | Eps: 0.079
+[Episode 1850] Model saved to mario_dqn.pth
+Episode 1850 | Reward: 464.78 | Eps: 0.079
+Episode 1851 | Reward: 594.08 | Eps: 0.079
+Episode 1852 | Reward: 70.22 | Eps: 0.079
+Episode 1853 | Reward: 80.12 | Eps: 0.079
+Episode 1854 | Reward: 497.16 | Eps: 0.079
+Episode 1855 | Reward: 1378.92 | Eps: 0.079
+Episode 1856 | Reward: 80.18 | Eps: 0.079
+Episode 1857 | Reward: 489.76 | Eps: 0.079
+Episode 1858 | Reward: 80.22 | Eps: 0.079
+Episode 1859 | Reward: 62.68 | Eps: 0.079
+[Episode 1860] Model saved to mario_dqn.pth
+Episode 1860 | Reward: 617.64 | Eps: 0.079
+Episode 1861 | Reward: 82.40 | Eps: 0.079
+Episode 1862 | Reward: 68.30 | Eps: 0.079
+Episode 1863 | Reward: 495.20 | Eps: 0.079
+Episode 1864 | Reward: 80.16 | Eps: 0.079
+Episode 1865 | Reward: 71.14 | Eps: 0.079
+Episode 1866 | Reward: 81.28 | Eps: 0.079
+Episode 1867 | Reward: 1284.12 | Eps: 0.079
+Episode 1868 | Reward: 80.16 | Eps: 0.079
+Episode 1869 | Reward: 81.26 | Eps: 0.079
+[Episode 1870] Model saved to mario_dqn.pth
+Episode 1870 | Reward: 466.74 | Eps: 0.078
+Episode 1871 | Reward: 692.84 | Eps: 0.078
+Episode 1872 | Reward: 498.28 | Eps: 0.078
+Episode 1873 | Reward: 930.77 | Eps: 0.078
+Episode 1874 | Reward: 82.44 | Eps: 0.078
+Episode 1875 | Reward: 919.17 | Eps: 0.078
+Episode 1876 | Reward: 458.04 | Eps: 0.078
+Episode 1877 | Reward: 695.28 | Eps: 0.078
+Episode 1878 | Reward: 639.50 | Eps: 0.078
+Episode 1879 | Reward: 77.98 | Eps: 0.078
+[Episode 1880] Model saved to mario_dqn.pth
+Episode 1880 | Reward: 498.12 | Eps: 0.078
+Episode 1881 | Reward: 693.82 | Eps: 0.078
+Episode 1882 | Reward: 468.68 | Eps: 0.078
+Episode 1883 | Reward: 82.44 | Eps: 0.078
+Episode 1884 | Reward: 82.34 | Eps: 0.078
+Episode 1885 | Reward: 847.13 | Eps: 0.078
+Episode 1886 | Reward: 652.32 | Eps: 0.078
+Episode 1887 | Reward: 76.76 | Eps: 0.078
+Episode 1888 | Reward: 76.84 | Eps: 0.078
+Episode 1889 | Reward: 76.90 | Eps: 0.078
+[Episode 1890] Model saved to mario_dqn.pth
+Episode 1890 | Reward: 501.90 | Eps: 0.078
+Episode 1891 | Reward: 905.54 | Eps: 0.078
+Episode 1892 | Reward: 61.36 | Eps: 0.078
+Episode 1893 | Reward: 82.44 | Eps: 0.078
+Episode 1894 | Reward: 1282.59 | Eps: 0.078
+Episode 1895 | Reward: 496.98 | Eps: 0.078
+Episode 1896 | Reward: 949.22 | Eps: 0.077
+Episode 1897 | Reward: 486.52 | Eps: 0.077
+Episode 1898 | Reward: 1270.09 | Eps: 0.077
+Episode 1899 | Reward: 81.26 | Eps: 0.077
+[Episode 1900] Model saved to mario_dqn.pth
+Episode 1900 | Reward: 497.50 | Eps: 0.077
+Episode 1901 | Reward: 79.08 | Eps: 0.077
+Episode 1902 | Reward: 80.20 | Eps: 0.077
+Episode 1903 | Reward: 663.58 | Eps: 0.077
+Episode 1904 | Reward: 471.00 | Eps: 0.077
+Episode 1905 | Reward: 949.91 | Eps: 0.077
+Episode 1906 | Reward: 82.32 | Eps: 0.077
+Episode 1907 | Reward: 1532.28 | Eps: 0.077
+Episode 1908 | Reward: 499.50 | Eps: 0.077
+Episode 1909 | Reward: 80.12 | Eps: 0.077
+[Episode 1910] Model saved to mario_dqn.pth
+Episode 1910 | Reward: 639.22 | Eps: 0.077
+Episode 1911 | Reward: 636.98 | Eps: 0.077
+Episode 1912 | Reward: 81.30 | Eps: 0.077
+Episode 1913 | Reward: 76.90 | Eps: 0.077
+Episode 1914 | Reward: 468.52 | Eps: 0.077
+Episode 1915 | Reward: 72.38 | Eps: 0.077
+Episode 1916 | Reward: 499.22 | Eps: 0.077
+Episode 1917 | Reward: 473.32 | Eps: 0.077
+Episode 1918 | Reward: 948.99 | Eps: 0.077
+Episode 1919 | Reward: 496.26 | Eps: 0.077
+[Episode 1920] Model saved to mario_dqn.pth
+Episode 1920 | Reward: 81.28 | Eps: 0.077
+Episode 1921 | Reward: 947.95 | Eps: 0.077
+Episode 1922 | Reward: 1277.95 | Eps: 0.076
+Episode 1923 | Reward: 488.70 | Eps: 0.076
+Episode 1924 | Reward: 79.08 | Eps: 0.076
+Episode 1925 | Reward: 1282.64 | Eps: 0.076
+Episode 1926 | Reward: 931.88 | Eps: 0.076
+Episode 1927 | Reward: 949.29 | Eps: 0.076
+Episode 1928 | Reward: 486.50 | Eps: 0.076
+Episode 1929 | Reward: 495.06 | Eps: 0.076
+[Episode 1930] Model saved to mario_dqn.pth
+Episode 1930 | Reward: 65.74 | Eps: 0.076
+Episode 1931 | Reward: 81.28 | Eps: 0.076
+Episode 1932 | Reward: 510.48 | Eps: 0.076
+Episode 1933 | Reward: 79.08 | Eps: 0.076
+Episode 1934 | Reward: 76.88 | Eps: 0.076
+Episode 1935 | Reward: 498.54 | Eps: 0.076
+Episode 1936 | Reward: 77.98 | Eps: 0.076
+Episode 1937 | Reward: 500.64 | Eps: 0.076
+Episode 1938 | Reward: 80.20 | Eps: 0.076
+Episode 1939 | Reward: 498.24 | Eps: 0.076
+[Episode 1940] Model saved to mario_dqn.pth
+Episode 1940 | Reward: 82.36 | Eps: 0.076
+Episode 1941 | Reward: 1269.16 | Eps: 0.076
+Episode 1942 | Reward: 522.48 | Eps: 0.076
+Episode 1943 | Reward: 80.20 | Eps: 0.076
+Episode 1944 | Reward: 77.98 | Eps: 0.076
+Episode 1945 | Reward: 80.20 | Eps: 0.076
+Episode 1946 | Reward: 944.75 | Eps: 0.076
+Episode 1947 | Reward: 67.06 | Eps: 0.076
+Episode 1948 | Reward: 467.86 | Eps: 0.075
+Episode 1949 | Reward: 77.94 | Eps: 0.075
+[Episode 1950] Model saved to mario_dqn.pth
+Episode 1950 | Reward: 65.98 | Eps: 0.075
+Episode 1951 | Reward: 1280.39 | Eps: 0.075
+Episode 1952 | Reward: 76.90 | Eps: 0.075
+Episode 1953 | Reward: 476.70 | Eps: 0.075
+Episode 1954 | Reward: 81.22 | Eps: 0.075
+Episode 1955 | Reward: 76.84 | Eps: 0.075
+Episode 1956 | Reward: 1276.59 | Eps: 0.075
+Episode 1957 | Reward: 65.92 | Eps: 0.075
+Episode 1958 | Reward: 486.36 | Eps: 0.075
+Episode 1959 | Reward: 475.54 | Eps: 0.075
+[Episode 1960] Model saved to mario_dqn.pth
+Episode 1960 | Reward: 80.20 | Eps: 0.075
+Episode 1961 | Reward: 1381.20 | Eps: 0.075
+Episode 1962 | Reward: 61.46 | Eps: 0.075
+Episode 1963 | Reward: 468.96 | Eps: 0.075
+Episode 1964 | Reward: 80.16 | Eps: 0.075
+Episode 1965 | Reward: 76.86 | Eps: 0.075
+Episode 1966 | Reward: 940.20 | Eps: 0.075
+Episode 1967 | Reward: 79.04 | Eps: 0.075
+Episode 1968 | Reward: 64.52 | Eps: 0.075
+Episode 1969 | Reward: 1259.61 | Eps: 0.075
+[Episode 1970] Model saved to mario_dqn.pth
+Episode 1970 | Reward: 1358.30 | Eps: 0.075
+Episode 1971 | Reward: 1353.36 | Eps: 0.075
+Episode 1972 | Reward: 956.99 | Eps: 0.075
+Episode 1973 | Reward: 945.75 | Eps: 0.075
+Episode 1974 | Reward: 1278.47 | Eps: 0.075
+Episode 1975 | Reward: 462.96 | Eps: 0.074
+Episode 1976 | Reward: 64.58 | Eps: 0.074
+Episode 1977 | Reward: 79.08 | Eps: 0.074
+Episode 1978 | Reward: 502.02 | Eps: 0.074
+Episode 1979 | Reward: 76.86 | Eps: 0.074
+[Episode 1980] Model saved to mario_dqn.pth
+Episode 1980 | Reward: 945.06 | Eps: 0.074
+Episode 1981 | Reward: 51.50 | Eps: 0.074
+Episode 1982 | Reward: 76.80 | Eps: 0.074
+Episode 1983 | Reward: 470.84 | Eps: 0.074
+Episode 1984 | Reward: 78.04 | Eps: 0.074
+Episode 1985 | Reward: 80.18 | Eps: 0.074
+Episode 1986 | Reward: 503.98 | Eps: 0.074
+Episode 1987 | Reward: 954.77 | Eps: 0.074
+Episode 1988 | Reward: 910.34 | Eps: 0.074
+Episode 1989 | Reward: 487.16 | Eps: 0.074
+[Episode 1990] Model saved to mario_dqn.pth
+Episode 1990 | Reward: 70.42 | Eps: 0.074
+Episode 1991 | Reward: 466.58 | Eps: 0.074
+Episode 1992 | Reward: 489.68 | Eps: 0.074
+Episode 1993 | Reward: 1259.99 | Eps: 0.074
+Episode 1994 | Reward: 969.12 | Eps: 0.074
+Episode 1995 | Reward: 615.42 | Eps: 0.074
+Episode 1996 | Reward: 69.00 | Eps: 0.074
+Episode 1997 | Reward: 654.54 | Eps: 0.074
+Episode 1998 | Reward: 618.82 | Eps: 0.074
+Episode 1999 | Reward: 468.38 | Eps: 0.074
+[Episode 2000] Model saved to mario_dqn.pth
+Episode 2000 | Reward: 956.18 | Eps: 0.074
+Episode 2001 | Reward: 469.90 | Eps: 0.074
+Episode 2002 | Reward: 683.66 | Eps: 0.073
+Episode 2003 | Reward: 948.78 | Eps: 0.073
+Episode 2004 | Reward: 1270.54 | Eps: 0.073
+Episode 2005 | Reward: 80.12 | Eps: 0.073
+Episode 2006 | Reward: 488.08 | Eps: 0.073
+Episode 2007 | Reward: 79.10 | Eps: 0.073
+Episode 2008 | Reward: 929.64 | Eps: 0.073
+Episode 2009 | Reward: 691.52 | Eps: 0.073
+[Episode 2010] Model saved to mario_dqn.pth
+Episode 2010 | Reward: 522.60 | Eps: 0.073
+Episode 2011 | Reward: 498.36 | Eps: 0.073
+Episode 2012 | Reward: 77.96 | Eps: 0.073
+Episode 2013 | Reward: 516.74 | Eps: 0.073
+Episode 2014 | Reward: 955.08 | Eps: 0.073
+Episode 2015 | Reward: 518.98 | Eps: 0.073
+Episode 2016 | Reward: 81.28 | Eps: 0.073
+Episode 2017 | Reward: 502.62 | Eps: 0.073
+Episode 2018 | Reward: 474.46 | Eps: 0.073
+Episode 2019 | Reward: 82.44 | Eps: 0.073
+[Episode 2020] Model saved to mario_dqn.pth
+Episode 2020 | Reward: 475.58 | Eps: 0.073
+Episode 2021 | Reward: 521.16 | Eps: 0.073
+Episode 2022 | Reward: 482.52 | Eps: 0.073
+Episode 2023 | Reward: 80.20 | Eps: 0.073
+Episode 2024 | Reward: 488.84 | Eps: 0.073
+Episode 2025 | Reward: 77.92 | Eps: 0.073
+Episode 2026 | Reward: 80.20 | Eps: 0.073
+Episode 2027 | Reward: 78.00 | Eps: 0.073
+Episode 2028 | Reward: 82.36 | Eps: 0.073
+Episode 2029 | Reward: 80.20 | Eps: 0.072
+[Episode 2030] Model saved to mario_dqn.pth
+Episode 2030 | Reward: 462.28 | Eps: 0.072
+Episode 2031 | Reward: 76.84 | Eps: 0.072
+Episode 2032 | Reward: 485.30 | Eps: 0.072
+Episode 2033 | Reward: 496.28 | Eps: 0.072
+Episode 2034 | Reward: 78.04 | Eps: 0.072
+Episode 2035 | Reward: 77.98 | Eps: 0.072
+Episode 2036 | Reward: 1275.54 | Eps: 0.072
+Episode 2037 | Reward: 79.08 | Eps: 0.072
+Episode 2038 | Reward: 940.06 | Eps: 0.072
+Episode 2039 | Reward: 494.04 | Eps: 0.072
+[Episode 2040] Model saved to mario_dqn.pth
+Episode 2040 | Reward: 474.08 | Eps: 0.072
+Episode 2041 | Reward: 76.90 | Eps: 0.072
+Episode 2042 | Reward: 907.80 | Eps: 0.072
+Episode 2043 | Reward: 76.84 | Eps: 0.072
+Episode 2044 | Reward: 503.62 | Eps: 0.072
+Episode 2045 | Reward: 77.80 | Eps: 0.072
+Episode 2046 | Reward: 80.20 | Eps: 0.072
+Episode 2047 | Reward: 76.90 | Eps: 0.072
+Episode 2048 | Reward: 895.38 | Eps: 0.072
+Episode 2049 | Reward: 76.88 | Eps: 0.072
+[Episode 2050] Model saved to mario_dqn.pth
+Episode 2050 | Reward: 1366.22 | Eps: 0.072
+Episode 2051 | Reward: 81.08 | Eps: 0.072
+Episode 2052 | Reward: 67.12 | Eps: 0.072
+Episode 2053 | Reward: 78.94 | Eps: 0.072
+Episode 2054 | Reward: 1255.62 | Eps: 0.072
+Episode 2055 | Reward: 1074.42 | Eps: 0.072
+Episode 2056 | Reward: 457.92 | Eps: 0.072
+Episode 2057 | Reward: 492.86 | Eps: 0.071
+Episode 2058 | Reward: 470.98 | Eps: 0.071
+Episode 2059 | Reward: 80.20 | Eps: 0.071
+[Episode 2060] Model saved to mario_dqn.pth
+Episode 2060 | Reward: 481.96 | Eps: 0.071
+Episode 2061 | Reward: 497.24 | Eps: 0.071
+Episode 2062 | Reward: 79.10 | Eps: 0.071
+Episode 2063 | Reward: 80.20 | Eps: 0.071
+Episode 2064 | Reward: 74.60 | Eps: 0.071
+Episode 2065 | Reward: 904.39 | Eps: 0.071
+Episode 2066 | Reward: 490.70 | Eps: 0.071
+Episode 2067 | Reward: 487.48 | Eps: 0.071
+Episode 2068 | Reward: 1370.92 | Eps: 0.071
+Episode 2069 | Reward: 629.98 | Eps: 0.071
+[Episode 2070] Model saved to mario_dqn.pth
+Episode 2070 | Reward: 697.40 | Eps: 0.071
+Episode 2071 | Reward: 501.38 | Eps: 0.071
+Episode 2072 | Reward: 480.80 | Eps: 0.071
+Episode 2073 | Reward: 80.16 | Eps: 0.071
+Episode 2074 | Reward: 943.17 | Eps: 0.071
+Episode 2075 | Reward: 942.23 | Eps: 0.071
+Episode 2076 | Reward: 79.08 | Eps: 0.071
+Episode 2077 | Reward: 480.82 | Eps: 0.071
+Episode 2078 | Reward: 78.00 | Eps: 0.071
+Episode 2079 | Reward: 479.50 | Eps: 0.071
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 308, in run_training
+    env.render()
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/order_enforcing.py", line 51, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/env_checker.py", line 55, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/nes_env.py", line 386, in render
+    self.viewer.show(self.screen)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/_image_viewer.py", line 144, in show
+    frame.tobytes(),
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 308, in run_training
+    env.render()
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/order_enforcing.py", line 51, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/env_checker.py", line 55, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/nes_env.py", line 386, in render
+    self.viewer.show(self.screen)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/_image_viewer.py", line 144, in show
+    frame.tobytes(),
+KeyboardInterrupt

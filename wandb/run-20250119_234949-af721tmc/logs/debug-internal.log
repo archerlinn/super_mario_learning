@@ -1,0 +1,16 @@
+{"time":"2025-01-19T23:49:49.785276583-05:00","level":"INFO","msg":"stream: starting","core version":"0.19.4","symlink path":"/home/archer/code/super_mario_learning/wandb/run-20250119_234949-af721tmc/logs/debug-core.log"}
+{"time":"2025-01-19T23:49:49.891364302-05:00","level":"INFO","msg":"created new stream","id":"af721tmc"}
+{"time":"2025-01-19T23:49:49.891427063-05:00","level":"INFO","msg":"stream: started","id":"af721tmc"}
+{"time":"2025-01-19T23:49:49.891587684-05:00","level":"INFO","msg":"handler: started","stream_id":"af721tmc"}
+{"time":"2025-01-19T23:49:49.892035959-05:00","level":"INFO","msg":"writer: Do: started","stream_id":"af721tmc"}
+{"time":"2025-01-19T23:49:49.892303093-05:00","level":"INFO","msg":"sender: started","stream_id":"af721tmc"}
+{"time":"2025-01-19T23:49:50.185446842-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-20T05:22:40.353552033-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-20T05:22:40.354577991-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-20T05:22:41.354468471-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.229040132,"progress":"233.3KB/233.3KB"},{"desc":"uploading wandb-summary.json","runtime_seconds":0.229001648,"progress":"161B/161B"},{"desc":"uploading config.yaml","runtime_seconds":0.139282663,"progress":"462B/462B"}],"total_operations":3}}
+{"time":"2025-01-20T05:22:41.432685464-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-20T05:22:42.562247906-05:00","level":"INFO","msg":"stream: closing","id":"af721tmc"}
+{"time":"2025-01-20T05:22:42.562302416-05:00","level":"INFO","msg":"handler: closed","stream_id":"af721tmc"}
+{"time":"2025-01-20T05:22:42.562317468-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":"af721tmc"}
+{"time":"2025-01-20T05:22:42.562338751-05:00","level":"INFO","msg":"sender: closed","stream_id":"af721tmc"}
+{"time":"2025-01-20T05:22:42.562415411-05:00","level":"INFO","msg":"stream: closed","id":"af721tmc"}

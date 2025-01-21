@@ -1,0 +1,50 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/envs/registration.py:555: UserWarning: [33mWARN: The environment SuperMarioBros-1-1-v0 is out of date. You should consider upgrading to version `v3`.[0m
+  logger.warn(
+Loading model from mario_dqn.pth ...
+/home/archer/code/super_mario_learning/train.py:277: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  agent.local_net.load_state_dict(torch.load(load_model, map_location=device))
+Model loaded successfully. Training will resume from this checkpoint.
+Training:   0%|                                                                                              | 0/5000 [00:00<?, ?it/s]/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:272: UserWarning: [33mWARN: No render modes was declared in the environment (env.metadata['render_modes'] is None or not defined), you may have trouble when calling `.render()`.[0m
+  logger.warn(
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:219: DeprecationWarning: [33mWARN: Core environment is written in old step API which returns one bool instead of two. It is recommended to rewrite the environment with new step API. [0m
+  logger.deprecation(
+Episode 1 | Reward: 68.96 | Eps: 0.200
+Training:   0%|                                                                                    | 1/5000 [00:03<5:09:56,  3.72s/it]
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 308, in run_training
+    env.render()
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/order_enforcing.py", line 51, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/env_checker.py", line 55, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/nes_env.py", line 386, in render
+    self.viewer.show(self.screen)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/_image_viewer.py", line 144, in show
+    frame.tobytes(),
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train.py", line 402, in <module>
+    run_training(num_episodes=5000, render=True, load_model="mario_dqn.pth")
+  File "/home/archer/code/super_mario_learning/train.py", line 308, in run_training
+    env.render()
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 329, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/order_enforcing.py", line 51, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/wrappers/env_checker.py", line 55, in render
+    return self.env.render(*args, **kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/nes_env.py", line 386, in render
+    self.viewer.show(self.screen)
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/_image_viewer.py", line 144, in show
+    frame.tobytes(),
+KeyboardInterrupt

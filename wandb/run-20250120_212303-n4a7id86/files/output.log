@@ -1,0 +1,34 @@
+/home/archer/.local/lib/python3.10/site-packages/gym/utils/passive_env_checker.py:195: UserWarning: [33mWARN: The result returned by `env.reset()` was not a tuple of the form `(obs, info)`, where `obs` is a observation and `info` is a dictionary containing additional information. Actual type: `<class 'numpy.ndarray'>`[0m
+  logger.warn(
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train_new.py", line 346, in <module>
+    agent, rewards = train_mario(num_episodes=10000)
+  File "/home/archer/code/super_mario_learning/train_new.py", line 306, in train_mario
+    state, _ = env.reset()
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/wrappers/joypad_space.py", line 78, in reset
+    return self.env.reset()
+  File "/home/archer/code/super_mario_learning/train_new.py", line 102, in reset
+    obs = self.env.reset()
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 379, in reset
+    obs, info = self.env.reset(**kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 379, in reset
+    obs, info = self.env.reset(**kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 379, in reset
+    obs, info = self.env.reset(**kwargs)
+ValueError: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "/home/archer/code/super_mario_learning/train_new.py", line 346, in <module>
+    agent, rewards = train_mario(num_episodes=10000)
+  File "/home/archer/code/super_mario_learning/train_new.py", line 306, in train_mario
+    state, _ = env.reset()
+  File "/home/archer/.local/lib/python3.10/site-packages/nes_py/wrappers/joypad_space.py", line 78, in reset
+    return self.env.reset()
+  File "/home/archer/code/super_mario_learning/train_new.py", line 102, in reset
+    obs = self.env.reset()
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 379, in reset
+    obs, info = self.env.reset(**kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 379, in reset
+    obs, info = self.env.reset(**kwargs)
+  File "/home/archer/.local/lib/python3.10/site-packages/gym/core.py", line 379, in reset
+    obs, info = self.env.reset(**kwargs)
+ValueError: too many values to unpack (expected 2)
